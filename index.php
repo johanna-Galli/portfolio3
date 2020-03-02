@@ -9,10 +9,15 @@
     <link href="asset/style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+
 </head>
 
 <body>
     <header id="home">
+        <div class="blur"></div>
+
         <nav class="topnav" id="myTopnav">
             <a href="#me" class="btn">Me</a>
             <a href="#about" class="btn">About</a>
@@ -25,17 +30,53 @@
             </a>
         </nav>
 
+
+
         <div id="me">
             <img src="asset/img/johanna-galli.JPG" alt="photo johanna galli" id="myPhoto">
-            <div class="MeText">
-                <h1>Johanna Galli, 23 ans</h1>
-                <h3>Actuellement a la recherche d'un stage en développement web</h3>
-                <a href="#">
+            <div class="meText">
+                <h1 class="test">Johanna Galli, 23 ans</h1>
+                <h3 class="test">Actuellement à la recherche d'un stage de 2 mois développeuse web</h3>
+                <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/">
                     <img src="asset/img/linkedin.png" alt="logo linkedin" id="logoLinkedin">
                 </a>
             </div>
         </div>
     </header>
+
+
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="img_nature_wide.jpg" style="width:100%">
+            <div class="text">Caption Text</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="img_snow_wide.jpg" style="width:100%">
+            <div class="text">Caption Two</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="img_mountains_wide.jpg" style="width:100%">
+            <div class="text">Caption Three</div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
 
 
     <p>

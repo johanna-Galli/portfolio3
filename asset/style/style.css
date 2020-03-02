@@ -2,7 +2,7 @@ body {
     margin: 0;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
 
 /**********************NAVBAR**********************************/
 
@@ -19,41 +19,37 @@ nav {
     background-color: rgba(0, 0, 0, 0.800);
     display: flex;
     justify-content: center;
-    
+    backdrop-filter: blur(5px) contrast(.8);
 }
-  
+
 .topnav a {
     float: left;
     display: block;
-    color: #f2f2f2;
+    color: rgb(150, 150, 150);
     text-decoration: none !important;
     font-size: 21px;
-    padding: 18px 20px;
+    padding: 10px 26px;
+    margin: 20px 0px;
 }
-  
+
 .topnav a:hover {
-    background-color: grey;
-    color: black;
-}
-  
-.topnav a.active {
-    background-color: grey;
     color: white;
 }
-  
+
+.topnav a.active {
+    color: white;
+}
+
 .topnav .icon {
     display: none;
 }
-  
-@media screen and (max-width: 650px) {
+
+@media screen and (max-width: 750px) {
     .topnav {
         justify-content: space-between;
     }
     .topnav a:not(:first-child) {
         display: none;
-    }
-    .topnav a {
-        padding: 18px 20px;
     }
     .topnav a.icon {
         display: block;
@@ -62,19 +58,20 @@ nav {
         position: relative;
     }
     .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
     }
     .topnav.responsive a {
-      float: right;
-      z-index: 1;
-      display: block;
-      height: auto;
+        display: block;
+        height: auto;
     }
 }
 
+/**********************ME**********************************/
+
 #me {
+    padding-top: 40px;
     background: black;
     position: relative;
     z-index: 0;
@@ -85,15 +82,141 @@ nav {
     height: auto;
 }
 
-.MeText {
+.meText {
     position: absolute;
     color: white;
     text-align: right;
     top: 50%;
-    left: 70%;
-    transform: translate(-50%, -50%);
+    right: 100px;
+    width: 50vw;
+}
+
+.test {
+    font-size: 2vw;
 }
 
 #logoLinkedin {
-    width: 50px;
+    width: 3vw;
+}
+
+/**********************Carousel about*********************************/
+
+.mySlides {
+    display: none
+}
+
+img {
+    vertical-align: middle;
+}
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+
+@media only screen and (max-width: 300px) {
+    .prev, .next, .text {
+        font-size: 11px
+    }
 }
