@@ -6,11 +6,11 @@ window.onscroll = function () { scrollFunction() };
 //taille navbar au scroll
 function scrollFunction() {
    let btn = document.getElementsByClassName('btn');
-   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
       console.log("scroll");
       console.log(btn);
       for (let i = 0; i < btn.length; i++) {
-         btn[i].style.margin = "5px 0px";
+         btn[i].style.margin = "0px 0px";
       }
    } else {
       console.log("notscroll");

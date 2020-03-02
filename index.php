@@ -16,8 +16,6 @@
 
 <body>
     <header id="home">
-        <div class="blur"></div>
-
         <nav class="topnav" id="myTopnav">
             <a href="#me" class="btn">Me</a>
             <a href="#about" class="btn">About</a>
@@ -30,13 +28,11 @@
             </a>
         </nav>
 
-
-
         <div id="me">
             <img src="asset/img/johanna-galli.JPG" alt="photo johanna galli" id="myPhoto">
             <div class="meText">
-                <h1 class="test">Johanna Galli, 23 ans</h1>
-                <h3 class="test">Actuellement à la recherche d'un stage de 2 mois développeuse web</h3>
+                <h1>Johanna Galli, 23 ans</h1>
+                <h5>Actuellement à la recherche d'un stage de 2 mois développeuse web</h5>
                 <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/">
                     <img src="asset/img/linkedin.png" alt="logo linkedin" id="logoLinkedin">
                 </a>
@@ -45,145 +41,53 @@
     </header>
 
 
+    <div id="about">
+        <h2 class="title"><span>About</span></h2>
 
-    <div class="slideshow-container">
+        <div class="row">
+            <div class="col txt">
+                <p>
+                    J'ai dans mes bagages un bac
+                    <a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin">
+                        STI2D opt. SIN
+                    </a>
+                    Suivi d'un diplôme universitaire 
+                    <a href="https://www.service-civique.gouv.fr/actualites/lancement-du-programme-projet-orientation-solidarite-a-mulhouse">
+                    Projet Orientation Solidarité
+                    </a> ou j'ai pu effectuer un service civique à la radio Antares
 
-        <div class="mySlides fade">
-            <div class="numbertext">1 / 3</div>
-            <img src="img_nature_wide.jpg" style="width:100%">
-            <div class="text">Caption Text</div>
+
+                </p>
+            </div>
+
+            <div class="col-6">
+                <div class="slideshow-container">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 2</div>
+                        <img src="asset/img/carnaval1.jpg" style="width:100%">
+                        <div class="text">Caption Text</div>
+                    </div>
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 2</div>
+                        <img src="asset/img/carnaval2.jpg" style="width:100%">
+                        <div class="text">Caption Two</div>
+                    </div>
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                </div>
+                <br>
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                </div>
+            </div>
+
+            <p class="col">
+                Mes loisirs :
+            </p>
         </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">2 / 3</div>
-            <img src="img_snow_wide.jpg" style="width:100%">
-            <div class="text">Caption Two</div>
-        </div>
-
-        <div class="mySlides fade">
-            <div class="numbertext">3 / 3</div>
-            <img src="img_mountains_wide.jpg" style="width:100%">
-            <div class="text">Caption Three</div>
-        </div>
-
-        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-        <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
-    <br>
 
-    <div style="text-align:center">
-        <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-    </div>
-
-
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p id="projects">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
-    <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat eveniet nobis provident sit ea repellendus atque autem id facilis, natus perspiciatis. Reprehenderit, laudantium! Quas incidunt nostrum earum enim nesciunt quaerat.
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio nihil error deleniti dolorem quibusdam vitae culpa. Quos quae ab, exercitationem id natus itaque sed omnis quam voluptas eius illum fuga!
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum eligendi molestiae amet nam ducimus sit officia nemo neque labore obcaecati. Eius, ullam laudantium vero dolor laboriosam eum et non unde.
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. At quas dolorem ratione natus consectetur sapiente iusto porro. Harum numquam incidunt rerum atque soluta quibusdam, repudiandae aliquid tempore ratione aspernatur eos.
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui natus deserunt repellat enim reiciendis iusto officia accusamus nesciunt aliquid nam. Qui saepe, alias atque debitis ad ducimus velit soluta. Nisi.
-    </p>
     <script src="asset/js/app.js"></script>
 </body>
 
