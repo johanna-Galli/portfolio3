@@ -10,6 +10,7 @@ body {
 }
 
 /**********************NAVBAR**********************************/
+
 nav {
     z-index: 1;
     position: fixed;
@@ -24,7 +25,41 @@ nav {
     display: flex;
     justify-content: center;
     backdrop-filter: blur(5px) contrast(.8);
+    padding: 25px;
 }
+
+
+
+.paddingMin {
+    padding: 5px;
+    animation-duration: 1s;
+    animation-name: paddingMin;
+    animation-direction: alternate;
+}
+@keyframes paddingMin {
+    from {
+        padding: 25px;
+    }
+    to {
+        padding: 5px;
+    }
+}
+
+.paddingMax {
+    padding: 25px;
+    animation-duration: 1s;
+    animation-name: paddingMax;
+    animation-direction: alternate;
+}
+@keyframes paddingMax {
+    from {
+        padding: 5px;
+    }
+    to {
+        padding: 25px;
+    }
+}
+
 
 .topnav a {
     float: left;
@@ -32,8 +67,7 @@ nav {
     color: rgb(150, 150, 150);
     text-decoration: none !important;
     font-size: 21px;
-    padding: 10px 26px;
-    margin: 20px 0px;
+    padding: 0px 26px;
 }
 
 .topnav a:hover {
@@ -98,10 +132,10 @@ nav {
 .meText h1 {
     font-size: 2vw;
 }
+
 .meText h4 {
     font-size: 2vw;
 }
-
 
 #logoLinkedin {
     width: 3vw;
@@ -112,16 +146,9 @@ nav {
 #about {
     margin: 2vw auto;
     width: 80%;
-    
 }
-
-
 
 /**********************Carousel**************************/
-
-.myCarousel {
-    display: inline !important;
-}
 
 .mySlides {
     display: none;
@@ -131,7 +158,9 @@ nav {
 img {
     vertical-align: middle;
 }
+
 /* Slideshow container */
+
 .slideshow-container {
     max-width: 1000px;
     position: relative;
@@ -140,6 +169,7 @@ img {
 }
 
 /* Next & previous buttons */
+
 .prev, .next {
     cursor: pointer;
     position: absolute;
@@ -156,17 +186,20 @@ img {
 }
 
 /* Position the "next button" to the right */
+
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
 /* On hover, add a black background color with a little bit see-through */
+
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
 /* Caption text */
+
 .text {
     color: #f2f2f2;
     font-size: 15px;
@@ -178,6 +211,7 @@ img {
 }
 
 /* Number text (1/2 etc) */
+
 .numbertext {
     color: #f2f2f2;
     font-size: 12px;
@@ -187,6 +221,7 @@ img {
 }
 
 /* The dots/bullets/indicators */
+
 .dot {
     cursor: pointer;
     height: 15px;
@@ -202,11 +237,15 @@ img {
     background-color: #717171;
 }
 
-
 /* On smaller screens, decrease text size */
+
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
         font-size: 11px
     }
 }
 
+.logoSkills {
+    height: 7vw;
+    width: auto;
+}

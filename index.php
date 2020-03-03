@@ -51,9 +51,9 @@
                     <a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin">
                         STI2D opt. SIN
                     </a>
-                    Suivi d'un diplôme universitaire 
+                    Suivi d'un diplôme universitaire
                     <a href="https://www.service-civique.gouv.fr/actualites/lancement-du-programme-projet-orientation-solidarite-a-mulhouse">
-                    Projet Orientation Solidarité
+                        Projet Orientation Solidarité
                     </a> ou j'ai pu effectuer un service civique à la radio Antares
 
 
@@ -87,6 +87,62 @@
             </p>
         </div>
     </div>
+
+
+    <div id="Skills">
+        <div class="d-flex">
+            <img class="logoSkills" src="asset/img/skills/html5.png" alt="logo html5">
+            <img class="logoSkills" src="asset/img/skills/css3.png" alt="logo css3">
+            <img class="logoSkills" src="asset/img/skills/js.png" alt="logo javascript">
+            <img class="logoSkills" src="asset/img/skills/php.png" alt="logo php">
+            <img class="logoSkills" src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
+            <img class="logoSkills" src="asset/img/skills/photoshop.png" alt="logo photoshop">
+            <img class="logoSkills" src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
+        </div>
+
+    </div>
+
+
+
+
+
+
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
+<br><br><br><br><br><br><br>
 
     <script src="asset/js/app.js"></script>
 </body>
