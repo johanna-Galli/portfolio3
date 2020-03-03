@@ -21,7 +21,6 @@
             <a href="#about" class="btn">About</a>
             <a href="#skills" class="btn">Skills</a>
             <a href="#projects" class="btn">Projects</a>
-            <a href="#experiences" class="btn">Experiences</a>
             <a href="#contact" class="btn">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="navbar()">
                 <i class="fa fa-bars"></i>
@@ -40,109 +39,80 @@
         </div>
     </header>
 
-
-    <div id="about">
-        <h2 class="title"><span>About</span></h2>
-
-        <div class="row">
-            <div class="col txt">
-                <p>
-                    J'ai dans mes bagages un bac
-                    <a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin">
-                        STI2D opt. SIN
-                    </a>
-                    Suivi d'un diplôme universitaire
-                    <a href="https://www.service-civique.gouv.fr/actualites/lancement-du-programme-projet-orientation-solidarite-a-mulhouse">
-                        Projet Orientation Solidarité
-                    </a> ou j'ai pu effectuer un service civique à la radio Antares
-
-
+    <div class="contain">
+        <div id="about">
+            <h2 class="title"><span>About</span></h2>
+            <div class="row">
+                <div class="col txt">
+                    <p>
+                        J'ai dans mes bagages un bac
+                        <a href="https://oniseptv.onisep.fr/onv/bac-techno-sti2d-specialite-systeme-dinformation-et-numerique-sin">
+                            STI2D opt. SIN
+                        </a>
+                        Suivi d'un diplôme universitaire
+                        <a href="https://www.service-civique.gouv.fr/actualites/lancement-du-programme-projet-orientation-solidarite-a-mulhouse">
+                            Projet Orientation Solidarité
+                        </a> ou j'ai pu effectuer un service civique à la radio Antares
+                    </p>
+                </div>
+                <div class="col-6">
+                    <div class="slideshow-container">
+                        <div class="mySlides">
+                            <div class="numbertext">1 / 2</div>
+                            <img src="asset/img/carnaval1.jpg" style="width:100%">
+                            <div class="text">Caption Text</div>
+                        </div>
+                        <div class="mySlides">
+                            <div class="numbertext">2 / 2</div>
+                            <img src="asset/img/carnaval2.jpg" style="width:100%">
+                            <div class="text">Caption Two</div>
+                        </div>
+                        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                    </div>
+                    <br>
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                    </div>
+                </div>
+                <p class="col">
+                    Mes loisirs :
                 </p>
             </div>
+        </div>
+    </div>
 
-            <div class="col-6">
-                <div class="slideshow-container">
-                    <div class="mySlides">
-                        <div class="numbertext">1 / 2</div>
-                        <img src="asset/img/carnaval1.jpg" style="width:100%">
-                        <div class="text">Caption Text</div>
-                    </div>
-                    <div class="mySlides">
-                        <div class="numbertext">2 / 2</div>
-                        <img src="asset/img/carnaval2.jpg" style="width:100%">
-                        <div class="text">Caption Two</div>
-                    </div>
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="contain">
+        <div id="skills">
+            <h2 class="title"><span>Skills</span></h2>
+            <div class="containerLogos">
+                <div class="web">
+                    <h2>WEB</h2>
+                    <img class="logoSkills" src="asset/img/skills/html5.png" alt="logo html5">
+                    <img class="logoSkills" src="asset/img/skills/css3.png" alt="logo css3">
+                    <img class="logoSkills" src="asset/img/skills/js.png" alt="logo javascript">
+                    <img class="logoSkills" src="asset/img/skills/php.png" alt="logo php">
+                    <img class="logoSkills" src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
+                    <img class="logoSkills" src="asset/img/skills/github.png" alt="logo github">
                 </div>
-                <br>
-                <div style="text-align:center">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
+
+                <div class="photoVideo">
+                    <h2>Photo / vidéo</h2>
+                    <img class="logoSkills" src="asset/img/skills/photoshop.png" alt="logo photoshop">
+                    <img class="logoSkills" src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
+                </div>
+
+                <div class="traitementTexte">
+                    <h2>Traitements textes</h2>
+                    <img class="logoSkills" src="asset/img/skills/word.png" alt="Word">
+                    <img class="logoSkills" src="asset/img/skills/excel.png" alt="excel">
+                    <img class="logoSkills" src="asset/img/skills/powerpoint.png" alt="powerpoint">
                 </div>
             </div>
-
-            <p class="col">
-                Mes loisirs :
-            </p>
         </div>
     </div>
-
-
-    <div id="Skills">
-        <div class="d-flex">
-            <img class="logoSkills" src="asset/img/skills/html5.png" alt="logo html5">
-            <img class="logoSkills" src="asset/img/skills/css3.png" alt="logo css3">
-            <img class="logoSkills" src="asset/img/skills/js.png" alt="logo javascript">
-            <img class="logoSkills" src="asset/img/skills/php.png" alt="logo php">
-            <img class="logoSkills" src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
-            <img class="logoSkills" src="asset/img/skills/photoshop.png" alt="logo photoshop">
-            <img class="logoSkills" src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
-        </div>
-
-    </div>
-
-
-
-
-
-
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga iste laboriosam saepe dolores repudiandae, voluptatum officia unde sapiente ipsam beatae praesentium ab facere, dicta sint eos? Odit voluptas ipsam cum.
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis. Quidem minima incidunt, unde itaque dolores accusantium, enim non quam qui repellendus corporis reprehenderit repudiandae veniam pariatur praesentium beatae perspiciatis!
-<br><br><br><br><br><br><br>
 
     <script src="asset/js/app.js"></script>
 </body>
