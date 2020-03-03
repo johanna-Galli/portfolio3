@@ -33,10 +33,12 @@ let nav = document.getElementById("myTopnav");
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+
    //si dépasse 800 réduit nav
    if (document.documentElement.scrollTop > 800) {
       nav.className = "topnav paddingMin";
    } 
+   
    //si inférieur a 800 et avant on etait suppérieur a 800
    if (document.documentElement.scrollTop != 0 && document.documentElement.scrollTop < 800 && nav.className == "topnav paddingMin"){
       nav.className = "topnav paddingMax";

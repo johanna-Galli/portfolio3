@@ -100,7 +100,7 @@ nav {
         right: 0;
         top: 0;
     }
-    .topnav.responsive a {
+    .btn {
         display: block;
         height: auto;
     }
