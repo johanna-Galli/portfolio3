@@ -3,7 +3,9 @@ body {
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-
+.title {
+    margin-top: 20px;
+}
 .title span {
     border-bottom: 4px solid #ffffff;
     border-image: linear-gradient(to right, black, white) 1;
@@ -18,8 +20,6 @@ body {
     padding: 1vw 0;
     width: 80%;
 }
-
-
 
 /**********************NAVBAR**********************************/
 
@@ -39,8 +39,6 @@ nav {
     backdrop-filter: blur(5px) contrast(.8);
     padding: 25px;
 }
-
-
 
 .paddingMin {
     padding: 5px;
@@ -71,7 +69,6 @@ nav {
         padding: 25px;
     }
 }
-
 
 .topnav a {
     float: left;
@@ -119,7 +116,6 @@ nav {
 }
 
 /**********************ME**********************************/
-
 #me {
     padding-top: 40px;
     background: black;
@@ -134,7 +130,7 @@ nav {
     font-size: 8vw;
     text-transform: uppercase;
     z-index: 1;
-    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.267);
     -webkit-text-fill-color: transparent;
     font-weight: 700;
     font-family: "Poppins", sans-serif;
@@ -149,8 +145,6 @@ nav {
     position: absolute;
     top: 50%;
     right: 6%;
-
-
     color: white;
     text-align: right;
     width: 50vw;
@@ -166,6 +160,58 @@ nav {
 
 #logoLinkedin {
     width: 3vw;
+}
+
+
+/**********************Skills**************************/
+#skills {
+    margin: 1vw auto;
+    width: 80%;
+}
+
+h5 {
+    color: rgb(71, 71, 71);
+}
+
+.logoSkills {
+    display: inline;
+    color: transparent;
+    margin: 0 10px;
+}
+
+.logoSkills img {
+    height: 100px;
+}
+
+.logoSkills img:hover {
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+}
+
+/** ecriture sous différents logos*/
+.logoSkills:hover .infoLogoBoot {
+    color: #563D7C;
+}
+.logoSkills:hover .infoLogoWamp {
+    color: #FF0099;
+}
+.logoSkills:hover .infoLogoGit {
+    color: black;
+}
+.logoSkills:hover .infoLogoPs {
+    color: #112759;
+}
+.logoSkills:hover .infoLogoVegas {
+    color: black;
+}
+.logoSkills:hover .infoLogoWord {
+    color: #2A5699;
+}
+.logoSkills:hover .infoLogoExcel {
+    color: #338C5B;
+}
+.logoSkills:hover .infoLogoPowerpoint {
+    color: #CB4A32;
 }
 
 /**********************about**************************/
@@ -269,28 +315,7 @@ img {
 }
 
 
-
-/**********************Skills**************************/
-
-#skills {
-    margin: 1vw auto;
-    width: 80%;
-}
-
-.containerLogos {
-    margin: auto;
-    text-align: center;
-}
-
-.logoSkills {
-    height: 5vw;
-    width: auto;
-}
-
-
-
 /**********************projets**************************/
-
 
 .containerProjects {
     margin: auto;
@@ -298,7 +323,7 @@ img {
 }
 
 .containerProjects a {
-    text-decoration: none;
+    text-decoration: none;        
 }
 
 .containerProjects a img {
@@ -313,3 +338,37 @@ img {
 .containerProjects a img:hover {
     opacity: .5;
 }
+
+.loupe {
+    opacity: 0;
+}
+
+
+.loupe:hover {
+    opacity: 1;
+}
+
+
+.containerProjects a .loupe {
+    position: absolute;
+    margin: auto;
+    opacity: 0;
+    width: 2%;
+ }
+
+ .containerProjects a:hover .loupe {
+    opacity: 100%;
+    z-index: 2;
+ }
+
+
+ /**********************footer**************************/
+
+ .footer {
+     text-align: center;
+     color: rgb(255, 255, 255);
+     margin: 0;
+     padding: 7px;
+     background-color: rgba(0, 0, 0, 0.800);
+     backdrop-filter: blur(5px) contrast(.8);
+    }

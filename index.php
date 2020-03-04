@@ -18,8 +18,8 @@
     <header id="home">
         <nav class="topnav" id="myTopnav">
             <a href="#me" class="btn">Me</a>
-            <a href="#about" class="btn">About</a>
             <a href="#skills" class="btn">Skills</a>
+            <a href="#about" class="btn">About</a>
             <a href="#projects" class="btn">Projects</a>
             <a href="#contact" class="btn">Contact</a>
             <a href="javascript:void(0);" class="icon" onclick="navbar()">
@@ -42,6 +42,108 @@
         </div>
     </header>
 
+
+
+    <!-------------------------------------SKILLS--------------------------------------->
+    <div class="contain">
+        <div id="skills" class="container80">
+            <h2 class="title"><span>Skills</span></h2>
+            <div class="row justify-content-md-center text-center mt-5 mb-5">
+                <div class="col-md-auto pr-5">
+                    <h5>Languages :</h5>
+                    <!---html-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/html5.png" alt="logo html5">
+                    </div>
+                    <!---css-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/css3.png" alt="logo css3">
+                    </div>
+                    <!---js-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/js.png" alt="logo javascript">
+                    </div>
+                    <!---php-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/php.png" alt="logo php">
+                    </div>
+                </div>
+                <div class="col-md-auto pr-5 pl-5">
+                    <h5>Frameworks :</h5>
+                    <!---bootstrap-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
+                        <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
+                    </div>
+                </div>
+                <div class="col-md-auto pr-5 pl-5">
+                    <h5>Plateforme dev :</h5>
+                    <!---wamp-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/Wamp.png" alt="logo wamp">
+                        <h6 class="infoLogoWamp mt-2">WampServer</h6>
+                    </div>
+                </div>
+                <div class="col-md-auto pr-5 pl-5">
+                    <h5>Gestion BDD :</h5>
+                    <!---mysql-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/MySQL.png" alt="logo mysql">
+                    </div>
+                </div>
+                <div class="col-md-auto">
+                    <h5>Hebergement :</h5>
+                    <!---github-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/github.png" alt="logo github">
+                        <h6 class="infoLogoGit mt-2">GitHub</h6>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-md-center text-center mt-5 mb-5">
+                <div class="col-md-auto pr-5">
+                    <h5>Photo</h5>
+                    <!---photoshop-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/photoshop.png" alt="logo photoshop">
+                        <h6 class="infoLogoPs mt-1">Photoshop</h6>
+                    </div>
+                </div>
+                <div class="col-md-auto pl-5 pr-5">
+                    <h5>Vidéo</h5>
+                    <!---vegas pro-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
+                        <h6 class="infoLogoVegas mt-1">Vegas Pro</h6>
+                    </div>
+                </div>
+                <div class="col-md-auto pl-5">
+                    <h5>Traitements textes</h5>
+                    <div class="d-flex">
+                        <!---word-->
+                        <div class="logoSkills">
+                            <img src="asset/img/skills/word.png" alt="Word">
+                            <h6 class="infoLogoWord mt-1">Word</h6>
+                        </div>
+                        <!---excel-->
+                        <div class="logoSkills">
+                            <img src="asset/img/skills/excel.png" alt="excel">
+                            <h6 class="infoLogoExcel mt-1">Excel</h6>
+                        </div>
+                        <!---powerpoint-->
+                        <div class="logoSkills">
+                            <img src="asset/img/skills/powerpoint.png" alt="powerpoint">
+                            <h6 class="infoLogoPowerpoint mt-1">Powerpoint</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-------------------------------------ABOUT--------------------------------------->
     <div class="contain">
         <div id="about" class="container80">
             <h2 class="title"><span>About</span></h2>
@@ -86,38 +188,6 @@
         </div>
     </div>
 
-
-    <div class="contain">
-        <div id="skills" class="container80">
-            <h2 class="title"><span>Skills</span></h2>
-            <div class="containerLogos">
-                <div class="web d-inline">
-                    <h2>WEB</h2>
-                    <img class="logoSkills" src="asset/img/skills/html5.png" alt="logo html5">
-                    <img class="logoSkills" src="asset/img/skills/css3.png" alt="logo css3">
-                    <img class="logoSkills" src="asset/img/skills/js.png" alt="logo javascript">
-                    <img class="logoSkills" src="asset/img/skills/php.png" alt="logo php">
-                    <img class="logoSkills" src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
-                    <img class="logoSkills" src="asset/img/skills/github.png" alt="logo github">
-                </div>
-
-                <div class="photoVideo d-inline">
-                    <h2>Photo / vidéo</h2>
-                    <img class="logoSkills" src="asset/img/skills/photoshop.png" alt="logo photoshop">
-                    <img class="logoSkills" src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
-                </div>
-
-                <div class="traitementTexte d-inline">
-                    <h2>Traitements textes</h2>
-                    <img class="logoSkills" src="asset/img/skills/word.png" alt="Word">
-                    <img class="logoSkills" src="asset/img/skills/excel.png" alt="excel">
-                    <img class="logoSkills" src="asset/img/skills/powerpoint.png" alt="powerpoint">
-                </div>
-            </div>
-        </div>
-    </div>
-
-
     <!----------------Projects----------------->
 
     <div class="contain">
@@ -128,32 +198,57 @@
 
             <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank">
                 <img src="asset/img/projets/allojati.JPG" alt="allo jati">
+                <span><img src="asset/img/loupe.png" alt="loupe" class="loupe"></span>
+
             </a>
 
             <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank">
                 <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert">
+                <span><img src="asset/img/loupe.png" alt="loupe" class="loupe"></span>
             </a>
 
             <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank">
                 <img src="asset/img/projets/blueasy.JPG" alt="blueasy">
+                <span><img src="asset/img/loupe.png" alt="loupe" class="loupe"></span>
             </a>
 
             <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank">
                 <img src="asset/img/projets/mockup.JPG" alt="mockup">
+                <span><img src="asset/img/loupe.png" alt="loupe" class="loupe"></span>
             </a>
 
             <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank">
                 <img src="asset/img/projets/guessNumber.JPG" alt="Guess number">
+                <span><img src="asset/img/loupe.png" alt="loupe" class="loupe"></span>
             </a>
 
             <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank">
                 <img src="asset/img/projets/multiplication.JPG" alt="multiplication">
+                <span><img src="asset/img/loupe.png" alt="loupe" class="loupe"></span>
             </a>
         </div>
     </div>
 
 
+    <!----------------Contact----------------->
+
+    <div class="contain">
+        <div id="contact" class="container80">
+            <h2 class="title"><span>Conta</span>ct</h2>
+        </div>
+    </div>
+
+
+    
+<!----------------Footer----------------->
+  
+    <p class="footer">Johanna Galli 2020</p>
+
+
     <script src="asset/js/app.js"></script>
 </body>
+
+
+
 
 </html>
