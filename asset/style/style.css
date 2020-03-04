@@ -10,8 +10,16 @@ body {
 }
 
 .contain {
-    background-color: rgba(204, 204, 204, 0.329);
+    background-color: rgba(204, 204, 204, 0.144);
 }
+
+.container80 {
+    margin: 1vw auto;
+    padding: 1vw 0;
+    width: 80%;
+}
+
+
 
 /**********************NAVBAR**********************************/
 
@@ -119,6 +127,19 @@ nav {
     z-index: 0;
 }
 
+.outline_text {
+    position: absolute;
+    top: 16.57%;
+    right: 6%;
+    font-size: 8vw;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-text-stroke: 1px rgb(255, 255, 255);
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
+}
+
 #myPhoto {
     width: 60%;
     height: auto;
@@ -126,10 +147,12 @@ nav {
 
 .meText {
     position: absolute;
+    top: 50%;
+    right: 6%;
+
+
     color: white;
     text-align: right;
-    top: 50%;
-    right: 150px;
     width: 50vw;
 }
 
@@ -147,10 +170,6 @@ nav {
 
 /**********************about**************************/
 
-#about {
-    margin: 1vw auto;
-    width: 80%;
-}
 
 /**********************Carousel**************************/
 
@@ -266,4 +285,31 @@ img {
 .logoSkills {
     height: 5vw;
     width: auto;
+}
+
+
+
+/**********************projets**************************/
+
+
+.containerProjects {
+    margin: auto;
+    text-align: center;
+}
+
+.containerProjects a {
+    text-decoration: none;
+}
+
+.containerProjects a img {
+   width: 25%;
+   margin: 1%;
+   opacity: 1;
+   -webkit-transition: .3s ease-in-out;
+   transition: .3s ease-in-out;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.containerProjects a img:hover {
+    opacity: .5;
 }

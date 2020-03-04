@@ -28,6 +28,9 @@
         </nav>
 
         <div id="me">
+            <div class="outline_text d-none d-lg-block">
+                Portfolio
+            </div>
             <img src="asset/img/johanna-galli.JPG" alt="photo johanna galli" id="myPhoto">
             <div class="meText">
                 <h1>Johanna Galli, 23 ans</h1>
@@ -40,7 +43,7 @@
     </header>
 
     <div class="contain">
-        <div id="about">
+        <div id="about" class="container80">
             <h2 class="title"><span>About</span></h2>
             <div class="row">
                 <div class="col txt">
@@ -85,10 +88,10 @@
 
 
     <div class="contain">
-        <div id="skills">
+        <div id="skills" class="container80">
             <h2 class="title"><span>Skills</span></h2>
             <div class="containerLogos">
-                <div class="web">
+                <div class="web d-inline">
                     <h2>WEB</h2>
                     <img class="logoSkills" src="asset/img/skills/html5.png" alt="logo html5">
                     <img class="logoSkills" src="asset/img/skills/css3.png" alt="logo css3">
@@ -98,13 +101,13 @@
                     <img class="logoSkills" src="asset/img/skills/github.png" alt="logo github">
                 </div>
 
-                <div class="photoVideo">
+                <div class="photoVideo d-inline">
                     <h2>Photo / vidéo</h2>
                     <img class="logoSkills" src="asset/img/skills/photoshop.png" alt="logo photoshop">
                     <img class="logoSkills" src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
                 </div>
 
-                <div class="traitementTexte">
+                <div class="traitementTexte d-inline">
                     <h2>Traitements textes</h2>
                     <img class="logoSkills" src="asset/img/skills/word.png" alt="Word">
                     <img class="logoSkills" src="asset/img/skills/excel.png" alt="excel">
@@ -113,6 +116,42 @@
             </div>
         </div>
     </div>
+
+
+    <!----------------Projects----------------->
+
+    <div class="contain">
+        <div id="projects" class="container80">
+            <h2 class="title"><span>Proje</span>cts</h2>
+        </div>
+        <div class="containerProjects">
+
+            <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank">
+                <img src="asset/img/projets/allojati.JPG" alt="allo jati">
+            </a>
+
+            <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank">
+                <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert">
+            </a>
+
+            <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank">
+                <img src="asset/img/projets/blueasy.JPG" alt="blueasy">
+            </a>
+
+            <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank">
+                <img src="asset/img/projets/mockup.JPG" alt="mockup">
+            </a>
+
+            <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank">
+                <img src="asset/img/projets/guessNumber.JPG" alt="Guess number">
+            </a>
+
+            <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank">
+                <img src="asset/img/projets/multiplication.JPG" alt="multiplication">
+            </a>
+        </div>
+    </div>
+
 
     <script src="asset/js/app.js"></script>
 </body>
