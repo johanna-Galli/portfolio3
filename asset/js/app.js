@@ -1,53 +1,21 @@
-
-/**********************NAVBAR*****************
-
-window.onscroll = function () { scrollFunction() };
-
-//taille navbar au scroll
-function scrollFunction() {
-   let btn = document.getElementsByClassName('btn');
-   if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-      console.log("scroll");
-      console.log(btn);
-      for (let i = 0; i < btn.length; i++) {
-         btn[i].style.transitionDuration = "10s";
-         btn[i].style.margin = "0px 0px";  
-      }
-   } else {
-      console.log("notscroll");
-      console.log(btn);
-      for (let i = 0; i < btn.length; i++) {
-         btn[i].style.margin = "20px 0px";
-      }
-   }
-}******/
-
-
-
-let header = document.getElementById("home");
-
-let btns = header.getElementsByClassName("btn");
+let header = document.getElementById("header");
 let nav = document.getElementById("myTopnav");
+let btns = header.getElementsByClassName("btn");
 
-//changement hauteur nav en fonction endroit sur le site
-window.onscroll = function () { scrollFunction() };
+/**********************Animations sur tous les elements de la page***********************/
 
-function scrollFunction() {
+/**appartion de chaque partie au scroll (durée 2sec) */
+let sr2 = ScrollReveal({
+   duration: 2000,
+   reset: true
+});
 
-   //si dépasse 800 réduit nav
-   if (document.documentElement.scrollTop > 800) {
-      nav.className = "topnav paddingMin";
-   } 
-   
-   //si inférieur a 800 et avant on etait suppérieur a 800
-   if (document.documentElement.scrollTop != 0 && document.documentElement.scrollTop < 800 && nav.className == "topnav paddingMin"){
-      nav.className = "topnav paddingMax";
-   } 
-   //sinon si inférieur a 800 mais qu'on l'a toujours été reste a la position de base
-   else if (document.documentElement.scrollTop != 0 && document.documentElement.scrollTop < 800 && nav.className == "topnav"){
-      nav.className = "topnav";
-   } 
-}
+sr2.reveal('#skills');
+sr2.reveal('#about');
+sr2.reveal('#projects');
+sr2.reveal('#contact');
+
+/**********************NAVBAR**********************/
 
 // menu hamburger
 function navbar() {
@@ -58,7 +26,25 @@ function navbar() {
    }
 }
 
-// bouton actif navbar
+//changement hauteur nav en fonction endroit sur le site
+window.onscroll = function () { scrollFunction() };
+function scrollFunction() {
+   //si dépasse 800 réduit nav
+   if (document.documentElement.scrollTop > 800) {
+      nav.className = "topnav paddingMin";
+   }
+   //si inférieur a 800 et avant on etait suppérieur a 800
+   if (document.documentElement.scrollTop != 0 && document.documentElement.scrollTop < 800 && nav.className == "topnav paddingMin") {
+      nav.className = "topnav paddingMax";
+   } //sinon si inférieur a 800 mais qu'on l'a toujours été reste a la position de base
+   else if (document.documentElement.scrollTop != 0 && document.documentElement.scrollTop < 800 && nav.className == "topnav") {
+      nav.className = "topnav";
+   }
+}
+
+
+
+// bouton actif navbar au click
 for (let i = 0; i < btns.length; i++) {
    btns[i].addEventListener("click", function () {
       let current = document.getElementsByClassName(" active");
@@ -67,14 +53,18 @@ for (let i = 0; i < btns.length; i++) {
    });
 }
 
+
+
+
+
 /**********************SLIDES**********************/
 let slideIndex = 1;
+
 showSlides(slideIndex);
 
 function plusSlides(n) {
    showSlides(slideIndex += n);
 }
-
 function currentSlide(n) {
    showSlides(slideIndex = n);
 }
@@ -94,3 +84,9 @@ function showSlides(n) {
    slides[slideIndex - 1].style.display = "block";
    dots[slideIndex - 1].className += " active";
 }
+
+
+
+
+
+

@@ -1,23 +1,48 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
 }
-.title {
-    margin-top: 20px;
+
+.titleGen {
+    position: absolute;
+    top: 19%;
+    right: 1%;
+    font-size: 8vw;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.267);
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
 }
-.title span {
-    border-bottom: 4px solid #ffffff;
-    border-image: linear-gradient(to right, black, white) 1;
+
+.titlePart {
+    text-align: center;
+    margin: 0;
+    font-size: 100px;
+    text-transform: uppercase;
+    z-index: 0;
+    -webkit-text-stroke: 1px rgb(0, 0, 0);
+    -webkit-text-fill-color: rgb(255, 255, 255);
+    font-weight: 700px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: underline;
+    text-decoration-color: rgba(0, 0, 0, 0.075);
 }
 
 .contain {
-    background-color: rgba(204, 204, 204, 0.144);
+    background-color: rgba(151, 151, 151, 0.144);
+    width: 100%;
 }
 
 .container80 {
+    padding: 3vw 0;
     margin: 1vw auto;
-    padding: 1vw 0;
     width: 80%;
 }
 
@@ -46,6 +71,7 @@ nav {
     animation-name: paddingMin;
     animation-direction: alternate;
 }
+
 @keyframes paddingMin {
     from {
         padding: 25px;
@@ -61,6 +87,7 @@ nav {
     animation-name: paddingMax;
     animation-direction: alternate;
 }
+
 @keyframes paddingMax {
     from {
         padding: 5px;
@@ -116,29 +143,19 @@ nav {
 }
 
 /**********************ME**********************************/
+
 #me {
     padding-top: 40px;
     background: black;
     position: relative;
     z-index: 0;
-}
-
-.outline_text {
-    position: absolute;
-    top: 16.57%;
-    right: 6%;
-    font-size: 8vw;
-    text-transform: uppercase;
-    z-index: 1;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.267);
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
+    height: 50vw;
 }
 
 #myPhoto {
-    width: 60%;
-    height: auto;
+    width: 70%;
+    position: absolute;
+    bottom: 0;
 }
 
 .meText {
@@ -162,11 +179,10 @@ nav {
     width: 3vw;
 }
 
-
 /**********************Skills**************************/
+
 #skills {
     margin: 1vw auto;
-    width: 80%;
 }
 
 h5 {
@@ -184,11 +200,12 @@ h5 {
 }
 
 .logoSkills img:hover {
-	-webkit-transform: scale(1.1);
-	transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
 /** ecriture sous différents logos*/
+
 .logoSkills:hover .infoLogoBoot {
     color: #563D7C;
 }
@@ -213,7 +230,6 @@ h5 {
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
 }
-
 /**********************about**************************/
 
 
@@ -314,61 +330,92 @@ img {
     }
 }
 
-
 /**********************projets**************************/
 
 .containerProjects {
-    margin: auto;
-    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
-.containerProjects a {
-    text-decoration: none;        
+.linkProject {
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
 }
 
-.containerProjects a img {
-   width: 25%;
-   margin: 1%;
-   opacity: 1;
-   -webkit-transition: .3s ease-in-out;
-   transition: .3s ease-in-out;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+.image {
+    width: 650px !important;
+    transition: .5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.containerProjects a img:hover {
-    opacity: .5;
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.596);
 }
 
 .loupe {
-    opacity: 0;
+    width: 50px !important;
+    position: absolute;
+    top: 40%;
+    bottom: -50%;
+    left: 47%;
+    right: -50%;
 }
 
+.linkProject:hover .image {
+    opacity: 0.5;
+}
 
-.loupe:hover {
+.linkProject:hover .overlay {
     opacity: 1;
 }
 
+.linkProject:hover .loupe {
+    opacity: 1;
+}
 
-.containerProjects a .loupe {
-    position: absolute;
-    margin: auto;
-    opacity: 0;
-    width: 2%;
- }
+/*
+    
+    
+    opacity: 1;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
 
- .containerProjects a:hover .loupe {
-    opacity: 100%;
-    z-index: 2;
- }
+.back-top {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
 
 
- /**********************footer**************************/
+.fleche {
+    width: 60px;
+}
 
- .footer {
-     text-align: center;
-     color: rgb(255, 255, 255);
-     margin: 0;
-     padding: 7px;
-     background-color: rgba(0, 0, 0, 0.800);
-     backdrop-filter: blur(5px) contrast(.8);
-    }
+/**********************footer**************************/
+
+.footer {
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 7px;
+    background-color: rgba(0, 0, 0, 0.800);
+    backdrop-filter: blur(5px) contrast(.8);
+}
