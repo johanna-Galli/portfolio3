@@ -175,11 +175,18 @@ nav {
     font-size: 2vw;
 }
 
-#logoLinkedin {
+.myLogo {
     width: 3vw;
+    margin-left: 10px;
 }
 
 /**********************Skills**************************/
+
+.containerSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
 #skills {
     margin: 1vw auto;
@@ -209,29 +216,36 @@ h5 {
 .logoSkills:hover .infoLogoBoot {
     color: #563D7C;
 }
+
 .logoSkills:hover .infoLogoWamp {
     color: #FF0099;
 }
+
 .logoSkills:hover .infoLogoGit {
     color: black;
 }
+
 .logoSkills:hover .infoLogoPs {
     color: #112759;
 }
+
 .logoSkills:hover .infoLogoVegas {
     color: black;
 }
+
 .logoSkills:hover .infoLogoWord {
     color: #2A5699;
 }
+
 .logoSkills:hover .infoLogoExcel {
     color: #338C5B;
 }
+
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
 }
-/**********************about**************************/
 
+/**********************about**************************/
 
 /**********************Carousel**************************/
 
@@ -330,6 +344,18 @@ img {
     }
 }
 
+svg {
+    width: 40px;
+    color: rgb(117, 117, 117);
+}
+
+#iconBasket:hover {
+    -webkit-animation: swing 1s ease;
+    animation: swing 1s ease;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+}
+
 /**********************projets**************************/
 
 .containerProjects {
@@ -343,6 +369,7 @@ img {
     margin: 0 !important;
     padding: 0 !important;
     position: relative;
+    width: 650px !important;
 }
 
 .image {
@@ -358,7 +385,7 @@ img {
     left: 0;
     right: 0;
     height: 100%;
-    width: 100%;
+    width: 650px;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.596);
@@ -369,7 +396,7 @@ img {
     position: absolute;
     top: 40%;
     bottom: -50%;
-    left: 47%;
+    left: 46%;
     right: -50%;
 }
 
@@ -385,13 +412,18 @@ img {
     opacity: 1;
 }
 
-/*
-    
-    
-    opacity: 1;
-    -webkit-transition: .3s ease-in-out;
-    transition: .3s ease-in-out;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);*/
+.titleProject {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+}
+
+.infoProject {
+    text-align: center;
+    color: white;
+    margin-top: 110px;
+    width: 650px;
+}
 
 .back-top {
     display: none;
@@ -404,12 +436,19 @@ img {
     background-color: red;
 }
 
-
 .fleche {
     width: 60px;
 }
 
+/**********************formulaire**************************/
+
+.red {
+    border-color: red;
+}
+
 /**********************footer**************************/
+
+.containerForm {}
 
 .footer {
     text-align: center;

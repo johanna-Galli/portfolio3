@@ -30,7 +30,7 @@ function navbar() {
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
    //si dépasse 800 réduit nav
-   if (document.documentElement.scrollTop > 800) {
+   if (document.documentElement.scrollTop > 990) {
       nav.className = "topnav paddingMin";
    }
    //si inférieur a 800 et avant on etait suppérieur a 800
@@ -84,6 +84,38 @@ function showSlides(n) {
    slides[slideIndex - 1].style.display = "block";
    dots[slideIndex - 1].className += " active";
 }
+
+
+
+/**********************FORMULAIRE**********************/
+let form = document.querySelector("form");
+
+
+form.addEventListener("submit", function (e) {
+   e.preventDefault();
+   let error;
+   let name = document.getElementById("name");
+   let mail = document.getElementById("mail");
+   let message = document.getElementById("text");
+
+   if (!name.value) {
+      error = "Veuillez renseigner un nom"
+   }
+   if (!mail.value) {
+      error = "Veuillez renseigner un nom"
+   }
+   if (!name.value) {
+      error = "Veuillez renseigner un nom"
+   }
+
+
+
+
+
+
+   alert("formulaire envoyé !");
+});
+
 
 
 
