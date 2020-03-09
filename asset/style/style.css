@@ -163,7 +163,7 @@ li {
     position: absolute;
     top: 50%;
     right: 6%;
-    color: white;
+    color: rgb(255, 255, 255);
     text-align: right;
     width: 50vw;
 }
@@ -172,8 +172,9 @@ li {
     font-size: 2vw;
 }
 
-.meText h4 {
+.meText h5 {
     font-size: 2vw;
+    color: rgb(143, 143, 143);
 }
 
 .myLogo {
@@ -183,6 +184,7 @@ li {
 /********************************************************************************/
 /****************************************Skills****************************************/
 /********************************************************************************/
+
 .containerSkills {
     display: flex;
     flex-wrap: wrap;
@@ -363,6 +365,8 @@ svg {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
+
+
 /********************************************************************************/
 /****************************************projets****************************************/
 /********************************************************************************/
@@ -370,7 +374,15 @@ svg {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: auto !important;
+    padding: auto !important;
 }
+
+.containerProjects a {
+    display: block;
+    width: 650px !important;
+}
+
 
 .linkProject {
     text-decoration: none;
@@ -378,6 +390,7 @@ svg {
     padding: 0 !important;
     position: relative;
     width: 650px !important;
+    flex-grow: 0 !important;
 }
 
 .image {
@@ -390,10 +403,8 @@ svg {
     position: absolute;
     top: 0;
     bottom: 0;
-    left: 0;
-    right: 0;
     height: 100%;
-    width: 650px;
+    width: 650px !important;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.596);
@@ -410,6 +421,7 @@ svg {
 
 .linkProject:hover .image {
     opacity: 0.5;
+    width: 650px !important;
 }
 
 .linkProject:hover .overlay {
@@ -424,13 +436,14 @@ svg {
     text-align: center;
     color: white;
     margin-top: 80px;
+    width: 650px !important;
 }
 
 .infoProject {
     text-align: center;
     color: white;
     margin-top: 110px;
-    width: 650px;
+    width: 650px !important;
 }
 
 .back-top {
