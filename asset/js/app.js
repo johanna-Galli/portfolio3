@@ -40,10 +40,10 @@ function scrollFunction() {
    else if (document.documentElement.scrollTop != 0 && document.documentElement.scrollTop < 800 && nav.className == "topnav") {
       nav.className = "topnav";
    }
+
 }
 
-
-
+/*
 // bouton actif navbar au click
 for (let i = 0; i < btns.length; i++) {
    btns[i].addEventListener("click", function () {
@@ -51,7 +51,58 @@ for (let i = 0; i < btns.length; i++) {
       current[0].className = current[0].className.replace(" active", "");
       this.className += " active";
    });
+}*/
+
+// bouton actif navbar au scroll
+function isElementVisible(elementToBeChecked) {
+   let TopView = $(window).scrollTop();
+   let BotView = TopView + $(window).height();
+   let TopElement = $(elementToBeChecked).offset().top;
+   let BotElement = TopElement + $(elementToBeChecked).height();
+   console.log();
+   return ((BotElement <= BotView) && (TopElement >= TopView));
 }
+
+$(window).scroll(function () {
+
+   let mebtn = document.getElementById("mebtn")
+   let skillsbtn = document.getElementById("skillsbtn")
+   let aboutbtn = document.getElementById("aboutbtn")
+   let projectsbtn = document.getElementById("projectsbtn")
+   let contactbtn = document.getElementById("contactbtn")
+
+   meOnView = isElementVisible("#me");
+   //console.log(meOnView);
+   skillsOnView = isElementVisible("#skills");
+   //console.log(skillsOnView);
+   aboutOnView = isElementVisible("#about");
+   //console.log(aboutOnView);
+   projectsOnView = isElementVisible("#projects");
+   console.log(projectsOnView);
+   contactOnView = isElementVisible("#contact");
+   //console.log(contactOnView);
+   
+
+   if (meOnView) {
+   }
+
+   if (skillsOnView) {
+   } 
+
+   if (aboutOnView) {
+
+   }
+
+   if (projectsOnView) {
+   }
+
+   if (contactOnView) {
+   }
+
+});
+
+
+
 
 
 

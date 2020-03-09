@@ -3,6 +3,7 @@ html {
 }
 
 body {
+    position: relative;
     margin: 0;
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
@@ -45,87 +46,87 @@ body {
     margin: 1vw auto;
     width: 80%;
 }
-
-/**********************NAVBAR**********************************/
-
-nav {
+/********************************************************************************/
+/****************************************NAVBAR****************************************/
+/********************************************************************************/
+.topnav {
     z-index: 1;
     position: fixed;
     top: 0;
-    left: 0;
-    right: 0;
-}
-
-.topnav {
+    width: 100%;
     overflow: hidden;
     background-color: rgba(0, 0, 0, 0.800);
-    display: flex;
-    justify-content: center;
     backdrop-filter: blur(5px) contrast(.8);
-    padding: 25px;
+    padding: 20px;
 }
 
+ul {    
+    text-align: center;
+}
+
+li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+} 
+
+.btn {
+    color: rgb(168, 168, 168) !important;
+    font-size: 1.4rem !important;
+}
+
+.btn:hover {
+    color: white !important;
+}
+
+.active {
+    color: white !important;
+}
+
+/**********taille de la navbar au scroll**********/
 .paddingMin {
     padding: 5px;
     animation-duration: 1s;
     animation-name: paddingMin;
     animation-direction: alternate;
 }
-
 @keyframes paddingMin {
     from {
-        padding: 25px;
+        padding: 20px;
     }
     to {
         padding: 5px;
     }
 }
-
 .paddingMax {
-    padding: 25px;
+    padding: 20px;
     animation-duration: 1s;
     animation-name: paddingMax;
     animation-direction: alternate;
 }
-
 @keyframes paddingMax {
     from {
         padding: 5px;
     }
     to {
-        padding: 25px;
+        padding: 20px;
     }
 }
 
-.topnav a {
-    float: left;
-    display: block;
-    color: rgb(150, 150, 150);
-    text-decoration: none !important;
-    font-size: 21px;
-    padding: 0px 26px;
-}
-
-.topnav a:hover {
-    color: white;
-}
-
-.topnav a.active {
-    color: white;
-}
-
-.topnav .icon {
+/**********affichage du bouton**********/
+.icon {
     display: none;
 }
 
 @media screen and (max-width: 750px) {
-    .topnav {
-        justify-content: space-between;
+    .btn {
+        display: none !important;
     }
-    .topnav a:not(:first-child) {
-        display: none;
+    ul {    
+        text-align: end;
+        margin: 0 !important;
     }
-    .topnav a.icon {
+    .icon {
         display: block;
     }
     .topnav.responsive {
@@ -141,9 +142,9 @@ nav {
         height: auto;
     }
 }
-
-/**********************ME**********************************/
-
+/********************************************************************************/
+/****************************************ME****************************************/
+/********************************************************************************/
 #me {
     padding-top: 40px;
     background: black;
@@ -179,17 +180,18 @@ nav {
     width: 3vw;
     margin-left: 10px;
 }
-
-/**********************Skills**************************/
-
+/********************************************************************************/
+/****************************************Skills****************************************/
+/********************************************************************************/
 .containerSkills {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    height: auto;
 }
 
 #skills {
-    margin: 1vw auto;
+    margin: auto;
 }
 
 h5 {
@@ -203,7 +205,7 @@ h5 {
 }
 
 .logoSkills img {
-    height: 100px;
+    height: 80px;
 }
 
 .logoSkills img:hover {
@@ -244,11 +246,17 @@ h5 {
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
 }
+/********************************************************************************/
+/****************************************about****************************************/
+/********************************************************************************/
 
-/**********************about**************************/
 
-/**********************Carousel**************************/
 
+
+
+/********************************************************************************/
+/****************************************Carousel****************************************/
+/********************************************************************************/
 .mySlides {
     display: none;
     flex-grow: 1;
@@ -258,7 +266,7 @@ img {
     vertical-align: middle;
 }
 
-/* Slideshow container */
+/**********Slideshow container**********/
 
 .slideshow-container {
     max-width: 1000px;
@@ -267,7 +275,7 @@ img {
     width: 350px;
 }
 
-/* Next & previous buttons */
+/**********Next & previous buttons**********/
 
 .prev, .next {
     cursor: pointer;
@@ -284,20 +292,20 @@ img {
     user-select: none;
 }
 
-/* Position the "next button" to the right */
+/**********Position the "next button" to the right**********/
 
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+/**********On hover, add a black background color with a little bit see-through**********/
 
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* Caption text */
+/**********Caption text**********/
 
 .text {
     color: #f2f2f2;
@@ -309,7 +317,7 @@ img {
     text-align: center;
 }
 
-/* Number text (1/2 etc) */
+/**********Number text (1/2 etc)**********/
 
 .numbertext {
     color: #f2f2f2;
@@ -319,7 +327,7 @@ img {
     top: 0;
 }
 
-/* The dots/bullets/indicators */
+/**********The dots/bullets/indicators**********/
 
 .dot {
     cursor: pointer;
@@ -336,7 +344,7 @@ img {
     background-color: #717171;
 }
 
-/* On smaller screens, decrease text size */
+/**********On smaller screens, decrease text size**********/
 
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
@@ -355,9 +363,9 @@ svg {
     -webkit-animation-iteration-count: 1;
     animation-iteration-count: 1;
 }
-
-/**********************projets**************************/
-
+/********************************************************************************/
+/****************************************projets****************************************/
+/********************************************************************************/
 .containerProjects {
     display: flex;
     flex-wrap: wrap;
@@ -439,17 +447,15 @@ svg {
 .fleche {
     width: 60px;
 }
-
-/**********************formulaire**************************/
-
+/********************************************************************************/
+/****************************************formulaire****************************************/
+/********************************************************************************/
 .red {
     border-color: red;
 }
-
-/**********************footer**************************/
-
-.containerForm {}
-
+/********************************************************************************/
+/****************************************footer****************************************/
+/********************************************************************************/
 .footer {
     text-align: center;
     color: rgb(255, 255, 255);
