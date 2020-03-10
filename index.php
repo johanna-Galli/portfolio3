@@ -60,7 +60,7 @@
             <div class="containerSkills">
                 <div class="row justify-content-md-center text-center mt-5">
                     <div class="col-md-auto pr-5">
-                        <h5>Languages :</h5>
+                        <h5>Languages</h5>
                         <!---html-->
                         <div class="logoSkills">
                             <img src="asset/img/skills/html5.png" alt="logo html5">
@@ -79,15 +79,20 @@
                         </div>
                     </div>
                     <div class="col-md-auto pr-5 pl-5">
-                        <h5>Frameworks :</h5>
+                        <h5>Frameworks</h5>
                         <!---bootstrap-->
-                        <div class="logoSkills">
+                        <div class="logoSkills d-inline">
                             <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
                             <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
                         </div>
+                        <!---bootstrap-->
+                        <div class="logoSkills d-inline">
+                            <img src="asset/img/skills/twig.png" alt="logo twig">
+                            <h6 class="infoLogotwig mt-2"> </h6>
+                        </div>
                     </div>
                     <div class="col-md-auto pr-5 pl-5">
-                        <h5>Plateforme dev :</h5>
+                        <h5>Plateforme dev</h5>
                         <!---wamp-->
                         <div class="logoSkills">
                             <img src="asset/img/skills/Wamp.png" alt="logo wamp">
@@ -95,14 +100,14 @@
                         </div>
                     </div>
                     <div class="col-md-auto pr-5 pl-5">
-                        <h5>Gestion BDD :</h5>
+                        <h5>Gestion BDD</h5>
                         <!---mysql-->
                         <div class="logoSkills">
                             <img src="asset/img/skills/MySQL.png" alt="logo mysql">
                         </div>
                     </div>
                     <div class="col-md-auto">
-                        <h5>Versionning :</h5>
+                        <h5>Versionning</h5>
                         <!---github-->
                         <div class="logoSkills">
                             <img src="asset/img/skills/github.png" alt="logo github">
@@ -162,21 +167,21 @@
                 <div class="row">
                     <div class="col-md-12 col-lg-4">
                         <h5>
-                            Moi :
+                            Moi
                         </h5>
-                        <p>
+                        <p style="text-align: justify;">
                             Je m'appelle Johanna, j'ai 23 ans et je suis actuellement en formation developpeuse web / web mobile à l'Access Code School Mulhouse.
                         </p>
                         <h5>
-                            Mon parcours scolaire :
+                            Parcours scolaire
                         </h5>
-                        <p>
+                        <p style="text-align: justify;">
                             Je possède le BAC STI2D opt. SIN, un diplôme universitaire POS, et un BTS Audiovisuel opt. TIEE
                         </p>
                         <h5>
-                            Mes expériences professionnelles :
+                            Expériences professionnelles
                         </h5>
-                        <p>
+                        <p style="text-align: justify;">
                             En 2015 j'ai effectué un service civique dans une web radio à Mulhouse (radio Antares). Ensuite dans le cadre de mon BTS Audiovisuel, j'étais 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieures antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) mais aussi à DisneyLand Paris en régie pour un spectacle.
                         </p>
                     </div>
@@ -203,18 +208,18 @@
                     </div>
                     <div class="col-md-12 col-lg-4">
                         <h5>
-                            Association :
+                            Association
                         </h5>
-                        <p>
+                        <p style="text-align: justify;">
                             Depuis 2010, membre active en tant que trésorière adjointe, responsable maquillage et musicienne de l'association <a href="https://www.lustige-klique.com/" target="_blank">La Lustige Klique de Riedisheim</a>.
                         </p>
-                        <p>
+                        <p style="text-align: justify;">
                             C'est un groupe de musique d'ambiance pour carnavals. Nous animons des carnavals et festivals dans toute la France mais aussi la Suisse, la Belgique, et l'Allemagne. Nous avons aussi voyagé en Angleterre, en Espagne, en Italie et en Martinique.
                         </p>
                         <h5>
-                            Passion :
+                            Passion
                         </h5>
-                        <p>
+                        <p style="text-align: justify;">
                             Je réalise régulièrement des montages vidéos de mes voyages ainsi que des sorties que nous faisons avec mon association.
                         </p>
                         <p>
@@ -222,7 +227,7 @@
                             <a href="https://www.youtube.com/channel/UCsxUjLngdviBiaf-3HKRCFA">Youtube Lustige Klique</a>
                         </p>
                         <h5>
-                            Loisirs :
+                            Loisirs
                         </h5>
                         <!--icones-->
                         <div>
@@ -266,8 +271,9 @@
     <!----------------Projects----------------->
 
     <section id="projects">
-        <div class="container80">
-            <!--<p class="titlePart">PROJECTS</p>-->
+        <div class="">
+            <!--<h1 class="text-center">Projets :</h1>
+            <p class="titlePart">PROJETS</p>-->
             <div class="containerProjects">
                 <!--ALLO JATI-->
                 <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" class="col linkProject p-0 m-4">
@@ -403,7 +409,7 @@
                                 </svg>
                             </div>
                             <div class="d-inline col text-left">
-                                <p class="d-inline">Git Hub</p>
+                                <p class="d-inline">GitHub</p>
                                 <br>
                                 <a href="https://github.com/johanna-Galli" target="_blank">johanna-Galli</a>
                             </div>
@@ -416,7 +422,7 @@
                                 </svg>
                             </div>
                             <div class="d-inline col text-left">
-                                <p class="d-inline">Mail</p>
+                                <p class="d-inline">YouTube</p>
                                 <br>
                                 <a href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber" target="_blank">Johanna Galli</a>
                             </div>
@@ -427,10 +433,10 @@
                         <h4 class="mb-4">Me <span style="font-weight: bold;">contacter :</span></h4>
                         <form action="#contact" method="get">
                             <div>
-                                <input type="text" maxlength="30" value="" id="nom" name="user_name" placeholder="Prénom" class="inputs">
+                                <input type="text" maxlength="30" value="" id="nom" name="user_name" placeholder="Nom" class="inputs">
                             </div>
                             <div>
-                                <input type="text" maxlength="30" value="" id="prénom" name="user_name" placeholder="Nom" class="inputs">
+                                <input type="text" maxlength="30" value="" id="prénom" name="user_name" placeholder="Sujet" class="inputs">
                             </div>
                             <div>
                                 <input type="email" id="mail" name="user_mail" placeholder="Mail" class="inputs">

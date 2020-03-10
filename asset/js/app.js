@@ -80,56 +80,38 @@ function scrollFunction() {
    let positionSectionProjects = sectionProjects.offsetTop;
    let positionSectionContact = sectionContact.offsetTop;
 
-   /*console.log(positionSectionSkills);
-   console.log(positionSectionAbout);
-   console.log(positionSectionProjects);
-   console.log(positionSectionContact);*/
    console.log(positionSectionAbout);
    console.log(scrollTop);
 
    //bouton actif
    for (let i = 0; i < btns.length; i++) {
-
       //bouton "me"
       if (scrollTop == 0 || scrollTop < sectionSkills.scrollHeight) {
          btns[i].classList.remove("active");
          mebtn.className += " active";
-         console.log("Me");
       }
-
       //bouton "skills"
       else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < positionSectionAbout) {
          btns[i].classList.remove("active");
          skillsbtn.className += " active";
-         console.log("skills");
-
       }
       //bouton "about"
       else if (scrollTop == positionSectionAbout || scrollTop > positionSectionAbout && scrollTop < positionSectionProjects) {
          btns[i].classList.remove("active");
          aboutbtn.className += " active";
       }
-
       //bouton "Projects"
       else if (scrollTop == positionSectionProjects || scrollTop > positionSectionProjects && scrollTop < positionSectionContact) {
          btns[i].classList.remove("active");
          projectsbtn.className += " active";
       }
-
       //bouton "Contact"
       else if (scrollTop == positionSectionContact || scrollTop > positionSectionContact) {
          btns[i].classList.remove("active");
          aboutbtn.className += " active";
       }
-
-
    }
-
-
 }
-
-
-
 
 /*
 // bouton actif navbar au scroll

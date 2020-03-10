@@ -32,7 +32,7 @@ body {
     -webkit-text-fill-color: rgb(255, 255, 255);
     font-weight: 700px;
     font-family: "Poppins", sans-serif;
-    text-decoration: underline;
+    /*text-decoration: underline;*/
     text-decoration-color: rgba(0, 0, 0, 0.075);
 }
 
@@ -523,8 +523,8 @@ button {
 
   .flecheHaut {
       position: absolute;
-      bottom: 80px;
-      right: 70px;
+      bottom: 100px;
+      right: 50px;
   }
 
 
