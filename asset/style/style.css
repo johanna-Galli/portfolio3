@@ -483,10 +483,13 @@ svg {
 
 /********************************************************************************/
 
-/****************************************formulaire****************************************/
+/****************************************CONTACT****************************************/
 
 /********************************************************************************/
 
+.containerForm {
+    margin-bottom: 0;
+}
 .containerForm {
     text-align: center;
     border-radius: 2px;
@@ -516,8 +519,13 @@ button {
     text-decoration: none !important;
     display: inline-block;
     font-size: 16px;
-  }
+}
 
+  .flecheHaut {
+      position: absolute;
+      bottom: 80px;
+      right: 70px;
+  }
 
 
 /********************************************************************************/
@@ -530,7 +538,7 @@ button {
     text-align: center;
     color: rgb(255, 255, 255);
     margin: 0;
-    padding: 7px;
+    padding: 20px;
     background-color: rgba(0, 0, 0, 0.800);
     backdrop-filter: blur(5px) contrast(.8);
 }
