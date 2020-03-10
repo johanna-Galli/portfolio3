@@ -46,9 +46,13 @@ body {
     margin: 1vw auto;
     width: 80%;
 }
+
 /********************************************************************************/
+
 /****************************************NAVBAR****************************************/
+
 /********************************************************************************/
+
 .topnav {
     z-index: 1;
     position: fixed;
@@ -60,15 +64,16 @@ body {
     padding: 20px;
 }
 
-ul {    
+ul {
     text-align: center;
+    margin: 0 !important;
 }
 
 li {
     list-style: none;
     display: inline-block;
     padding: 0 10px;
-} 
+}
 
 .btn {
     color: rgb(168, 168, 168) !important;
@@ -84,29 +89,33 @@ li {
 }
 
 /**********taille de la navbar au scroll**********/
+
 .paddingMin {
-    padding: 5px;
+    padding: 0px;
     animation-duration: 1s;
     animation-name: paddingMin;
     animation-direction: alternate;
 }
+
 @keyframes paddingMin {
     from {
         padding: 20px;
     }
     to {
-        padding: 5px;
+        padding: 0px;
     }
 }
+
 .paddingMax {
     padding: 20px;
     animation-duration: 1s;
     animation-name: paddingMax;
     animation-direction: alternate;
 }
+
 @keyframes paddingMax {
     from {
-        padding: 5px;
+        padding: 0px;
     }
     to {
         padding: 20px;
@@ -114,6 +123,7 @@ li {
 }
 
 /**********affichage du bouton**********/
+
 .icon {
     display: none;
 }
@@ -122,7 +132,7 @@ li {
     .btn {
         display: none !important;
     }
-    ul {    
+    ul {
         text-align: end;
         margin: 0 !important;
     }
@@ -142,15 +152,19 @@ li {
         height: auto;
     }
 }
+
 /********************************************************************************/
+
 /****************************************ME****************************************/
+
 /********************************************************************************/
+
 #me {
     padding-top: 40px;
     background: black;
     position: relative;
     z-index: 0;
-    height: 50vw;
+    height: 45vw;
 }
 
 #myPhoto {
@@ -181,8 +195,11 @@ li {
     width: 3vw;
     margin-left: 10px;
 }
+
 /********************************************************************************/
+
 /****************************************Skills****************************************/
+
 /********************************************************************************/
 
 .containerSkills {
@@ -248,17 +265,19 @@ h5 {
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
 }
+
 /********************************************************************************/
+
 /****************************************about****************************************/
-/********************************************************************************/
-
-
-
-
 
 /********************************************************************************/
+
+/********************************************************************************/
+
 /****************************************Carousel****************************************/
+
 /********************************************************************************/
+
 .mySlides {
     display: none;
     flex-grow: 1;
@@ -366,10 +385,12 @@ svg {
     animation-iteration-count: 1;
 }
 
+/********************************************************************************/
+
+/****************************************projets****************************************/
 
 /********************************************************************************/
-/****************************************projets****************************************/
-/********************************************************************************/
+
 .containerProjects {
     display: flex;
     flex-wrap: wrap;
@@ -382,7 +403,6 @@ svg {
     display: block;
     width: 650px !important;
 }
-
 
 .linkProject {
     text-decoration: none;
@@ -460,15 +480,52 @@ svg {
 .fleche {
     width: 60px;
 }
+
 /********************************************************************************/
+
 /****************************************formulaire****************************************/
+
 /********************************************************************************/
-.red {
-    border-color: red;
+
+.containerForm {
+    text-align: center;
+    border-radius: 2px;
+    box-shadow: rgb(0, 0, 0);
 }
+
+.inputs {
+    border: none;
+    border-bottom: 2px solid rgb(0, 0, 0);
+    margin: 20px;
+    padding: 10px;
+    width: 60%;
+    background-color: transparent;
+}
+
+.inputs:focus {
+    outline: none;
+}
+
+button {
+    background-color: rgb(196, 196, 196);
+    border: none;
+    border-radius: 5;
+    color: rgb(0, 0, 0);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none !important;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+
+
 /********************************************************************************/
+
 /****************************************footer****************************************/
+
 /********************************************************************************/
+
 .footer {
     text-align: center;
     color: rgb(255, 255, 255);

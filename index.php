@@ -44,7 +44,7 @@
         <div>
             <div id="me">
                 <p class="titleGen">Portfolio</p>
-                <img src="asset/img/johanna-galli.JPG" alt="photo johanna galli" id="myPhoto">
+                <img src="asset/img/johanna-galli-2.JPG" alt="photo johanna galli" id="myPhoto" class="">
                 <div class="meText">
                     <h1>Johanna Galli, 23 ans</h1>
                     <h5>Actuellement à la recherche d'un stage de 2 mois développeuse web</h5>
@@ -374,15 +374,20 @@
             <!--<p class="titlePart">Contact</p>-->
             <div class="container80 containerForm">
 
+            <h4>Me contacter :</h4>
+
                 <form action="#contact" method="get">
                     <div>
-                        <input type="text" maxlength="30" value="" id="name" name="user_name" placeholder="Votre nom">
+                        <input type="text" maxlength="30" value="" id="nom" name="user_name" placeholder="Prénom" class="inputs">
                     </div>
                     <div>
-                        <input type="email" id="mail" name="user_mail" placeholder="votre mail">
+                        <input type="text" maxlength="30" value="" id="prénom" name="user_name" placeholder="Nom" class="inputs">
                     </div>
                     <div>
-                        <textarea id="text" name="user_message" placeholder="votre message"></textarea>
+                        <input type="email" id="mail" name="user_mail" placeholder="Mail" class="inputs">
+                    </div>
+                    <div>
+                        <textarea id="message" name="user_message" placeholder="Message" class="inputs"></textarea>
                     </div>
                     <div class="button">
                         <button type="submit">Envoyer</button>
