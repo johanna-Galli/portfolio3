@@ -47,6 +47,12 @@ body {
     width: 80%;
 }
 
+.container100 {
+    padding: 3vw 0;
+    margin: 1vw auto;
+    width: 100%;
+}
+
 /********************************************************************************/
 
 /****************************************NAVBAR****************************************/
@@ -218,9 +224,8 @@ h5 {
 }
 
 .logoSkills {
-    display: inline;
     color: transparent;
-    margin: 0 10px;
+    padding: 20px 20px;
 }
 
 .logoSkills img {
@@ -232,39 +237,67 @@ h5 {
     transform: scale(1.1);
 }
 
-/** ecriture sous différents logos*/
+/**couleur ecriture sous différents logos*/
 
+/*languages*/
+.logoSkills:hover .infoLogohtml {
+    color: #E44D26;
+}
+.logoSkills:hover .infoLogocss {
+    color: #264DE4;
+}
+.logoSkills:hover .infoLogojs {
+    color: #E9CA32;
+}
+.logoSkills:hover .infoLogophp {
+    color: #777BB3;
+}
+
+/*Frameworks*/
 .logoSkills:hover .infoLogoBoot {
     color: #563D7C;
 }
+.logoSkills:hover .infoLogoTwig {
+    color: #87AB28;
+}
 
+/*plateforme dev*/
 .logoSkills:hover .infoLogoWamp {
     color: #FF0099;
 }
 
+/*BDD************************/
+.logoSkills:hover .infoLogoMysql {
+    color: #4D90AD;
+}
+
+/*Versionning*/
 .logoSkills:hover .infoLogoGit {
     color: black;
 }
 
+/*photo*/
 .logoSkills:hover .infoLogoPs {
     color: #112759;
 }
 
+/*video*/
 .logoSkills:hover .infoLogoVegas {
     color: black;
 }
 
+/*traitement texte*/
 .logoSkills:hover .infoLogoWord {
     color: #2A5699;
 }
-
 .logoSkills:hover .infoLogoExcel {
     color: #338C5B;
 }
-
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
 }
+
+
 
 /********************************************************************************/
 
@@ -272,11 +305,11 @@ h5 {
 
 /********************************************************************************/
 
-/********************************************************************************/
+
+
 
 /****************************************Carousel****************************************/
 
-/********************************************************************************/
 
 .mySlides {
     display: none;
@@ -397,6 +430,7 @@ svg {
     justify-content: center;
     margin: auto !important;
     padding: auto !important;
+    
 }
 
 .containerProjects a {
@@ -486,7 +520,6 @@ svg {
 /****************************************CONTACT****************************************/
 
 /********************************************************************************/
-
 .containerForm {
     margin-bottom: 0;
 }
@@ -499,7 +532,7 @@ svg {
 .inputs {
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
-    margin: 20px;
+    margin: 30px;
     padding: 10px;
     width: 60%;
     background-color: transparent;
@@ -509,6 +542,10 @@ svg {
     outline: none;
 }
 
+.error {
+    color: transparent;
+}
+/*
 button {
     background-color: rgb(196, 196, 196);
     border: none;
@@ -519,7 +556,7 @@ button {
     text-decoration: none !important;
     display: inline-block;
     font-size: 16px;
-}
+}*/
 
   .flecheHaut {
       position: absolute;

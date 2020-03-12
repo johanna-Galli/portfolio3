@@ -56,41 +56,52 @@
 
     <section id="skills">
         <div class="container80">
-            <!---<p class="titlePart">SKILLS</p>-->
             <div class="containerSkills">
                 <div class="row justify-content-md-center text-center mt-5">
                     <div class="col-md-auto pr-5">
                         <h5>Languages</h5>
-                        <!---html-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/html5.png" alt="logo html5">
+                        <div class="d-flex">
+                            <!---html-->
+                            <div class="logoSkills">
+                                <img src="asset/img/skills/html5.png" alt="logo html5">
+                                <h6 class="infoLogohtml mt-2">HTML 5</h6>
+                            </div>
+                            <!---css-->
+                            <div class="logoSkills">
+                                <img src="asset/img/skills/css3.png" alt="logo css3">
+                                <h6 class="infoLogocss mt-2">CSS 3</h6>
+                            </div>
+                            <!---js-->
+                            <div class="logoSkills">
+                                <img src="asset/img/skills/js.png" alt="logo javascript">
+                                <h6 class="infoLogojs mt-2">JavaScript</h6>
+                            </div>
+                            <!---php-->
+                            <div class="logoSkills">
+                                <img src="asset/img/skills/php.png" alt="logo php">
+                                <h6 class="infoLogophp mt-2">PHP</h6>
+                            </div>
                         </div>
-                        <!---css-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/css3.png" alt="logo css3">
-                        </div>
-                        <!---js-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/js.png" alt="logo javascript">
-                        </div>
-                        <!---php-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/php.png" alt="logo php">
-                        </div>
+
                     </div>
+
                     <div class="col-md-auto pr-5 pl-5">
                         <h5>Frameworks</h5>
-                        <!---bootstrap-->
-                        <div class="logoSkills d-inline">
-                            <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
-                            <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
+                        <div class="d-flex">
+                            <!---bootstrap-->
+                            <div class="logoSkills">
+                                <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
+                                <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
+                            </div>
+                            <!---Twig-->
+                            <div class="logoSkills">
+                                <img src="asset/img/skills/twig.png" alt="logo twig">
+                                <h6 class="infoLogoTwig mt-2">Twig</h6>
+                            </div>
                         </div>
-                        <!---bootstrap-->
-                        <div class="logoSkills d-inline">
-                            <img src="asset/img/skills/twig.png" alt="logo twig">
-                            <h6 class="infoLogotwig mt-2"> </h6>
-                        </div>
+
                     </div>
+
                     <div class="col-md-auto pr-5 pl-5">
                         <h5>Plateforme dev</h5>
                         <!---wamp-->
@@ -99,13 +110,16 @@
                             <h6 class="infoLogoWamp mt-2">WampServer</h6>
                         </div>
                     </div>
+
                     <div class="col-md-auto pr-5 pl-5">
                         <h5>Gestion BDD</h5>
                         <!---mysql-->
                         <div class="logoSkills">
                             <img src="asset/img/skills/MySQL.png" alt="logo mysql">
+                            <h6 class="infoLogoMysql mt-2">My SQL</h6>
                         </div>
                     </div>
+
                     <div class="col-md-auto">
                         <h5>Versionning</h5>
                         <!---github-->
@@ -133,8 +147,9 @@
                             <h6 class="infoLogoVegas mt-1">Vegas Pro</h6>
                         </div>
                     </div>
-                    <div class="col-md-auto pl-5">
+                    <div class="col-md-auto pr-5">
                         <h5>Traitements textes</h5>
+
                         <div class="d-flex">
                             <!---word-->
                             <div class="logoSkills">
@@ -152,6 +167,8 @@
                                 <h6 class="infoLogoPowerpoint mt-1">Powerpoint</h6>
                             </div>
                         </div>
+
+
                     </div>
                 </div>
             </div>
@@ -162,7 +179,6 @@
 
     <section id="about">
         <div class="contain">
-            <!--<p class="titlePart">ABOUT ME</p>-->
             <div class="container80">
                 <div class="row">
                     <div class="col-md-12 col-lg-4">
@@ -190,12 +206,10 @@
                             <div class="mySlides">
                                 <div class="numbertext">1 / 2</div>
                                 <img src="asset/img/johanna1.jpg" style="width:100%" class="img-fluid">
-                                <div class="text">Caption Text</div>
                             </div>
                             <div class="mySlides">
                                 <div class="numbertext">2 / 2</div>
                                 <img src="asset/img/johanna2.jpg" style="width:100%" class="img-fluid">
-                                <div class="text">Caption Two</div>
                             </div>
                             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
                             <a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -271,9 +285,7 @@
     <!----------------Projects----------------->
 
     <section id="projects">
-        <div class="">
-            <!--<h1 class="text-center">Projets :</h1>
-            <p class="titlePart">PROJETS</p>-->
+        <div class="container100">
             <div class="containerProjects">
                 <!--ALLO JATI-->
                 <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" class="col linkProject p-0 m-4">
@@ -367,11 +379,9 @@
 
     <!----------------Contact----------------->
     <section id="contact">
-        <div class="contain contact">
-            <!--<p class="titlePart">Contact</p>-->
+        <div class="contain containercontact">
             <div class="container80 containerForm">
                 <div class="row">
-
                     <div class="col-sm-12 col-md-6">
                         <h4 class="mb-4">Me <span style="font-weight: bold;">trouver :</span></h4>
                         <!-- Mail -->
@@ -431,41 +441,39 @@
 
                     <div class="col-sm-12 col-md-6">
                         <h4 class="mb-4">Me <span style="font-weight: bold;">contacter :</span></h4>
-                        <form action="#contact" method="get">
-                            <div>
-                                <input type="text" maxlength="30" value="" id="nom" name="user_name" placeholder="Nom" class="inputs">
-                            </div>
-                            <div>
-                                <input type="text" maxlength="30" value="" id="prénom" name="user_name" placeholder="Sujet" class="inputs">
-                            </div>
-                            <div>
-                                <input type="email" id="mail" name="user_mail" placeholder="Mail" class="inputs">
-                            </div>
-                            <div>
-                                <textarea id="message" name="user_message" placeholder="Message" class="inputs"></textarea>
-                            </div>
-                            <div class="button">
-                                <button type="submit">Envoyer</button>
-                            </div>
+
+                        <form action="form.php" method="post">
+
+                            <input type="text" maxlength="50" name="name" placeholder="Nom" class="inputs" id="inputName">
+                            <p class="error" id="inputNameError">Caractères spéciaux interdits</p>
+
+                            <input type="text" maxlength="100" name="subject" placeholder="Sujet" class="inputs" id="inputSubject">
+                            <p class="error" id="inputSubjectError"></p>
+
+                            <input type="email" maxlength="100" name="mail" placeholder="Mail" class="inputs" id="inputMail">
+                            <p class="error" id="inputMailError"></p>
+
+                            <textarea name="message" placeholder="Message" maxlength="3000" class="inputs" id="inputMessage"></textarea>
+                            <p class="error" id="inputMessageError"></p>
+                            <input type="submit" class="button d-block mx-auto">
                         </form>
+
                     </div>
-
                 </div>
-
             </div>
         </div>
-
         <div class="flecheHaut">
             <a href="#header">
                 <img src="asset/img/fleche.png" alt="fleche vers le haut" class="fleche">
             </a>
         </div>
+
+        <div id="traitementFormulaire">
+        </div>
     </section>
 
-
-
     <!----------------Footer----------------->
-    <p class="footer">Design : Johanna Galli - <a href="mentionsLegales.php">Mentions légales</a></p>
+    <p class="footer">Design et intégration : Johanna Galli - <a href="mentionsLegales.php">Mentions légales</a></p>
 
 
 </body>

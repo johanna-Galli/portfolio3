@@ -80,8 +80,8 @@ function scrollFunction() {
    let positionSectionProjects = sectionProjects.offsetTop;
    let positionSectionContact = sectionContact.offsetTop;
 
-   console.log(positionSectionAbout);
-   console.log(scrollTop);
+   //console.log(positionSectionAbout);
+   //console.log(scrollTop);
 
    //bouton actif
    for (let i = 0; i < btns.length; i++) {
@@ -199,27 +199,69 @@ let form = document.querySelector("form");
 
 form.addEventListener("submit", function (e) {
    e.preventDefault();
-   let error;
-   let name = document.getElementById("name");
-   let mail = document.getElementById("mail");
-   let message = document.getElementById("text");
 
-   if (!name.value) {
-      error = "Veuillez renseigner un nom"
-   }
-   if (!mail.value) {
-      error = "Veuillez renseigner un nom"
-   }
-   if (!name.value) {
-      error = "Veuillez renseigner un nom"
-   }
+   const formData = new FormData(form);
+   fetch("form.php", {
+      method: "post",
+      body: formData
+   })
+      .then(response => {
+         return response.json();
+      })
+      .then(data => {
+         let name = null;
+         let subject = null;
+         let mail = null;
+         let message = null;
 
+         //test sur name
+         if (data.name.err == "Champ vide" || data.name.err == "Champ ne correspond pas") {
+            inputName.style.borderBottom = "2px solid red";
+            if (data.name.err == "Champ ne correspond pas") {
+               inputNameError.style.color = "red";
+            }
+         } else {
+            inputName.style.borderBottom = "2px solid black"
+            name = data.name.value;
+            console.log(name);
+         }
 
+         //test sur sujet
+         if (data.subject.err == "Champ vide" || data.subject.err == "Champ ne correspond pas") {
+            inputSubject.style.borderBottom = "2px solid red";
+         } else {
+            inputSubject.style.borderBottom = "2px solid black"
+            subject = data.subject.value;
+            console.log(subject);
+         }
 
+         //test sur mail
+         if (data.mail.err == "Champ vide" || data.mail.err == "Champ ne correspond pas") {
+            inputMail.style.borderBottom = "2px solid red";
+            if (data.mail.err == "Champ ne correspond pas") {
+               console.log("Champ ne correspond pas");
+            }
+         } else {
+            inputMail.style.borderBottom = "2px solid black"
+            mail = data.mail.value;
+            console.log(mail);
+         }
 
+         //test sur message
+         if (data.message.err == "Champ vide" || data.message.err == "Champ ne correspond pas") {
+            inputMessage.style.borderBottom = "2px solid red";
+         } else {
+            inputMessage.style.borderBottom = "2px solid black"
+            message = data.message.value;
+            console.log(message);
+         }
 
-
-   alert("formulaire envoyé !");
+         //test si tous les champs sont définis
+         if (name != null && subject != null && mail != null && message != null) {
+            console.log("on a tout");
+            //ici on va envoyer un mail
+         }
+      });
 });
 
 
