@@ -1,5 +1,6 @@
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 body {
@@ -53,11 +54,7 @@ body {
     width: 100%;
 }
 
-/********************************************************************************/
-
-/****************************************NAVBAR****************************************/
-
-/********************************************************************************/
+/**************************************************NAVBAR**************************************************/
 
 .topnav {
     z-index: 1;
@@ -159,11 +156,7 @@ li {
     }
 }
 
-/********************************************************************************/
-
-/****************************************ME****************************************/
-
-/********************************************************************************/
+/**************************************************ME**************************************************/
 
 #me {
     padding-top: 40px;
@@ -221,11 +214,7 @@ li {
     text-decoration: none;
 }
 
-/********************************************************************************/
-
-/****************************************Skills****************************************/
-
-/********************************************************************************/
+/**************************************************Skills**************************************************/
 
 .containerSkills {
     display: flex;
@@ -260,81 +249,86 @@ h5 {
 /**couleur ecriture sous différents logos*/
 
 /*languages*/
+
 .logoSkills:hover .infoLogohtml {
     color: #E44D26;
 }
+
 .logoSkills:hover .infoLogocss {
     color: #264DE4;
 }
+
 .logoSkills:hover .infoLogojs {
     color: #E9CA32;
 }
+
 .logoSkills:hover .infoLogophp {
     color: #777BB3;
 }
 
 /*Frameworks*/
+
 .logoSkills:hover .infoLogoBoot {
     color: #563D7C;
 }
+
 .logoSkills:hover .infoLogoTwig {
     color: #87AB28;
 }
 
 /*Outils de développement*/
+
 .logoSkills:hover .infoLogovscode {
     color: #3BA8F2;
 }
+
 .logoSkills:hover .infoLogoWamp {
     color: #FF0099;
 }
+
 .logoSkills:hover .infoLogoGit {
     color: black;
 }
+
 .logoSkills:hover .infoLogofilezilla {
     color: #A10000;
 }
 
 /*BDD*/
+
 .logoSkills:hover .infoLogoMysql {
     color: #4D90AD;
 }
+
 .logoSkills:hover .infoLogoMariaDB {
     color: #434E66;
 }
 
 /*multimedia*/
+
 .logoSkills:hover .infoLogoPs {
     color: #112759;
 }
+
 .logoSkills:hover .infoLogoVegas {
     color: black;
 }
 
 /*bureautique*/
+
 .logoSkills:hover .infoLogoWord {
     color: #2A5699;
 }
+
 .logoSkills:hover .infoLogoExcel {
     color: #338C5B;
 }
+
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
 }
 
-
-
-/********************************************************************************/
-
-/****************************************about****************************************/
-
-/********************************************************************************/
-
-
-
-
-/****************************************Carousel****************************************/
-
+/**************************************************Carousel**************************************************/
 
 .mySlides {
     display: none;
@@ -345,7 +339,7 @@ img {
     vertical-align: middle;
 }
 
-/**********Slideshow container**********/
+/*Slideshow container*/
 
 .slideshow-container {
     max-width: 1000px;
@@ -354,7 +348,7 @@ img {
     width: 350px;
 }
 
-/**********Next & previous buttons**********/
+/*Next & previous buttons*/
 
 .prev, .next {
     cursor: pointer;
@@ -371,20 +365,20 @@ img {
     user-select: none;
 }
 
-/**********Position the "next button" to the right**********/
+/*Position the "next button" to the right*/
 
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/**********On hover, add a black background color with a little bit see-through**********/
+/*On hover, add a black background color with a little bit see-through*/
 
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/**********Caption text**********/
+/*Caption text*/
 
 .text {
     color: #f2f2f2;
@@ -396,7 +390,7 @@ img {
     text-align: center;
 }
 
-/**********Number text (1/2 etc)**********/
+/*Number text (1/2 etc)*/
 
 .numbertext {
     color: #f2f2f2;
@@ -406,7 +400,7 @@ img {
     top: 0;
 }
 
-/**********The dots/bullets/indicators**********/
+/*The dots/bullets/indicators*/
 
 .dot {
     cursor: pointer;
@@ -423,7 +417,7 @@ img {
     background-color: #717171;
 }
 
-/**********On smaller screens, decrease text size**********/
+/*On smaller screens, decrease text size*/
 
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
@@ -443,11 +437,7 @@ svg {
     animation-iteration-count: 1;
 }
 
-/********************************************************************************/
-
-/****************************************projets****************************************/
-
-/********************************************************************************/
+/**************************************************projets**************************************************/
 
 .containerProjects {
     display: flex;
@@ -455,7 +445,6 @@ svg {
     justify-content: center;
     margin: auto !important;
     padding: auto !important;
-    
 }
 
 .containerProjects a {
@@ -540,14 +529,12 @@ svg {
     width: 60px;
 }
 
-/********************************************************************************/
+/**************************************************CONTACT**************************************************/
 
-/****************************************CONTACT****************************************/
-
-/********************************************************************************/
 .containerForm {
     margin-bottom: 0;
 }
+
 .containerForm {
     text-align: center;
     border-radius: 2px;
@@ -570,6 +557,7 @@ svg {
 .error {
     color: transparent;
 }
+
 /*
 button {
     background-color: rgb(196, 196, 196);
@@ -583,18 +571,13 @@ button {
     font-size: 16px;
 }*/
 
-  .flecheHaut {
-      position: absolute;
-      bottom: 100px;
-      right: 50px;
-  }
+.flecheHaut {
+    position: absolute;
+    bottom: 100px;
+    right: 50px;
+}
 
-
-/********************************************************************************/
-
-/****************************************footer****************************************/
-
-/********************************************************************************/
+/**************************************************footer**************************************************/
 
 .footer {
     text-align: center;
@@ -603,4 +586,46 @@ button {
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.800);
     backdrop-filter: blur(5px) contrast(.8);
+}
+
+/**************************************************PAGE 404**************************************************/
+
+.body404 {
+    text-align: center;
+    margin: 0;
+}
+
+
+.oops404 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.267);
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    font-family: "Poppins", sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.chiffre404 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.267);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    font-weight: 1000;
+    font-family: "Poppins", sans-serif;
+}
+
+.erreur404 {
+    background-color: white;
+}
+
+.revenir404 {
+    text-decoration: none;
+}
+
+.revenir404 {
+    text-decoration: none;
 }
