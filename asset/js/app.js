@@ -1,11 +1,10 @@
 let header = document.getElementById("header");
 let nav = document.getElementById("myTopnav");
 
-
-//tous les boutons
+//tous les boutons de la navbar
 let btns = document.getElementsByClassName("btn");
 
-//chaque bouton :
+//chaque bouton de la navbar
 let mebtn = document.getElementById("mebtn");
 let skillsbtn = document.getElementById("skillsbtn");
 let aboutbtn = document.getElementById("aboutbtn");
@@ -18,9 +17,13 @@ const sectionAbout = document.getElementById("about");
 const sectionProjects = document.getElementById("projects");
 const sectionContact = document.getElementById("contact");
 
-/**********************Animations sur tous les elements de la page***********************/
+//formulaire contact
+let form = document.querySelector("form");
 
-/**appartion de chaque partie au scroll (durée 2sec) */
+
+/************************************************************Animations sur tous les elements de la page************************************************************/
+
+//effet apparitions sections
 let sr2 = ScrollReveal({
    duration: 2000,
    reset: true
@@ -31,9 +34,10 @@ sr2.reveal('#about');
 sr2.reveal('#projects');
 sr2.reveal('#contact');
 
-/**********************NAVBAR**********************/
+/************************************************************HEADER************************************************************/
 
-// menu hamburger
+/**********NAVBAR**********/
+//menu hamburger
 function navbar() {
    if (nav.className === "topnav") {
       nav.className = " responsive";
@@ -42,9 +46,7 @@ function navbar() {
    }
 }
 
-
-
-// bouton actif au click
+//bouton actif au click
 for (let i = 0; i < btns.length; i++) {
    //btns[i].classList = remove("active");
    btns[i].addEventListener("click", function () {
@@ -55,12 +57,9 @@ for (let i = 0; i < btns.length; i++) {
    });
 }
 
-
-mebtn.className += " active";
 //changement hauteur nav en fonction endroit sur le site
 window.onscroll = function () { scrollFunction() };
 function scrollFunction() {
-
    //valeur du scroll top
    let scrollTop = document.documentElement.scrollTop;
    //let scrollTop = window.scrollY;
@@ -74,7 +73,6 @@ function scrollFunction() {
    } else if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav") {
       nav.className = "topnav";
    }
-
    let positionSectionSkills = header.scrollHeight;
    let positionSectionAbout = sectionAbout.offsetTop;
    let positionSectionProjects = sectionProjects.offsetTop;
@@ -112,58 +110,7 @@ function scrollFunction() {
       }
    }
 }
-
-/*
-// bouton actif navbar au scroll
-function isElementVisible(elementToBeChecked) {
-   let TopView = $(window).scrollTop();
-   let BotView = TopView + $(window).height();
-   let TopElement = $(elementToBeChecked).offset().top;
-   let BotElement = TopElement + $(elementToBeChecked).height();
-   console.log();
-   return ((BotElement <= BotView) && (TopElement >= TopView));
-}
-
-$(window).scroll(function () {
-
-   let mebtn = document.getElementById("mebtn")
-   let skillsbtn = document.getElementById("skillsbtn")
-   let aboutbtn = document.getElementById("aboutbtn")
-   let projectsbtn = document.getElementById("projectsbtn")
-   let contactbtn = document.getElementById("contactbtn")
-
-   meOnView = isElementVisible("#me");
-   //console.log(meOnView);
-   skillsOnView = isElementVisible("#skills");
-   //console.log(skillsOnView);
-   aboutOnView = isElementVisible("#about");
-   //console.log(aboutOnView);
-   projectsOnView = isElementVisible("#projects");
-   console.log(projectsOnView);
-   contactOnView = isElementVisible("#contact");
-   //console.log(contactOnView);
-   
-
-   if (meOnView) {
-   }
-
-   if (skillsOnView) {
-   } 
-
-   if (aboutOnView) {
-
-   }
-
-   if (projectsOnView) {
-   }
-
-   if (contactOnView) {
-   }
-
-});
-*/
-
-/**********************SLIDES**********************/
+/************************************************************ABOUT************************************************************/
 let slideIndex = 1;
 
 showSlides(slideIndex);
@@ -193,9 +140,9 @@ function showSlides(n) {
 
 
 
-/**********************FORMULAIRE**********************/
-let form = document.querySelector("form");
+/************************************************************CONTACT************************************************************/
 
+//gestion du formulaire 
 
 form.addEventListener("submit", function (e) {
    e.preventDefault();

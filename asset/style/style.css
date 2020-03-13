@@ -186,6 +186,7 @@ li {
     color: rgb(255, 255, 255);
     text-align: right;
     width: 50vw;
+    height: 200px;
 }
 
 .meText h1 {
@@ -202,6 +203,24 @@ li {
     margin-left: 10px;
 }
 
+.conteneurLiencv {
+    margin-top: 30px;
+}
+
+.liencv {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    border: solid 2px rgba(255, 255, 255, 0.61);
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.liencv:hover {
+    color: white;
+    text-decoration: none;
+}
+
 /********************************************************************************/
 
 /****************************************Skills****************************************/
@@ -213,6 +232,7 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
+    width: 100%;
 }
 
 #skills {
@@ -261,32 +281,37 @@ h5 {
     color: #87AB28;
 }
 
-/*plateforme dev*/
+/*Outils de développement*/
+.logoSkills:hover .infoLogovscode {
+    color: #3BA8F2;
+}
 .logoSkills:hover .infoLogoWamp {
     color: #FF0099;
 }
-
-/*BDD************************/
-.logoSkills:hover .infoLogoMysql {
-    color: #4D90AD;
-}
-
-/*Versionning*/
 .logoSkills:hover .infoLogoGit {
     color: black;
 }
+.logoSkills:hover .infoLogofilezilla {
+    color: #A10000;
+}
 
-/*photo*/
+/*BDD*/
+.logoSkills:hover .infoLogoMysql {
+    color: #4D90AD;
+}
+.logoSkills:hover .infoLogoMariaDB {
+    color: #434E66;
+}
+
+/*multimedia*/
 .logoSkills:hover .infoLogoPs {
     color: #112759;
 }
-
-/*video*/
 .logoSkills:hover .infoLogoVegas {
     color: black;
 }
 
-/*traitement texte*/
+/*bureautique*/
 .logoSkills:hover .infoLogoWord {
     color: #2A5699;
 }

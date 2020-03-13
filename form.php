@@ -24,10 +24,10 @@ $errMessage = [];*/
 $err = [];
 
 //traitement name
-$name = $_POST["name"];
-$subject = $_POST["subject"];
-$mail = $_POST["mail"];
-$message = $_POST["message"];
+$name = trim($_POST["name"]);
+$subject = trim($_POST["subject"]);
+$mail = trim($_POST["mail"]);
+$message = trim($_POST["message"]);
 
 //name
 if (empty($name)) {
