@@ -222,6 +222,8 @@ li {
     justify-content: center;
     height: auto;
     width: 100%;
+    text-align: center;
+    margin-top: 1vw;
 }
 
 #skills {
@@ -445,6 +447,8 @@ svg {
     justify-content: center;
     margin: auto !important;
     padding: auto !important;
+    
+    overflow:hidden;
 }
 
 .containerProjects a {
@@ -558,6 +562,16 @@ svg {
     color: transparent;
 }
 
+input[type=submit] {
+    background-color: rgba(0, 0, 0, 0.589);
+    border: none;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+}
 /*
 button {
     background-color: rgb(196, 196, 196);

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Johanna Galli</title>
-    <link rel="icon" type="image/png" href="asset/img/favicon3.png"/>
+    <link rel="icon" type="image/png" href="asset/img/favicon3.png" />
     <link href="asset/style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -60,118 +60,116 @@
     <!--------------------------------------------------Skills-------------------------------------------------->
     <section id="skills">
         <div class="containerSkills">
-            <div class="justify-content-md-center text-center mt-5">
-                <div class="mr-5 ml-5">
-                    <h5>Languages</h5>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <!---html-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/html5.png" alt="logo html5">
-                            <h6 class="infoLogohtml mt-2">HTML 5</h6>
-                        </div>
-                        <!---css-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/css3.png" alt="logo css3">
-                            <h6 class="infoLogocss mt-2">CSS 3</h6>
-                        </div>
-                        <!---js-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/js.png" alt="logo javascript">
-                            <h6 class="infoLogojs mt-2">JavaScript</h6>
-                        </div>
-                        <!---php-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/php.png" alt="logo php">
-                            <h6 class="infoLogophp mt-2">PHP</h6>
-                        </div>
-                        <!---bootstrap-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
-                            <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
-                        </div>
-                        <!---Twig-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/twig.png" alt="logo twig">
-                            <h6 class="infoLogoTwig mt-2">Twig</h6>
-                        </div>
+            <div class="mr-5 ml-5">
+                <h5>Languages</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <!---html-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/html5.png" alt="logo html5">
+                        <h6 class="infoLogohtml mt-2">HTML 5</h6>
+                    </div>
+                    <!---css-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/css3.png" alt="logo css3">
+                        <h6 class="infoLogocss mt-2">CSS 3</h6>
+                    </div>
+                    <!---js-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/js.png" alt="logo javascript">
+                        <h6 class="infoLogojs mt-2">JavaScript</h6>
+                    </div>
+                    <!---php-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/php.png" alt="logo php">
+                        <h6 class="infoLogophp mt-2">PHP</h6>
+                    </div>
+                    <!---bootstrap-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
+                        <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
+                    </div>
+                    <!---Twig-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/twig.png" alt="logo twig">
+                        <h6 class="infoLogoTwig mt-2">Twig</h6>
                     </div>
                 </div>
+            </div>
 
-                <div class="mr-5 ml-5">
-                    <h5>Outils de développement</h5>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <!---vscode-->
-                        <div class="logoSkills mr-0">
-                            <img src="asset/img/skills/vscode.png" alt="logo vscode">
-                            <h6 class="infoLogovscode mt-2">Visual Studio Code</h6>
-                        </div>
-                        <!---wamp-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/Wamp.png" alt="logo wamp">
-                            <h6 class="infoLogoWamp mt-2">WampServer</h6>
-                        </div>
-                        <!---github-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/github.png" alt="logo github">
-                            <h6 class="infoLogoGit mt-2">GitHub</h6>
-                        </div>
-                        <!---filezila-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/filezilla.png" alt="logo FileZilla">
-                            <h6 class="infoLogofilezilla mt-2">FileZilla</h6>
-                        </div>
+            <div class="mr-5 ml-5">
+                <h5>Outils de développement</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <!---vscode-->
+                    <div class="logoSkills mr-0">
+                        <img src="asset/img/skills/vscode.png" alt="logo vscode">
+                        <h6 class="infoLogovscode mt-2">Visual Studio Code</h6>
+                    </div>
+                    <!---wamp-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/Wamp.png" alt="logo wamp">
+                        <h6 class="infoLogoWamp mt-2">WampServer</h6>
+                    </div>
+                    <!---github-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/github.png" alt="logo github">
+                        <h6 class="infoLogoGit mt-2">GitHub</h6>
+                    </div>
+                    <!---filezila-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/filezilla.png" alt="logo FileZilla">
+                        <h6 class="infoLogofilezilla mt-2">FileZilla</h6>
                     </div>
                 </div>
+            </div>
 
-                <div class="mr-5 ml-5">
-                    <h5>Gestion BDD</h5>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <!---mysql-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/MySQL.png" alt="logo mysql">
-                            <h6 class="infoLogoMysql mt-2">My SQL</h6>
-                        </div>
-                        <!---mariadb-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/Mariadb.png" alt="logo mysql">
-                            <h6 class="infoLogoMariaDB mt-2">MariaDB</h6>
-                        </div>
+            <div class="mr-5 ml-5">
+                <h5>Gestion BDD</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <!---mysql-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/MySQL.png" alt="logo mysql">
+                        <h6 class="infoLogoMysql mt-2">My SQL</h6>
+                    </div>
+                    <!---mariadb-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/Mariadb.png" alt="logo mysql">
+                        <h6 class="infoLogoMariaDB mt-2">MariaDB</h6>
                     </div>
                 </div>
+            </div>
 
-                <div class="mr-5 ml-5">
-                    <h5>Multimédia</h5>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <!---photoshop-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/photoshop.png" alt="logo photoshop">
-                            <h6 class="infoLogoPs mt-1">Photoshop</h6>
-                        </div>
-                        <!---vegas pro-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
-                            <h6 class="infoLogoVegas mt-1">Vegas Pro</h6>
-                        </div>
+            <div class="mr-5 ml-5">
+                <h5>Multimédia</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <!---photoshop-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/photoshop.png" alt="logo photoshop">
+                        <h6 class="infoLogoPs mt-1">Photoshop</h6>
+                    </div>
+                    <!---vegas pro-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
+                        <h6 class="infoLogoVegas mt-1">Vegas Pro</h6>
                     </div>
                 </div>
-                <div class="mr-5 ml-5">
-                    <h5>Bureautique</h5>
-                    <div class="d-flex flex-wrap justify-content-center">
-                        <!---word-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/word.png" alt="Word">
-                            <h6 class="infoLogoWord mt-1">Word</h6>
-                        </div>
-                        <!---excel-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/excel.png" alt="excel">
-                            <h6 class="infoLogoExcel mt-1">Excel</h6>
-                        </div>
-                        <!---powerpoint-->
-                        <div class="logoSkills">
-                            <img src="asset/img/skills/powerpoint.png" alt="powerpoint">
-                            <h6 class="infoLogoPowerpoint mt-1">Powerpoint</h6>
-                        </div>
+            </div>
+            <div class="mr-5 ml-5">
+                <h5>Bureautique</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <!---word-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/word.png" alt="Word">
+                        <h6 class="infoLogoWord mt-1">Word</h6>
+                    </div>
+                    <!---excel-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/excel.png" alt="excel">
+                        <h6 class="infoLogoExcel mt-1">Excel</h6>
+                    </div>
+                    <!---powerpoint-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/powerpoint.png" alt="powerpoint">
+                        <h6 class="infoLogoPowerpoint mt-1">Powerpoint</h6>
                     </div>
                 </div>
             </div>
@@ -274,7 +272,7 @@
                         </div>
                     </div>
                     <!--Fin texte de droite-->
-                    
+
                 </div>
             </div>
         </div>
@@ -453,7 +451,7 @@
 
                             <textarea name="message" placeholder="Message" maxlength="3000" class="inputs" id="inputMessage"></textarea>
                             <p class="error" id="inputMessageError"></p>
-                            <input type="submit" class="button d-block mx-auto">
+                            <input type="submit" value="Envoyer" class="button d-block mx-auto">
                         </form>
 
                     </div>
