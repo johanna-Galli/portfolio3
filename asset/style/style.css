@@ -44,13 +44,13 @@ body {
 
 .container80 {
     padding: 3vw 0;
-    margin: 1vw auto;
+    margin: 0 auto;
     width: 80%;
 }
 
 .container100 {
     padding: 3vw 0;
-    margin: 1vw auto;
+    margin: 0 auto;
     width: 100%;
 }
 
@@ -201,7 +201,7 @@ li {
 }
 
 .liencv {
-    color: white;
+    color: rgba(255, 255, 255, 0.486);
     text-decoration: none;
     padding: 10px;
     border: solid 2px rgba(255, 255, 255, 0.61);
@@ -211,6 +211,7 @@ li {
 
 .liencv:hover {
     color: white;
+    border: solid 2px white;
     text-decoration: none;
 }
 
@@ -330,7 +331,8 @@ h5 {
     color: #CB4A32;
 }
 
-/**************************************************Carousel**************************************************/
+/**************************************************ABOUT**************************************************/
+
 
 .mySlides {
     display: none;
@@ -341,16 +343,14 @@ img {
     vertical-align: middle;
 }
 
-/*Slideshow container*/
-
 .slideshow-container {
     max-width: 1000px;
     position: relative;
     margin: auto;
-    width: 350px;
+    width: auto;
 }
 
-/*Next & previous buttons*/
+/*boutons changer photo*/
 
 .prev, .next {
     cursor: pointer;
@@ -367,20 +367,16 @@ img {
     user-select: none;
 }
 
-/*Position the "next button" to the right*/
-
 .next {
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-/*On hover, add a black background color with a little bit see-through*/
-
 .prev:hover, .next:hover {
     background-color: rgba(255, 255, 255, 0.8);
 }
 
-/*Caption text*/
+/*texte sous photo*/
 
 .text {
     color: #f2f2f2;
@@ -392,7 +388,7 @@ img {
     text-align: center;
 }
 
-/*Number text (1/2 etc)*/
+/*1/2 & 2/2*/
 
 .numbertext {
     color: #f2f2f2;
@@ -402,7 +398,7 @@ img {
     top: 0;
 }
 
-/*The dots/bullets/indicators*/
+/*indicateur boules blanches*/
 
 .dot {
     cursor: pointer;
@@ -418,8 +414,6 @@ img {
 .active, .dot:hover {
     background-color: #717171;
 }
-
-/*On smaller screens, decrease text size*/
 
 @media only screen and (max-width: 300px) {
     .prev, .next, .text {
@@ -447,8 +441,7 @@ svg {
     justify-content: center;
     margin: auto !important;
     padding: auto !important;
-    
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .containerProjects a {
@@ -535,22 +528,20 @@ svg {
 
 /**************************************************CONTACT**************************************************/
 
-.containerForm {
-    margin-bottom: 0;
-}
-
-.containerForm {
+.containerContact {
+    background-color: rgba(151, 151, 151, 0.144);
+    width: 100%;
     text-align: center;
-    border-radius: 2px;
-    box-shadow: rgb(0, 0, 0);
 }
 
 .inputs {
     border: none;
     border-bottom: 2px solid rgb(0, 0, 0);
-    margin: 30px;
-    padding: 10px;
-    width: 60%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 90%;
     background-color: transparent;
 }
 
@@ -572,6 +563,7 @@ input[type=submit] {
     cursor: pointer;
     border-radius: 5px;
 }
+
 /*
 button {
     background-color: rgb(196, 196, 196);
@@ -607,8 +599,8 @@ button {
 .body404 {
     text-align: center;
     margin: 0;
+    overflow: hidden;
 }
-
 
 .oops404 {
     font-size: 10vw;
@@ -617,10 +609,7 @@ button {
     -webkit-text-fill-color: transparent;
     font-weight: 1000;
     font-family: "Poppins", sans-serif;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 10%;
 }
 
 .chiffre404 {
