@@ -37,6 +37,16 @@ sr2.reveal('#contact');
 /************************************************************HEADER************************************************************/
 
 /**********NAVBAR**********/
+
+
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+
+toggleButton.addEventListener("click", function () {
+   navbarLinks.classList.toggle('active')
+});
+
+/*
 //menu hamburger
 function navbar() {
    if (nav.className === "topnav") {
@@ -44,7 +54,7 @@ function navbar() {
    } else {
       nav.className = "topnav";
    }
-}
+}*/
 
 //bouton actif au click
 for (let i = 0; i < btns.length; i++) {
@@ -143,7 +153,6 @@ function showSlides(n) {
 /************************************************************CONTACT************************************************************/
 
 //gestion du formulaire 
-
 form.addEventListener("submit", function (e) {
    e.preventDefault();
 
@@ -202,12 +211,12 @@ form.addEventListener("submit", function (e) {
             message = data.message.value;
             console.log(message);
          }
-
-         //test si tous les champs sont définis
-         if (name != null && subject != null && mail != null && message != null) {
-            console.log("on a tout");
-            //ici on va envoyer un mail
-         }
+         /*
+                  //test si tous les champs sont définis
+                  if (name != null && subject != null && mail != null && message != null) {
+                     console.log("on a tout");
+                     
+                  }*/
       });
 });
 

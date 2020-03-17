@@ -16,6 +16,40 @@
 
 <body>
     <header id="header">
+
+        <nav class="topnav" id="myTopnav">
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
+            <div class="navbar-links">
+                <ul>
+                    <li>
+                        <a href="#me" id="mebtn" class="btn">Moi</a>
+                    </li>
+                    <li>
+                        <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#about" id="aboutbtn" class="btn">À propos</a>
+                    </li>
+                    <li>
+                        <a href="#projects" id="projectsbtn" class="btn">Projets</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+
+
+        <!--
         <nav class="topnav" id="myTopnav">
             <ul>
                 <li>
@@ -41,7 +75,7 @@
                 </li>
             </ul>
         </nav>
-
+        -->
         <div>
             <div id="me">
                 <p class="titleGen">Portfolio</p>

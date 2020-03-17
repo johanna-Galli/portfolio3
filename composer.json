@@ -1,0 +1,12 @@
+{
+    "name": "johanna/mailer",
+    "authors": [
+        {
+            "name": "Johanna Galli",
+            "email": "galli.johanna.g2@gmail.com"
+        }
+    ],
+    "require": {
+        "swiftmailer/swiftmailer": "^6.2"
+    }
+}
