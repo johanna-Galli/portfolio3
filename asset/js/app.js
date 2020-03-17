@@ -39,22 +39,16 @@ sr2.reveal('#contact');
 /**********NAVBAR**********/
 
 
-const toggleButton = document.getElementsByClassName("toggle-button")[0];
-const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+/**menu burger*/
+let toggle = document.getElementsByClassName('toggle');
+console.log(toggle);
 
-toggleButton.addEventListener("click", function () {
-   navbarLinks.classList.toggle('active')
-});
 
-/*
-//menu hamburger
-function navbar() {
-   if (nav.className === "topnav") {
-      nav.className = " responsive";
-   } else {
-      nav.className = "topnav";
-   }
-}*/
+toggle.addEventListener("click") = function() {
+   console.log("click");
+}
+
+
 
 //bouton actif au click
 for (let i = 0; i < btns.length; i++) {
@@ -148,8 +142,6 @@ function showSlides(n) {
    dots[slideIndex - 1].className += " active";
 }
 
-
-
 /************************************************************CONTACT************************************************************/
 
 //gestion du formulaire 
@@ -169,6 +161,7 @@ form.addEventListener("submit", function (e) {
          let subject = null;
          let mail = null;
          let message = null;
+         console.log(data);
 
          //test sur name
          if (data.name.err == "Champ vide" || data.name.err == "Champ ne correspond pas") {
@@ -211,12 +204,6 @@ form.addEventListener("submit", function (e) {
             message = data.message.value;
             console.log(message);
          }
-         /*
-                  //test si tous les champs sont définis
-                  if (name != null && subject != null && mail != null && message != null) {
-                     console.log("on a tout");
-                     
-                  }*/
       });
 });
 

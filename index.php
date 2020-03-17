@@ -9,7 +9,7 @@
     <link rel="icon" type="image/png" href="asset/img/favicon3.png" />
     <link href="asset/style/style.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -18,40 +18,10 @@
     <header id="header">
 
         <nav class="topnav" id="myTopnav">
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
-            <div class="navbar-links">
-                <ul>
-                    <li>
-                        <a href="#me" id="mebtn" class="btn">Moi</a>
-                    </li>
-                    <li>
-                        <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
-                    </li>
-                    <li>
-                        <a href="#about" id="aboutbtn" class="btn">À propos</a>
-                    </li>
-                    <li>
-                        <a href="#projects" id="projectsbtn" class="btn">Projets</a>
-                    </li>
-                    <li>
-                        <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
-                    </li>
-                </ul>
+            <div class="toggle">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
-        </nav>
-
-
-
-
-
-
-        <!--
-        <nav class="topnav" id="myTopnav">
-            <ul>
+            <ul class="navbarLinks">
                 <li>
                     <a href="#me" id="mebtn" class="btn">Moi</a>
                 </li>
@@ -67,15 +37,9 @@
                 <li>
                     <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
                 </li>
-
-                <li class="icon">
-                    <a href="javascript:void(0);" onclick="navbar()">
-                        <i class="fa fa-bars"></i>
-                    </a>
-                </li>
             </ul>
         </nav>
-        -->
+
         <div>
             <div id="me">
                 <p class="titleGen">Portfolio</p>

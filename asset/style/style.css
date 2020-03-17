@@ -65,116 +65,71 @@ body {
     background-color: rgba(0, 0, 0, 0.800);
     backdrop-filter: blur(5px) contrast(.8);
     padding: 20px;
-    display: flex;
-    text-align: center;
-    justify-content: space-between;
-    align-items: center;
 }
 
-.navbar-links ul {
-    margin: 0;
-    padding: 0;
-    margin: auto;
-    display: flex;
-}
-
-.navbar-links li {
-    list-style: none;
-    padding: 1rem;
-}
-
-.navbar-links li a {
-    text-decoration: none;
-    color: white;
-    padding: 1rem;
-    width: 100%;
-}
-
-.navbar-links li:hover {
-    background-color: burlywood;
-}
-
-/*hamburger*/
-.toggle-button {
-    position: absolute;
-    top: 1.5rem;
-    right: 1rem;
-    display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 21px;
-}
-
-.toggle-button .bar {
-    height: 3px;
-    width: 100%;
-    background-color: white;
-    border-radius: 10px;
-}
-
-@media (max-width: 900px) {
-    .toggle-button {
-        display: flex;
-    }
-    .navbar-links {
-        display: none;
-        width: 100%;
-    }
-    .navbar {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-    .navbar-links ul {
-        width: 100%;
-        flex-direction: column;
-    }
-    .navbar-links li {
-        text-align: center;
-    }
-    .navbar-links.active {
-        display: flex;
-    }
-}
-
-/*
-.topnav {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.800);
-    backdrop-filter: blur(5px) contrast(.8);
-    padding: 20px;
-}
-
-ul {
+.topnav ul {
     text-align: center;
     margin: 0 !important;
 }
 
-li {
+.topnav ul li {
     list-style: none;
     display: inline-block;
     padding: 0 10px;
-}*/
-
-.btn {
-    color: rgb(168, 168, 168) !important;
-    font-size: 1.4rem !important;
 }
 
-.btn:hover {
-    color: white !important;
+.topnav ul li a {
+    color: rgb(168, 168, 168);
+    font-size: 1.4rem;
+}
+
+.topnav ul li a:hover {
+    color: white;
 }
 
 .active {
     color: white !important;
 }
 
-/**********taille de la navbar au scroll**********/
 
+.toggle {
+    width: 100%;
+    padding: 10px 20px;
+    color: rgb(168, 168, 168);
+    box-sizing: border-box;
+    text-align: right;
+    vertical-align: middle;
+    font-size: 30px; 
+    display: none;
+}
+
+.toggle:hover {
+    color: white;
+}
+
+
+/**********affichage du bouton**********/
+
+@media screen and (max-width: 900px) {
+
+    .toggle {
+        display: block;
+    }
+    .navbarLinks {
+        width: 100%;
+        display: block;
+    }
+    .topnav ul li {
+        display: block !important;
+        text-align: center;
+    }
+    .openList {
+        display: block !important;
+    }
+}
+
+*/
+/**********taille de la navbar au scroll**********/
 .paddingMin {
     padding: 0px;
     animation-duration: 1s;
@@ -207,36 +162,6 @@ li {
     }
 }
 
-/**********affichage du bouton**********/
-
-.icon {
-    display: none;
-}
-
-@media screen and (max-width: 750px) {
-    .btn {
-        display: none !important;
-    }
-    ul {
-        text-align: end;
-        margin: 0 !important;
-    }
-    .icon {
-        display: block;
-    }
-    .topnav.responsive {
-        position: relative;
-    }
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .btn {
-        display: block;
-        height: auto;
-    }
-}
 
 /**************************************************ME**************************************************/
 

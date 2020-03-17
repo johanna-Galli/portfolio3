@@ -104,7 +104,6 @@ if (empty($message)) {
     $goodMessage = $message;
 }
 
-
 echo json_encode($err);
 
 if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessage != null) {
@@ -180,5 +179,3 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
     $resultJohanna = $mailer->send($message);
     return $resultJohanna;
 } 
-
-echo json_encode($resultJohanna);
