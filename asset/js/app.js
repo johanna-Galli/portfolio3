@@ -39,10 +39,9 @@ sr2.reveal('#contact');
 /**********NAVBAR**********/
 
 
-/**menu burger*/
+/*menu burger*/
 let toggle = document.getElementsByClassName('toggle');
-console.log(toggle);
-
+console.log("coucou");
 
 toggle.addEventListener("click") = function() {
    console.log("click");

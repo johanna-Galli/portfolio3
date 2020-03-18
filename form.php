@@ -106,16 +106,20 @@ if (empty($message)) {
 
 echo json_encode($err);
 
+
+
 if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessage != null) {
-    //on charge Swiftmailer
-    require_once('vendor/autoload.php');
 
-    //on instancie un nouveau corps de document mail
-    $sujet = 'From portfolio :' . $goodSubject;
-    $message = (new Swift_Message($sujet));
+    if ($_SERVER['SERVER_NAME'] === "localhost") {
+        //on charge Swiftmailer
+        require_once('vendor/autoload.php');
 
-    //contenu mail
-    $mailBody ='
+        //on instancie un nouveau corps de document mail
+        $sujet = 'From portfolio :' . $goodSubject;
+        $message = (new Swift_Message($sujet));
+
+        //contenu mail
+        $mailBody = '
         <html>
         <body>
             <div class="main">
@@ -156,26 +160,148 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         </body>
         </html>';
 
-    //on instancie une nouvelle méthode d'envois du mail
-    $transport = (new Swift_SmtpTransport('smtp.mailtrap.io', 465))
-        //Port 25 ou 465 selon votre configuration
-        //identifiant et mot de passe pour votre swiftmailer
-        ->setUsername('fb4412351e7042')
-        ->setPassword('9377fb0dbcb0f8');
 
-    //on instancie un nouveau mail
-    $mailer = new Swift_Mailer($transport);
-    //on instancie un nouveau corps de document mail
-    $message
-        ->setFrom([$goodMail])
-        ->setTo(['galli.johanna.g2@gmail.com'])
-        ->setBody($mailBody, 'text/html');
+        //on instancie une nouvelle méthode d'envois du mail
+        $transport = (new Swift_SmtpTransport('smtp.mailtrap.io', 465))
+            //Port 25 ou 465 selon votre configuration
+            //identifiant et mot de passe pour votre swiftmailer
+            ->setUsername('fb4412351e7042')
+            ->setPassword('9377fb0dbcb0f8');
 
-    //on récupère et modifie le header du mail pour l'envois en HTML
-    $type = $message->getHeaders()->get('Content-Type');
-    $type->setValue('text/html');
-    $type->setParameter('charset', 'utf-8');
-    //On envois le mail en local
-    $resultJohanna = $mailer->send($message);
-    return $resultJohanna;
-} 
+        //on instancie un nouveau mail
+        $mailer = new Swift_Mailer($transport);
+        //on instancie un nouveau corps de document mail
+        $message
+            ->setFrom([$goodMail])
+            ->setTo(['galli.johanna.g2@gmail.com'])
+            ->setBody($mailBody, 'text/html');
+
+        //on récupère et modifie le header du mail pour l'envois en HTML
+        $type = $message->getHeaders()->get('Content-Type');
+        $type->setValue('text/html');
+        $type->setParameter('charset', 'utf-8');
+        //On envois le mail en local
+        $resultJohanna = $mailer->send($message);
+
+        echo $resultJohanna;
+        var_dump($resultJohanna);
+
+        return $resultJohanna;
+    }
+
+    if ($_SERVER['SERVER_NAME'] === "johannag.promo-36.codeur.online") {
+        //Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+        //En-têtes additionnels
+        $headers[] = 'From: ' . $goodMail;
+
+        //on instancie le mail
+        $to = "galli.johanna.g2@gmail.com";
+        $subject = 'From portfolio :' . $goodSubject;
+
+        //contenu mail
+        $mailBody = '
+        <html>
+        <body>
+            <div class="main">
+                <div class="body">
+                    <h1 class="title">Bonjour Johanna !</h1>
+                    <h3>Vous venez de recevoir un mail de la part de : ' . $goodName . '. </h3>
+                    <p>voici son message : <br> ' . $goodMessage . '</p> 
+
+                    <br>
+                    <p>À bientôt !</p>
+                </div>
+            </div>
+            <style type="text/css">
+                .main {
+                    margin: 20px;
+                    box-shadow: 0px 5px 20px rgba(153, 28, 59, 0.1);
+                    max-width: 100%;
+                }
+                .body {
+                    padding: 20px;
+                    text-align: center;
+                    font-family: "Gill Sans", sans-serif;
+                }
+                .title {
+                    color: #991c3b;
+                }
+                .link {
+                    padding: 3px;
+                    border-style: solid 1px;
+                    border-color: #991c3b;
+                    color: #991c3b;
+                }
+                .logo {
+                    max-height:130px;
+                    max-width:130px;
+                }
+            </style>
+        </body>
+        </html>';
+
+        // Envoi
+        $envoi = mail($to, $subject, $mailBody, implode("\r\n", $headers));
+
+        //Si l'envoi à été effectué alors on envoi un mail a la personne qui m'a contacté
+        if ($envoi == true) {
+
+            // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+            $headers[] = 'MIME-Version: 1.0';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+
+            // En-têtes additionnels
+            $headers[] = 'From: galli.johanna.g2@gmail.com';
+
+            //On instancie le mail
+            $to = $goodMail;
+            $subject = "Votre mail pour Johanna Galli à bien été envoyé";
+
+            //contenu mail
+            $mailBody = '
+            <html>
+            <body>
+            <div class="main">
+                <div class="body">
+                    <h1 class="title">Bonjour ' . $goodName . ' !</h1>
+                    <h3>Vous venez d\'envoyer un mail à Johanna Galli. </h3>
+                    <br>
+                    <p>Merci et à bientôt !</p>
+                </div>
+            </div>
+            <style type="text/css">
+                .main {
+                    margin: 20px;
+                    box-shadow: 0px 5px 20px rgba(153, 28, 59, 0.1);
+                    max-width: 100%;
+                }
+                .body {
+                    padding: 20px;
+                    text-align: center;
+                    font-family: "Gill Sans", sans-serif;
+                }
+                .title {
+                    color: #991c3b;
+                }
+                .link {
+                    padding: 3px;
+                    border-style: solid 1px;
+                    border-color: #991c3b;
+                    color: #991c3b;
+                }
+                .logo {
+                    max-height:130px;
+                    max-width:130px;
+                }
+            </style>
+            </body>
+            </html>';
+
+            // Envoi
+            mail($to, $subject, $mailBody, implode("\r\n", $headers));
+        }
+    }
+}

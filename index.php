@@ -19,7 +19,7 @@
 
         <nav class="topnav" id="myTopnav">
             <div class="toggle">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
+                <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
             <ul class="navbarLinks">
                 <li>
@@ -59,7 +59,7 @@
     <section id="skills">
         <div class="containerSkills">
             <div class="mr-5 ml-5">
-                <h5>Languages</h5>
+                <h5>Langages</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---html-->
                     <div class="logoSkills">
@@ -489,5 +489,4 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="asset/js/app.js"></script>
-
 </html>

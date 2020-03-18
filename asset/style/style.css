@@ -111,7 +111,6 @@ body {
 /**********affichage du bouton**********/
 
 @media screen and (max-width: 900px) {
-
     .toggle {
         display: block;
     }
