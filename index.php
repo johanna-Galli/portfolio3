@@ -48,7 +48,7 @@
                     <h1>Johanna Galli, 23 ans</h1>
                     <h5>Actuellement à la recherche d'un stage de 2 mois développeuse web</h5>
                     <div class="conteneurLiencv">
-                        <a class="liencv" target="_blank" href="asset/fichier/2020-03_CV_Johanna-GALLI.pdf">Curriculum Vitæ</a>
+                        <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-03_CV_Johanna-GALLI.pdf">Curriculum Vitæ</a>
                     </div>
 
                 </div>
@@ -179,32 +179,29 @@
     <section id="about">
         <div class="contain">
             <div class="container80">
-
                 <div class="row pt-5 pb-5">
-
                     <!--Texte de gauche-->
                     <div class="col-sm-12 col-lg-12 col-xl-4">
                         <h5>
                             Moi
                         </h5>
                         <p style="text-align: justify;">
-                            Je m'appelle Johanna, j'ai 23 ans et je suis actuellement en formation developpeuse web / web mobile à l'Access Code School Mulhouse.
+                            Je m'appelle Johanna, j'ai 23 ans et je suis actuellement en formation pour devenir développeuse web / web mobile à l'Access Code School Mulhouse.
                         </p>
                         <h5>
                             Parcours scolaire
                         </h5>
                         <p style="text-align: justify;">
-                            Je possède le BAC STI2D opt. SIN, un diplôme universitaire POS, et un BTS Audiovisuel opt. TIEE
+                            Je possède le BAC STI2D opt. SIN, un diplôme universitaire POS et un BTS Audiovisuel opt. TIEE
                         </p>
                         <h5>
                             Expériences professionnelles
                         </h5>
                         <p style="text-align: justify;">
-                            En 2015 j'ai effectué un service civique dans une web radio à Mulhouse (radio Antares). Ensuite dans le cadre de mon BTS Audiovisuel, j'étais 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieures antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) mais aussi à DisneyLand Paris en régie pour un spectacle.
+                            En 2015, j'ai effectué un service civique dans une web radio à Mulhouse (radio Antares). Ensuite dans le cadre de mon BTS Audiovisuel, j'ai passé 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieurs antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) ainsi qu'à DisneyLand Paris en régie pour un spectacle.
                         </p>
                     </div>
                     <!--Fin texte de gauche-->
-
 
                     <!--Photos milieu-->
                     <div class="col-sm-12 col-lg-12 col-xl-4">
@@ -234,20 +231,20 @@
                             Association
                         </h5>
                         <p style="text-align: justify;">
-                            Depuis 2010, membre active en tant que trésorière adjointe, responsable maquillage et musicienne de l'association <a href="https://www.lustige-klique.com/" target="_blank">La Lustige Klique de Riedisheim</a>.
+                            Depuis 2010, membre active en tant que trésorière adjointe, responsable maquillage et musicienne de l'association <a href="https://www.lustige-klique.com/" target="_blank" rel="noopener noreferrer">La Lustige Klique de Riedisheim</a>.
                         </p>
                         <p style="text-align: justify;">
-                            C'est un groupe de musique d'ambiance pour carnavals. Nous animons des carnavals et festivals dans toute la France mais aussi la Suisse, la Belgique, et l'Allemagne. Nous avons aussi voyagé en Angleterre, en Espagne, en Italie et en Martinique.
+                            C'est un groupe de musique d'ambiance pour carnavals. Nous animons des carnavals et festivals dans toute la France ainsi qu'en Suisse, en Belgique et en Allemagne. Nous avons aussi voyagé en Angleterre, en Espagne, en Italie et en Guyane.
                         </p>
                         <h5>
                             Passion
                         </h5>
                         <p style="text-align: justify;">
-                            Je réalise régulièrement des montages vidéos de mes voyages ainsi que des sorties que nous faisons avec mon association.
+                            Je réalise régulièrement des montages vidéos de mes voyages et des sorties que nous faisons avec mon association.
                         </p>
                         <p>
-                            <a target="_blank" href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber">Youtube perso</a> /
-                            <a target="_blank" href="https://www.youtube.com/channel/UCsxUjLngdviBiaf-3HKRCFA">Youtube Lustige Klique</a>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber">Youtube perso</a> /
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/channel/UCsxUjLngdviBiaf-3HKRCFA">Youtube Lustige Klique</a>
                         </p>
                         <h5>
                             Loisirs
@@ -287,7 +284,7 @@
         <div class="container100">
             <div class="containerProjects">
                 <!--ALLO JATI-->
-                <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" class="col linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" rel="noopener noreferrer" class="col linkProject p-0 m-4">
                     <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
@@ -299,7 +296,7 @@
                     </div>
                 </a>
                 <!--YES TRANSFERT-->
-                <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank" class="col linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank" rel="noopener noreferrer" class="col linkProject p-0 m-4">
                     <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
@@ -311,7 +308,7 @@
                     </div>
                 </a>
                 <!--BLUEASY-->
-                <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
                     <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Intégration maquette</h4>
@@ -323,7 +320,7 @@
                     </div>
                 </a>
                 <!--MOCKUP-->
-                <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
 
                     <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
                     <div class="overlay">
@@ -336,7 +333,7 @@
                     </div>
                 </a>
                 <!--Convertisseur d'âge-->
-                <a href="#" target="_blank" class="col-sm linkProject p-0 m-4">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
                     <img src="asset/img/projets/age.JPG" alt="age" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Convertir son âge</h4>
@@ -348,7 +345,7 @@
                     </div>
                 </a>
                 <!--DEVINER NOMBRE-->
-                <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
                     <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Jeu : deviner un nombre</h4>
@@ -360,7 +357,7 @@
                     </div>
                 </a>
                 <!--MULTIPLICATION-->
-                <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
                     <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Apprendre les tables de multiplication</h4>
@@ -414,7 +411,7 @@
                                 <div class="col-sm-12 col-lg-6 text-lg-left">
                                     <p class="d-inline">Linkedin</p>
                                     <br>
-                                    <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/" target="_blank">Johanna Galli</a>
+                                    <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/" target="_blank" rel="noopener noreferrer" >Johanna Galli</a>
                                 </div>
 
                             </div>
@@ -428,7 +425,7 @@
                                 <div class="col-sm-12 col-lg-6 text-lg-left">
                                     <p class="d-inline">GitHub</p>
                                     <br>
-                                    <a href="https://github.com/johanna-Galli" target="_blank">johanna-Galli</a>
+                                    <a href="https://github.com/johanna-Galli" target="_blank" rel="noopener noreferrer" >johanna-Galli</a>
                                 </div>
                             </div>
                             <!-- Youtube -->
@@ -441,7 +438,7 @@
                                 <div class="col-sm-12 col-lg-6 text-lg-left">
                                     <p class="d-inline">YouTube</p>
                                     <br>
-                                    <a href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber" target="_blank">Johanna Galli</a>
+                                    <a href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber" target="_blank" rel="noopener noreferrer">Johanna Galli</a>
                                 </div>
                             </div>
                         </div>
@@ -466,7 +463,8 @@
 
                             <textarea name="message" placeholder="Message" maxlength="3000" class="inputs" id="inputMessage"></textarea>
                             <p class="error" id="inputMessageError"></p>
-                            <input type="submit" value="Envoyer" class="button d-block mx-auto">
+                            <input type="submit" value="Envoyer" class="button d-block mx-auto" name="page_formulaire">
+                            <p class="feedBackMail" id="inputMessageError">Mail envoyé !</p>
                         </form>
                     </div>
                     <!--Fin colone de droite-->

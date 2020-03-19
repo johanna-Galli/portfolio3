@@ -39,7 +39,8 @@ sr2.reveal('#contact');
 /**********NAVBAR**********/
 
 
-/*menu burger*/
+/*menu burger */
+
 let toggle = document.getElementsByClassName('toggle');
 console.log("coucou");
 
@@ -146,7 +147,6 @@ function showSlides(n) {
 //gestion du formulaire 
 form.addEventListener("submit", function (e) {
    e.preventDefault();
-
    const formData = new FormData(form);
    fetch("form.php", {
       method: "post",
@@ -162,6 +162,9 @@ form.addEventListener("submit", function (e) {
          let message = null;
          console.log(data);
 
+         let feedBackMail = document.getElementsByClassName("feedBackMail");
+         e.preventDefault();
+
          //test sur name
          if (data.name.err == "Champ vide" || data.name.err == "Champ ne correspond pas") {
             inputName.style.borderBottom = "2px solid red";
@@ -171,7 +174,7 @@ form.addEventListener("submit", function (e) {
          } else {
             inputName.style.borderBottom = "2px solid black"
             name = data.name.value;
-            console.log(name);
+            //console.log(name);
          }
 
          //test sur sujet
@@ -180,29 +183,40 @@ form.addEventListener("submit", function (e) {
          } else {
             inputSubject.style.borderBottom = "2px solid black"
             subject = data.subject.value;
-            console.log(subject);
+            //console.log(subject);
          }
 
          //test sur mail
          if (data.mail.err == "Champ vide" || data.mail.err == "Champ ne correspond pas") {
             inputMail.style.borderBottom = "2px solid red";
             if (data.mail.err == "Champ ne correspond pas") {
-               console.log("Champ ne correspond pas");
+               //console.log("Champ ne correspond pas");
             }
          } else {
             inputMail.style.borderBottom = "2px solid black"
             mail = data.mail.value;
-            console.log(mail);
+            //console.log(mail);
          }
 
          //test sur message
          if (data.message.err == "Champ vide" || data.message.err == "Champ ne correspond pas") {
             inputMessage.style.borderBottom = "2px solid red";
          } else {
-            inputMessage.style.borderBottom = "2px solid black"
+            inputMessage.style.borderBottom = "2px solid black";
             message = data.message.value;
-            console.log(message);
+            //console.log(message);
          }
+
+         //console.log(feedBackMail);
+         //test sur envoi de mail
+         if (data.message.envoiMail === "envoye") {
+            feedBackMail.style.color = "green";
+
+            
+         } else {
+            feedBackMail.style.color = "transparent";
+         }
+
       });
 });
 

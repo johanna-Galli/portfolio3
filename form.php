@@ -104,9 +104,9 @@ if (empty($message)) {
     $goodMessage = $message;
 }
 
+$resultJohanna = null;
+
 echo json_encode($err);
-
-
 
 if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessage != null) {
 
@@ -181,12 +181,21 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         $type->setValue('text/html');
         $type->setParameter('charset', 'utf-8');
         //On envois le mail en local
-        $resultJohanna = $mailer->send($message);
+        $envoi = $mailer->send($message);
 
-        echo $resultJohanna;
-        var_dump($resultJohanna);
+        if ($envoi) {
+            var_dump("mail envoyé");
 
-        return $resultJohanna;
+            $err["envoiMail"] = [
+                "envoiMail" => "envoye"
+            ];
+        } else {
+            var_dump("mail pas envoyé");
+
+            $err["envoiMail"] = [
+                "envoiMail" => "pas envoye"
+            ];
+        }
     }
 
     if ($_SERVER['SERVER_NAME'] === "johannag.promo-36.codeur.online") {
@@ -246,8 +255,17 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         // Envoi
         $envoi = mail($to, $subject, $mailBody, implode("\r\n", $headers));
 
+
         //Si l'envoi à été effectué alors on envoi un mail a la personne qui m'a contacté
-        if ($envoi == true) {
+        if ($envoi) {
+
+            var_dump("mail envoyé");
+
+            $err["envoiMail"] = [
+                "envoiMail" => "envoye"
+            ];
+
+            /*
 
             // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
             $headers[] = 'MIME-Version: 1.0';
@@ -301,7 +319,8 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
             </html>';
 
             // Envoi
-            mail($to, $subject, $mailBody, implode("\r\n", $headers));
-        }
+            mail($to, $subject, $mailBody, implode("\r\n", $headers));*/
+        } 
     }
 }
+
