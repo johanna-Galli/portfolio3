@@ -40,14 +40,30 @@ sr2.reveal('#contact');
 
 
 /*menu burger */
+let navbarlinks = document.getElementsByClassName('navbarLinks');
+console.log(navbarlinks.style);
 
+function togglebutton() {
+   console.log("click");
+   
+   if (display == 'none') {
+      console.log('display none');
+      
+   } 
+   
+   if (display == "block") {
+      console.log('display block');
+   }
+}
+
+/*
 let toggle = document.getElementsByClassName('toggle');
 console.log("coucou");
 
 toggle.addEventListener("click") = function() {
    console.log("click");
 }
-
+*/
 
 
 //bouton actif au click

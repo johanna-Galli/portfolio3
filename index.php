@@ -18,7 +18,7 @@
     <header id="header">
 
         <nav class="topnav" id="myTopnav">
-            <div class="toggle">
+            <div class="toggle" onclick="togglebutton()">
                 <i class="fa fa-bars" aria-hidden="true"></i>
             </div>
             <ul class="navbarLinks">
@@ -41,17 +41,30 @@
         </nav>
 
         <div>
-            <div id="me">
-                <p class="titleGen">Portfolio</p>
-                <img src="asset/img/johanna-galli-2.JPG" alt="photo johanna galli" id="myPhoto">
-                <div class="meText">
-                    <h1>Johanna Galli, 23 ans</h1>
-                    <h5>Actuellement à la recherche d'un stage de 2 mois développeuse web</h5>
-                    <div class="conteneurLiencv">
-                        <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-03_CV_Johanna-GALLI.pdf">Curriculum Vitæ</a>
+            <div id="me" class="row">
+
+                <!--photo-->
+                <div class="mePhoto col-sm-12 col-lg-6">
+
+                    <img src="asset/img/johanna-galli-2.JPG" alt="photo johanna galli" id="myPhoto">
+
+                </div>
+
+                <!--texte-->
+                <div class="meText col-sm-12 col-lg-6">
+
+                    <p class="titleGen">Portfolio</p>
+                    <div class="meText">
+                        <h1>Johanna Galli, 23 ans</h1>
+                        <h5>Actuellement à la recherche d'un stage de 2 mois développeuse web</h5>
+                        <div class="conteneurLiencv">
+                            <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-03_CV_Johanna-GALLI.pdf">Curriculum Vitæ</a>
+                        </div>
                     </div>
 
                 </div>
+
+
             </div>
     </header>
 
@@ -130,7 +143,7 @@
                     </div>
                     <!---mariadb-->
                     <div class="logoSkills">
-                        <img src="asset/img/skills/Mariadb.png" alt="logo mysql">
+                        <img src="asset/img/skills/mariadb.png" alt="logo mysql">
                         <h6 class="infoLogoMariaDB mt-2">MariaDB</h6>
                     </div>
                 </div>
@@ -411,7 +424,7 @@
                                 <div class="col-sm-12 col-lg-6 text-lg-left">
                                     <p class="d-inline">Linkedin</p>
                                     <br>
-                                    <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/" target="_blank" rel="noopener noreferrer" >Johanna Galli</a>
+                                    <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/" target="_blank" rel="noopener noreferrer">Johanna Galli</a>
                                 </div>
 
                             </div>
@@ -425,7 +438,7 @@
                                 <div class="col-sm-12 col-lg-6 text-lg-left">
                                     <p class="d-inline">GitHub</p>
                                     <br>
-                                    <a href="https://github.com/johanna-Galli" target="_blank" rel="noopener noreferrer" >johanna-Galli</a>
+                                    <a href="https://github.com/johanna-Galli" target="_blank" rel="noopener noreferrer">johanna-Galli</a>
                                 </div>
                             </div>
                             <!-- Youtube -->
@@ -487,4 +500,5 @@
 
 <script src="https://unpkg.com/scrollreveal"></script>
 <script src="asset/js/app.js"></script>
+
 </html>

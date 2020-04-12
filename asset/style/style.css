@@ -10,19 +10,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-.titleGen {
-    position: absolute;
-    top: 19%;
-    right: 1%;
-    font-size: 8vw;
-    text-transform: uppercase;
-    z-index: 1;
-    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.267);
-    -webkit-text-fill-color: transparent;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif;
-}
-
 .titlePart {
     text-align: center;
     margin: 0;
@@ -110,13 +97,13 @@ body {
 
 /**********affichage du bouton**********/
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 992px) {
     .toggle {
         display: block;
     }
     .navbarLinks {
         width: 100%;
-        display: block;
+        display: none;
     }
     .topnav ul li {
         display: block !important;
@@ -167,39 +154,51 @@ body {
 #me {
     padding-top: 40px;
     background: black;
-    position: relative;
-    z-index: 0;
-    height: 45vw;
+    min-height: 80vh;
+    /*z-index: 0;*/
+}
+
+.mePhoto {
+    order: 1;
 }
 
 #myPhoto {
-    width: 70%;
-    position: absolute;
-    bottom: 0;
+    position: relative;
+    width: 800px;
+    bottom: 0 !important;
+}
+
+.titleGen {
+    position: relative;
+    margin-top: 100px;
+    right: 6%;
+    font-size: 70px;
+    text-transform: uppercase;
+    z-index: 1;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.267);
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif;
 }
 
 .meText {
-    position: absolute;
-    top: 50%;
+    position: relative;
+    margin-top: 20px;
     right: 6%;
     color: rgb(255, 255, 255);
     text-align: right;
-    width: 50vw;
+    width: 100%;
     height: 200px;
+    order: 2;
 }
 
 .meText h1 {
-    font-size: 2vw;
+    font-size: 30px;
 }
 
 .meText h5 {
-    font-size: 2vw;
+    font-size: 20px;
     color: rgb(143, 143, 143);
-}
-
-.myLogo {
-    width: 3vw;
-    margin-left: 10px;
 }
 
 .conteneurLiencv {
@@ -219,6 +218,25 @@ body {
     color: white;
     border: solid 2px white;
     text-decoration: none;
+}
+
+@media(max-width: 992px) {
+    .titleGen {
+        margin-top: 20px;
+        right: 0%;
+    }
+    .meText {
+        order: 1;
+        text-align: center;
+        right: 0%;
+    }
+    .mePhoto {
+        order: 2;
+        text-align: center;
+    }
+    #myPhoto {
+        width: 120%;
+    }
 }
 
 /**************************************************Skills**************************************************/
