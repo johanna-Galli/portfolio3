@@ -17,6 +17,10 @@ const sectionAbout = document.getElementById("about");
 const sectionProjects = document.getElementById("projects");
 const sectionContact = document.getElementById("contact");
 
+//pour burger
+let toggle = document.getElementsByClassName('toggle');
+let navbarlinks = document.getElementsByClassName('navbarLinks').style;
+
 //formulaire contact
 let form = document.querySelector("form");
 
@@ -36,49 +40,39 @@ sr2.reveal('#contact');
 
 /************************************************************HEADER************************************************************/
 
+
 /**********NAVBAR**********/
 
+//burger
+/*
+let toggleBtn = document.getElementById('toggleBtn');
 
-/*menu burger */
-let navbarlinks = document.getElementsByClassName('navbarLinks');
-console.log(navbarlinks.style);
-
-function togglebutton() {
-   console.log("click");
-   
-   if (display == 'none') {
-      console.log('display none');
-      
-   } 
-   
-   if (display == "block") {
-      console.log('display block');
+function toggle() {
+   if (toggleBtn.style.display === 'none'){
+      return "block";
+   } else {
+      toggleBtn.style.display = 'none';
    }
 }
 
-/*
-let toggle = document.getElementsByClassName('toggle');
-console.log("coucou");
+toggle();
 
-toggle.addEventListener("click") = function() {
-   console.log("click");
-}
 */
 
 
-//bouton actif au click
-for (let i = 0; i < btns.length; i++) {
-   //btns[i].classList = remove("active");
-   btns[i].addEventListener("click", function () {
-      console.log("click");
-      let current = document.getElementsByClassName(" active");
-      current[0].className = current[0].className.replace(" active", "");
-      this.className += " active";
-   });
+function togglebutton() {
+   let toggleNav = document.getElementById('toggleNav');
+   if (toggleNav.style.display === 'none') {
+      toggleNav.style.display = 'block';
+   } else {
+      toggleNav.style.display = 'none';
+   }
 }
+
 
 //changement hauteur nav en fonction endroit sur le site
 window.onscroll = function () { scrollFunction() };
+
 function scrollFunction() {
    //valeur du scroll top
    let scrollTop = document.documentElement.scrollTop;
@@ -93,16 +87,19 @@ function scrollFunction() {
    } else if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav") {
       nav.className = "topnav";
    }
+
    let positionSectionSkills = header.scrollHeight;
    let positionSectionAbout = sectionAbout.offsetTop;
    let positionSectionProjects = sectionProjects.offsetTop;
    let positionSectionContact = sectionContact.offsetTop;
 
-   //console.log(positionSectionAbout);
-   //console.log(scrollTop);
+   console.log(positionSectionAbout);
+   console.log(positionSectionAbout + 10);
+   console.log(scrollTop);
 
-   //bouton actif
+   //bouton actif au scroll
    for (let i = 0; i < btns.length; i++) {
+
       //bouton "me"
       if (scrollTop == 0 || scrollTop < sectionSkills.scrollHeight) {
          btns[i].classList.remove("active");
@@ -126,10 +123,11 @@ function scrollFunction() {
       //bouton "Contact"
       else if (scrollTop == positionSectionContact || scrollTop > positionSectionContact) {
          btns[i].classList.remove("active");
-         aboutbtn.className += " active";
+         contactbtn.className += " active";
       }
    }
 }
+
 /************************************************************ABOUT************************************************************/
 let slideIndex = 1;
 
@@ -228,7 +226,7 @@ form.addEventListener("submit", function (e) {
          if (data.message.envoiMail === "envoye") {
             feedBackMail.style.color = "green";
 
-            
+
          } else {
             feedBackMail.style.color = "transparent";
          }
