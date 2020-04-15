@@ -23,7 +23,7 @@
             </div>
             <ul class="navbarLinks" id="toggleNav">
                 <li>
-                    <a href="#me" id="mebtn" class="btn">Moi</a>
+                    <a href="#me" id="mebtn" class="btn active">Moi</a>
                 </li>
                 <li>
                     <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
