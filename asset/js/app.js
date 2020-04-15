@@ -33,10 +33,10 @@ let sr2 = ScrollReveal({
    reset: true
 });
 
-sr2.reveal('#skills');
-sr2.reveal('#about');
-sr2.reveal('#projects');
-sr2.reveal('#contact');
+sr2.reveal('#skills', { reset: true });
+sr2.reveal('#about', { reset: true });
+sr2.reveal('#projects', { reset: true });
+sr2.reveal('#contact', { reset: true });
 
 /************************************************************HEADER************************************************************/
 
