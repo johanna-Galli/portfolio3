@@ -25,7 +25,7 @@ let navbarlinks = document.getElementsByClassName('navbarLinks').style;
 let form = document.querySelector("form");
 
 
-/************************************************************Animations sur tous les elements de la page************************************************************/
+/***********************************************Animations sur tous les elements de la page***********************************************/
 
 //effet apparitions sections
 let sr2 = ScrollReveal({
@@ -38,27 +38,14 @@ sr2.reveal('#about', { reset: true });
 sr2.reveal('#projects', { reset: true });
 sr2.reveal('#contact', { reset: true });
 
-/************************************************************HEADER************************************************************/
 
-
+/******************************************************************HEADER******************************************************************/
 /**********NAVBAR**********/
-
-//burger
-/*
-let toggleBtn = document.getElementById('toggleBtn');
-
-function toggle() {
-   if (toggleBtn.style.display === 'none'){
-      return "block";
-   } else {
-      toggleBtn.style.display = 'none';
+window.onresize = function () {
+   if (window.innerWidth >= 992) {
+      toggleNav.style.display = 'block';
    }
 }
-
-toggle();
-
-*/
-
 
 function togglebutton() {
    let toggleNav = document.getElementById('toggleNav');
@@ -106,29 +93,30 @@ function scrollFunction() {
          mebtn.className += " active";
       }
       //bouton "skills"
-      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < positionSectionAbout) {
+      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < (positionSectionAbout - 1)) {
          btns[i].classList.remove("active");
          skillsbtn.className += " active";
       }
       //bouton "about"
-      else if (scrollTop == positionSectionAbout || scrollTop > positionSectionAbout && scrollTop < positionSectionProjects) {
+      else if (scrollTop == (positionSectionAbout - 1) || scrollTop > positionSectionAbout && scrollTop < (positionSectionProjects - 1)) {
          btns[i].classList.remove("active");
          aboutbtn.className += " active";
       }
       //bouton "Projects"
-      else if (scrollTop == positionSectionProjects || scrollTop > positionSectionProjects && scrollTop < positionSectionContact) {
+      else if (scrollTop == (positionSectionProjects - 1) || scrollTop > positionSectionProjects && scrollTop < (positionSectionContact - 1)) {
          btns[i].classList.remove("active");
          projectsbtn.className += " active";
       }
       //bouton "Contact"
-      else if (scrollTop == positionSectionContact || scrollTop > positionSectionContact) {
+      else if (scrollTop == (positionSectionContact - 1) || scrollTop > (positionSectionContact - 1)) {
          btns[i].classList.remove("active");
          contactbtn.className += " active";
       }
    }
 }
 
-/************************************************************ABOUT************************************************************/
+
+/******************************************************************ABOUT*****************************************************************/
 let slideIndex = 1;
 
 showSlides(slideIndex);
@@ -156,8 +144,8 @@ function showSlides(n) {
    dots[slideIndex - 1].className += " active";
 }
 
-/************************************************************CONTACT************************************************************/
 
+/*****************************************************************CONTACT*****************************************************************/
 //gestion du formulaire 
 form.addEventListener("submit", function (e) {
    e.preventDefault();
@@ -233,10 +221,3 @@ form.addEventListener("submit", function (e) {
 
       });
 });
-
-
-
-
-
-
-

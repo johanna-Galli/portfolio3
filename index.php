@@ -493,7 +493,7 @@
     </section>
 
     <!--------------------------------------------------Footer-------------------------------------------------->
-    <p class="footer">Design et intégration : Johanna Galli - <a href="mentionsLegales.php">Mentions légales</a></p>
+    <p class="footer">Design et intégration : Johanna Galli - <a href="mentionsLegales.html">Mentions légales</a></p>
 </body>
 
 <script src="https://unpkg.com/scrollreveal"></script>
