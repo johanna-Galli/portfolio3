@@ -41,7 +41,7 @@ body {
 /**************************************************NAVBAR**************************************************/
 
 .topnav {
-    z-index: 1;
+    z-index: 2;
     position: fixed;
     top: 0;
     width: 100%;
@@ -55,6 +55,11 @@ body {
     text-align: center;
     margin: 0 !important;
     display: block;
+    transition: transform 0.5s ease;
+    -webkit-transition: transform 0.5s ease;
+    -moz-transition: transform 0.5s ease;
+    -ms-transition: transform 0.5s ease;
+    -o-transition: transform 0.5s ease;
 }
 
 .topnav ul li {
@@ -102,6 +107,19 @@ body {
         width: 100%;
         display: none;
     }
+
+    i:hover {
+        cursor: pointer;
+    }
+
+    .hideNav {
+        transform: translateY(-320px);
+        -webkit-transform: translateY(-320px);
+        -moz-transform: translateY(-320px);
+        -ms-transform: translateY(-320px);
+        -o-transform: translateY(-320px);
+    }
+
     .topnav ul li {
         display: block !important;
         text-align: center;

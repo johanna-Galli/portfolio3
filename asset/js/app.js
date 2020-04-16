@@ -1,8 +1,11 @@
 let header = document.getElementById("header");
 let nav = document.getElementById("myTopnav");
+let toggleNav = document.getElementById('toggleNav');
+//let liNav = document.querySelectorAll("#myTopnav ul li");
+
 
 //tous les boutons de la navbar
-let btns = document.getElementsByClassName("btn");
+let btns = [...document.getElementsByClassName("btn")];
 
 //chaque bouton de la navbar
 let mebtn = document.getElementById("mebtn");
@@ -58,20 +61,49 @@ function toggle() {
 toggle();
 
 */
-
+let isOpen = false;
 
 function togglebutton() {
-   let toggleNav = document.getElementById('toggleNav');
    if (toggleNav.style.display === 'none') {
       toggleNav.style.display = 'block';
+      toggleNav.classList.remove("hideNav");
+      isOpen = true;
    } else {
+      toggleNav.classList.add("hideNav");
       toggleNav.style.display = 'none';
+      isOpen = false;
    }
 }
 
+if (window.innerWidth <= 992 && !isOpen) {
+   toggleNav.style.display = 'none';
+}
+
+
+window.addEventListener('resize', () => {
+   if(window.innerWidth > 992) {
+      isOpen = false;
+      toggleNav.style.display = 'block';
+   } else if (window.innerWidth <= 992 && isOpen === false) {
+      toggleNav.style.display = 'none';
+   }
+});
+
+btns.forEach(btn => {
+   btn.addEventListener("click", () => {
+      if(isOpen) {
+         toggleNav.classList.add("hideNav");
+         toggleNav.style.display = 'none';
+         isOpen = false;
+      }
+   })
+});
+
 
 //changement hauteur nav en fonction endroit sur le site
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () {     
+   scrollFunction();
+};
 
 function scrollFunction() {
    //valeur du scroll top
@@ -92,10 +124,12 @@ function scrollFunction() {
    let positionSectionAbout = sectionAbout.offsetTop;
    let positionSectionProjects = sectionProjects.offsetTop;
    let positionSectionContact = sectionContact.offsetTop;
-
-   console.log(positionSectionAbout);
-   console.log(positionSectionAbout + 10);
+   
+   console.log("sectionAbout : " + positionSectionAbout);
+   console.log("section Skills : " + positionSectionSkills);
    console.log(scrollTop);
+   console.log(positionSectionAbout - 1);
+   console.log("sectionProject : " + positionSectionProjects);
 
    //bouton actif au scroll
    for (let i = 0; i < btns.length; i++) {
@@ -106,17 +140,17 @@ function scrollFunction() {
          mebtn.className += " active";
       }
       //bouton "skills"
-      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < positionSectionAbout) {
+      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < (positionSectionAbout - 1)) {
          btns[i].classList.remove("active");
          skillsbtn.className += " active";
       }
       //bouton "about"
-      else if (scrollTop == positionSectionAbout || scrollTop > positionSectionAbout && scrollTop < positionSectionProjects) {
+      else if (scrollTop == (positionSectionAbout - 1) || scrollTop > positionSectionAbout && scrollTop < (positionSectionProjects - 1)) {
          btns[i].classList.remove("active");
          aboutbtn.className += " active";
       }
       //bouton "Projects"
-      else if (scrollTop == positionSectionProjects || scrollTop > positionSectionProjects && scrollTop < positionSectionContact) {
+      else if (scrollTop == (positionSectionProjects - 1) || scrollTop > positionSectionProjects && scrollTop < (positionSectionContact - 1)) {
          btns[i].classList.remove("active");
          projectsbtn.className += " active";
       }
