@@ -44,6 +44,8 @@ sr2.reveal('#contact', { reset: true });
 window.onresize = function () {
    if (window.innerWidth >= 992) {
       toggleNav.style.display = 'block';
+   } else {
+      toggleNav.style.display = 'none';
    }
 }
 
@@ -55,7 +57,6 @@ function togglebutton() {
       toggleNav.style.display = 'none';
    }
 }
-
 
 //changement hauteur nav en fonction endroit sur le site
 window.onscroll = function () { scrollFunction() };

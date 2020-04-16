@@ -482,6 +482,7 @@
                 </div>
             </div>
         </div>
+        
         <div class="flecheHaut">
             <a href="#header">
                 <img src="asset/img/fleche.png" alt="fleche vers le haut" class="fleche">
