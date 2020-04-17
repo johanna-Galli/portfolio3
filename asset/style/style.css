@@ -292,8 +292,6 @@ h5 {
     color: #777BB3;
 }
 
-/*Frameworks*/
-
 .logoSkills:hover .infoLogoBoot {
     color: #563D7C;
 }
@@ -302,6 +300,9 @@ h5 {
     color: #87AB28;
 }
 
+.logoSkills:hover .infoLogoWordpress {
+    color: #464646;
+}
 /*Outils de développement*/
 
 .logoSkills:hover .infoLogovscode {
@@ -352,6 +353,15 @@ h5 {
 
 .logoSkills:hover .infoLogoPowerpoint {
     color: #CB4A32;
+}
+
+/*OpenClassrooms*/
+
+.logoSkills .infoLogoCertif {
+    color: #263251;
+}
+.logoSkills:hover .infoLogoCertif {
+    color: #263251;
 }
 
 /**************************************************ABOUT**************************************************/

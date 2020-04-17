@@ -104,6 +104,11 @@
                         <img src="asset/img/skills/twig.png" alt="logo twig">
                         <h6 class="infoLogoTwig mt-2">Twig</h6>
                     </div>
+                    <!---wordpress-->
+                    <div class="logoSkills">
+                        <img src="asset/img/skills/wordpress.png" alt="logo wordpress">
+                        <h6 class="infoLogoWordpress mt-2">Wordpress</h6>
+                    </div>
                 </div>
             </div>
 
@@ -181,6 +186,25 @@
                     <div class="logoSkills">
                         <img src="asset/img/skills/powerpoint.png" alt="powerpoint">
                         <h6 class="infoLogoPowerpoint mt-1">Powerpoint</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="mr-5 ml-5">
+                <h5>OpenClassrooms</h5>
+                <div class="d-flex flex-wrap justify-content-center">
+                    <!---wordpress-->
+                    <div class="logoSkills">
+                        <a target="_blank" href="asset/fichier/CreezVotrePremierSiteAvecWordpress.pdf">
+                            <img src="asset/img/skills/certificat.png" alt="certificat">
+                        </a>
+                        <h6 class="infoLogoCertif mt-1">Wordpress</h6>
+                    </div>
+                    <!---excel-->
+                    <div class="logoSkills">
+                        <a target="_blank" href="asset/fichier/ConcevezVotreSiteWebAvecPHPetMySQL.pdf">
+                            <img src="asset/img/skills/certificat.png" alt="certificat">
+                        </a>
+                        <h6 class="infoLogoCertif mt-1">PHP MySQL</h6>
                     </div>
                 </div>
             </div>
@@ -481,11 +505,11 @@
                     <!--Fin colone de droite-->
                 </div>
             </div>
-                <a href="#header" class="flecheHaut">
-                    <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up" class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                        <path fill="currentColor" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path>
-                    </svg>
-                </a>
+            <a href="#header" class="flecheHaut">
+                <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up" class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path fill="currentColor" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path>
+                </svg>
+            </a>
         </div>
         <div id="traitementFormulaire">
         </div>

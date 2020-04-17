@@ -211,7 +211,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
 
         $headers[] = 'From: ' . $goodMail; //provenance
         $headers[] = 'To: ' . $to . ' <' . $to . '>' . "\r\n"; //destinataire
-        $subject = 'From portfolio :' . $goodSubject;
+        $subject = 'mail envoyé depuis portfolio : ' . $goodSubject;
 
 
 
@@ -258,16 +258,75 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         </html>';
 
         // Envoi
-        $envoi = mail($to, $subject, $mailBody, $headers);
+        $envoi = mail($to, $subject, $mailBody, implode("\r\n", $headers));
 
         //Si l'envoi à été effectué alors on envoi un mail a la personne qui m'a contacté
         if ($envoi) {
+
+            $to = "galli.johanna.g2@gmail.com";
+
+            //l'en-tête Content-type
+            $headers[] = 'MIME-Version: 1.0';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
+    
+            $headers[] = 'From: ' . $goodMail; //provenance
+            $headers[] = 'To: ' . $to . ' <' . $to . '>' . "\r\n"; //destinataire
+            $subject = 'mail envoyé depuis portfolio : ' . $goodSubject;
+    
+    
+    
+            //contenu mail
+            $mailBody = '
+            <html>
+            <body>
+                <div class="main">
+                    <div class="body">
+                        <h1 class="title">Bonjour Johanna !</h1>
+                        <h3>Vous venez de recevoir un mail de la part de : ' . $goodName . '. </h3>
+                        <p>voici son message : <br> ' . $goodMessage . '</p> 
+    
+                        <br>
+                        <p>À bientôt !</p>
+                    </div>
+                </div>
+                <style type="text/css">
+                    .main {
+                        margin: 20px;
+                        box-shadow: 0px 5px 20px rgba(153, 28, 59, 0.1);
+                        max-width: 100%;
+                    }
+                    .body {
+                        padding: 20px;
+                        text-align: center;
+                        font-family: "Gill Sans", sans-serif;
+                    }
+                    .title {
+                        color: #991c3b;
+                    }
+                    .link {
+                        padding: 3px;
+                        border-style: solid 1px;
+                        border-color: #991c3b;
+                        color: #991c3b;
+                    }
+                    .logo {
+                        max-height:130px;
+                        max-width:130px;
+                    }
+                </style>
+            </body>
+            </html>';
+    
+            // Envoi
+            $envoi = mail($to, $subject, $mailBody, implode("\r\n", $headers));
+            
+            /*
 
             //l'en-tête Content-type
             $headers[] = 'MIME-Version: 1.0';
             $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
 
-            $headers[] = 'From: galli.johanna.g2@gmail.com'; //provenance
+            $headers[] = 'From: ' . $to ; //provenance
             $headers[] = 'To: ' . $goodMail . ' <' . $goodMail . '>' . "\r\n"; //destinataire
             $subject = 'Contact portfolio Johanna Galli :' . $goodSubject;
 
@@ -313,7 +372,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
             </html>';
 
             // Envoi
-            mail($goodMail, $subject, $mailBody, $headers);
+            mail($goodMail, $subject, $mailBody, implode("\r\n", $headers));*/
         }
     }
 }
