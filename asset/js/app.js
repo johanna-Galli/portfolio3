@@ -26,10 +26,10 @@ let form = document.querySelector("form");
 
 
 /***********************************************Animations sur tous les elements de la page***********************************************/
-
+/*
 //effet apparitions sections
 let sr2 = ScrollReveal({
-   duration: 2000,
+   duration: 1800,
    reset: true
 });
 
@@ -37,7 +37,7 @@ sr2.reveal('#skills', { reset: true });
 sr2.reveal('#about', { reset: true });
 sr2.reveal('#projects', { reset: true });
 sr2.reveal('#contact', { reset: true });
-
+*/
 
 /******************************************************************HEADER******************************************************************/
 /**********NAVBAR**********/
