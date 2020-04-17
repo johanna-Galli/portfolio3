@@ -81,9 +81,9 @@ function scrollFunction() {
    let positionSectionProjects = sectionProjects.offsetTop;
    let positionSectionContact = sectionContact.offsetTop;
 
-   console.log(positionSectionAbout);
-   console.log(positionSectionAbout + 10);
-   console.log(scrollTop);
+   //console.log(positionSectionAbout);
+   //console.log(positionSectionAbout + 10);
+   //console.log(scrollTop);
 
    //bouton actif au scroll
    for (let i = 0; i < btns.length; i++) {
@@ -151,13 +151,8 @@ function showSlides(n) {
 form.addEventListener("submit", function (e) {
    e.preventDefault();
    const formData = new FormData(form);
-   fetch("form.php", {
-      method: "post",
-      body: formData
-   })
-      .then(response => {
-         return response.json();
-      })
+   fetch("form.php", { method: "post", body: formData })
+      .then(response => { return response.json(); })
       .then(data => {
          let name = null;
          let subject = null;
@@ -210,15 +205,14 @@ form.addEventListener("submit", function (e) {
             //console.log(message);
          }
 
+         /*
          //console.log(feedBackMail);
          //test sur envoi de mail
          if (data.message.envoiMail === "envoye") {
             feedBackMail.style.color = "green";
-
-
+   
          } else {
             feedBackMail.style.color = "transparent";
-         }
-
+         }*/
       });
 });

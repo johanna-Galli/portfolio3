@@ -24,12 +24,13 @@ $errMessage = [];*/
 
 $err = [];
 
-//traitement name
+//traitement inputs
 $name = trim($_POST["name"]);
 $subject = trim($_POST["subject"]);
 $mail = trim($_POST["mail"]);
 $message = trim($_POST["message"]);
 
+//instancie les variables
 $goodName = null;
 $goodSubject = null;
 $goodMail = null;
@@ -110,6 +111,7 @@ echo json_encode($err);
 
 if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessage != null) {
 
+    //si on est en local
     if ($_SERVER['SERVER_NAME'] === "localhost") {
         //on charge Swiftmailer
         require_once('vendor/autoload.php');
@@ -184,13 +186,13 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         $envoi = $mailer->send($message);
 
         if ($envoi) {
-            var_dump("mail envoyé");
+            //var_dump("mail envoyé");
 
             $err["envoiMail"] = [
                 "envoiMail" => "envoye"
             ];
         } else {
-            var_dump("mail pas envoyé");
+            //var_dump("mail pas envoyé");
 
             $err["envoiMail"] = [
                 "envoiMail" => "pas envoye"
@@ -198,17 +200,20 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         }
     }
 
+    //si on est en ligne
     if ($_SERVER['SERVER_NAME'] === "johannag.promo-36.codeur.online") {
-        //Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
-        $headers[] = 'MIME-Version: 1.0';
-        $headers[] = 'Content-type: text/html; charset=iso-8859-1';
 
-        //En-têtes additionnels
-        $headers[] = 'From: ' . $goodMail;
-
-        //on instancie le mail
         $to = "galli.johanna.g2@gmail.com";
+
+        //l'en-tête Content-type
+        $headers[] = 'MIME-Version: 1.0';
+        $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
+
+        $headers[] = 'From: ' . $goodMail; //provenance
+        $headers[] = 'To: ' . $to . ' <' . $to . '>' . "\r\n"; //destinataire
         $subject = 'From portfolio :' . $goodSubject;
+
+
 
         //contenu mail
         $mailBody = '
@@ -253,30 +258,18 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         </html>';
 
         // Envoi
-        $envoi = mail($to, $subject, $mailBody, implode("\r\n", $headers));
-
+        $envoi = mail($to, $subject, $mailBody, $headers);
 
         //Si l'envoi à été effectué alors on envoi un mail a la personne qui m'a contacté
         if ($envoi) {
 
-            var_dump("mail envoyé");
-
-            $err["envoiMail"] = [
-                "envoiMail" => "envoye"
-            ];
-
-            /*
-
-            // Pour envoyer un mail HTML, l'en-tête Content-type doit être défini
+            //l'en-tête Content-type
             $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=iso-8859-1';
+            $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
 
-            // En-têtes additionnels
-            $headers[] = 'From: galli.johanna.g2@gmail.com';
-
-            //On instancie le mail
-            $to = $goodMail;
-            $subject = "Votre mail pour Johanna Galli à bien été envoyé";
+            $headers[] = 'From: galli.johanna.g2@gmail.com'; //provenance
+            $headers[] = 'To: ' . $goodMail . ' <' . $goodMail . '>' . "\r\n"; //destinataire
+            $subject = 'Contact portfolio Johanna Galli :' . $goodSubject;
 
             //contenu mail
             $mailBody = '
@@ -286,6 +279,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
                 <div class="body">
                     <h1 class="title">Bonjour ' . $goodName . ' !</h1>
                     <h3>Vous venez d\'envoyer un mail à Johanna Galli. </h3>
+                    <p>Voiçi le contenu de votre message :' . $goodMessage . '</p>
                     <br>
                     <p>Merci et à bientôt !</p>
                 </div>
@@ -319,8 +313,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
             </html>';
 
             // Envoi
-            mail($to, $subject, $mailBody, implode("\r\n", $headers));*/
-        } 
+            mail($goodMail, $subject, $mailBody, $headers);
+        }
     }
 }
-
