@@ -56,9 +56,9 @@
                     <p class="titleGen">Portfolio</p>
                     <div class="meText">
                         <h1>Johanna Galli, 23 ans</h1>
-                        <h5>Actuellement à la recherche d'un stage de 2 mois développeuse web</h5>
+                        <h5>Actuellement à la recherche d'un stage de 2 mois en développement web</h5>
                         <div class="conteneurLiencv">
-                            <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-03_CV_Johanna-GALLI.pdf">Curriculum Vitæ</a>
+                            <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-04-28_CV_Johanna-GALLI-SANS-ADRESSE.pdf">Curriculum Vitæ</a>
                         </div>
                     </div>
 
