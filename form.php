@@ -102,7 +102,7 @@ if (empty($message)) {
         "value" => $message,
         "err" => "aucune erreur"
     ];
-    $goodMessage = $message;
+    $goodMessage = nl2br(htmlentities($message));
 }
 
 $resultJohanna = null;
@@ -209,10 +209,10 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
         //provenance :
-        $headers[] = 'From: ' . $goodMail; 
+        $headers[] = 'From: ' . $goodMail;
         //destinataire :
         $headers[] = 'To: ' . $to . ' <' . $to . '>' . "\r\n";
-        $subject = 'mail envoyé depuis portfolio : ' . $goodSubject;
+        $subject = 'Portfolio : ' . $goodSubject;
 
         //contenu mail :
         $mailBody = '
@@ -257,20 +257,19 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         </html>';
 
         // Envoi
-        $envoi = mail($to, $subject, $mailBody, implode("\r\n", $headers));
+        $envoi1 = mail($to, $subject, $mailBody, implode("\r\n", $headers));
 
         //Si l'envoi à été effectué alors on envoi un mail a la personne qui m'a contacté
-        if ($envoi) {
+        if ($envoi1) {
 
-            
             //l'en-tête Content-type
-            $headers2[] = 'MIME-Version: 1.0';
+            $Headers2[] = "MIME-version: 1.0\r\n" . 'Date: ' . date('r') . "\r\n";
             $headers2[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
             //provenance :
-            $headers2[] = 'From: ' . $to ;
+            $headers2[] = 'From: ' . $to;
             //destinataire :
             $headers2[] = 'To: ' . $goodMail . ' <' . $goodMail . '>' . "\r\n";
-            $subject = 'Contact portfolio Johanna Galli :' . $goodSubject;
+            $subject2 = 'Contact portfolio Johanna Galli :' . $goodSubject;
 
             //contenu mail
             $mailBody2 = '
@@ -280,7 +279,9 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
                 <div class="body">
                     <h1 class="title">Bonjour ' . $goodName . ' !</h1>
                     <h3>Vous venez d\'envoyer un mail à Johanna Galli. </h3>
-                    <p>Voiçi le contenu de votre message :' . $goodMessage . '</p>
+                    <p>Voici le contenu de votre message :</p>
+                    <br>
+                    <p class="colorBlue">' . $goodMessage . '</p>
                     <br>
                     <p>Merci et à bientôt !</p>
                 </div>
@@ -309,15 +310,17 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
                     max-height:130px;
                     max-width:130px;
                 }
+                .colorBlue {
+                    color: #384a77;
+                }
             </style>
             </body>
             </html>';
 
-            mail($goodMail, "Mail envoyé a Johanna Galli", $mailBody2, implode("\r\n", $headers2));
+            $envoi2 = mail($goodMail, $subject2, $mailBody2, implode("\r\n", $headers2));
+        }
 
-            /*
-            // Envoi
-            mail($goodMail, $subject, $mailBody, implode("\r\n", $headers));*/
+        if ($envoi1 & $envoi2) {
         }
     }
 }
