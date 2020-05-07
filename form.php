@@ -208,14 +208,13 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         //l'en-tête Content-type
         $headers[] = 'MIME-Version: 1.0';
         $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
-
-        $headers[] = 'From: ' . $goodMail; //provenance
-        $headers[] = 'To: ' . $to . ' <' . $to . '>' . "\r\n"; //destinataire
+        //provenance :
+        $headers[] = 'From: ' . $goodMail; 
+        //destinataire :
+        $headers[] = 'To: ' . $to . ' <' . $to . '>' . "\r\n";
         $subject = 'mail envoyé depuis portfolio : ' . $goodSubject;
 
-
-
-        //contenu mail
+        //contenu mail :
         $mailBody = '
         <html>
         <body>
@@ -263,16 +262,15 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         //Si l'envoi à été effectué alors on envoi un mail a la personne qui m'a contacté
         if ($envoi) {
 
-
-
-            /*
+            
             //l'en-tête Content-type
-            $headers[] = 'MIME-Version: 1.0';
-            $headers[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
-
-            $headers[] = 'From: ' . $to ; //provenance
-            $headers[] = 'To: ' . $goodMail . ' <' . $goodMail . '>' . "\r\n"; //destinataire
-            $subject = 'Contact portfolio Johanna Galli :' . $goodSubject;*/
+            $headers2[] = 'MIME-Version: 1.0';
+            $headers2[] = 'Content-type: text/html; charset=iso-8859-1' . '\r\n';
+            //provenance :
+            $headers2[] = 'From: ' . $to ;
+            //destinataire :
+            $headers2[] = 'To: ' . $goodMail . ' <' . $goodMail . '>' . "\r\n";
+            $subject = 'Contact portfolio Johanna Galli :' . $goodSubject;
 
             //contenu mail
             $mailBody2 = '
@@ -315,7 +313,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
             </body>
             </html>';
 
-            mail($goodMail, "Mail envoyé a Johanna Galli", $mailBody2, implode("\r\n", $headers));
+            mail($goodMail, "Mail envoyé a Johanna Galli", $mailBody2, implode("\r\n", $headers2));
 
             /*
             // Envoi
