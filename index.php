@@ -222,7 +222,7 @@
                         Moi
                     </h5>
                     <p style="text-align: justify;">
-                        Je m'appelle Johanna, j'ai 23 ans et je suis actuellement en formation pour devenir développeuse web / web mobile à l'Access Code School Mulhouse.
+                        Je m'appelle Johanna, j'ai 24 ans et je suis actuellement en formation pour devenir développeuse web / web mobile à l'Access Code School Mulhouse.
                     </p>
                     <h5>
                         Parcours scolaire
