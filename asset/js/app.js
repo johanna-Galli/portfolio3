@@ -27,6 +27,9 @@ let form = document.querySelector("form");
 
 /***********************************************Animations sur tous les elements de la page***********************************************/
 
+/* CECI EST LEFFET DAPPARITION QUI BUG */
+
+/*
 //effet apparitions sections
 let sr2 = ScrollReveal({
    duration: 1500,
@@ -37,7 +40,15 @@ sr2.reveal('#skills', { reset: true });
 sr2.reveal('#about', { reset: true });
 sr2.reveal('#projects', { reset: true });
 sr2.reveal('#contact', { reset: true });
+*/
 
+/* CECI EST LEFFET DAPPARITION DE THOMAS */
+ScrollOut({
+   once: false,
+   onShown: function (el) {
+     el.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
+   }
+});
 
 /******************************************************************HEADER******************************************************************/
 /**********NAVBAR**********/
@@ -203,6 +214,12 @@ form.addEventListener("submit", function (e) {
             inputMessage.style.borderBottom = "2px solid black";
             message = data.message.value;
             //console.log(message);
+         }
+
+         if (data.envoiMail.envoi == "envoye") {
+            console.log(envoiMail);
+         } else {
+            console.log("pas envoye");
          }
 
          /*

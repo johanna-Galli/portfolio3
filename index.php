@@ -55,8 +55,8 @@
 
                     <p class="titleGen">Portfolio</p>
                     <div class="meText">
-                        <h1>Johanna Galli, 23 ans</h1>
-                        <h5>Actuellement à la recherche d'un stage de 2 mois en développement web</h5>
+                        <h1>Johanna Galli, 24 ans</h1>
+                        <!--<h5>Actuellement en stage chez <a href="https://www.marmignonbrothers.com/" target="_blank" rel="noopener noreferrer">Marmignon Brothers</a></h5>-->
                         <div class="conteneurLiencv">
                             <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-04-28_CV_Johanna-GALLI-SANS-ADRESSE.pdf">Curriculum Vitæ</a>
                         </div>
@@ -69,7 +69,7 @@
     </header>
 
     <!--------------------------------------------------Skills-------------------------------------------------->
-    <section id="skills">
+    <section id="skills" data-scroll>
         <div class="containerSkills">
             <div class="mr-5 ml-5">
                 <h5>Langages</h5>
@@ -213,8 +213,8 @@
 
 
     <!--------------------------------------------------About-------------------------------------------------->
-    <section id="about" class="bg-light">
-        <div class="container80 ">
+    <section id="about" class="bg-light" data-scroll>
+        <div class="container80">
             <div class="row pt-5 pb-5">
                 <!--Texte de gauche-->
                 <div class="col-sm-12 col-lg-12 col-xl-4">
@@ -319,7 +319,20 @@
         <div class="container100">
             <div class="containerProjects">
                 <!--ALLO JATI-->
-                <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" rel="noopener noreferrer" class="col linkProject p-0 m-4">
+                <a href="https://jent-strasbourg.promo-36.codeur.online/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                    <img src="asset/img/projets/jentstrasbourg.jpg" alt="JENT Strasbourg" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Utilisation d'une API</h4>
+                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        <div class="infoProject">
+                            <h6>Projet de groupe (4)</h6>
+                            <h7>Symfony<br>PHP - SCSS - TWIG</h7>
+                        </div>
+                    </div>
+                </a>
+
+                <!--ALLO JATI-->
+                <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
@@ -331,7 +344,7 @@
                     </div>
                 </a>
                 <!--YES TRANSFERT-->
-                <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank" rel="noopener noreferrer" class="col linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
@@ -343,7 +356,7 @@
                     </div>
                 </a>
                 <!--BLUEASY-->
-                <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Intégration maquette</h4>
@@ -355,7 +368,7 @@
                     </div>
                 </a>
                 <!--MOCKUP-->
-                <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
 
                     <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
                     <div class="overlay">
@@ -368,7 +381,7 @@
                     </div>
                 </a>
                 <!--Convertisseur d'âge-->
-                <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
+                <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/age.JPG" alt="age" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Convertir son âge</h4>
@@ -380,7 +393,7 @@
                     </div>
                 </a>
                 <!--DEVINER NOMBRE-->
-                <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Jeu : deviner un nombre</h4>
@@ -392,7 +405,7 @@
                     </div>
                 </a>
                 <!--MULTIPLICATION-->
-                <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4">
+                <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Apprendre les tables de multiplication</h4>
@@ -403,86 +416,81 @@
                         </div>
                     </div>
                 </a>
-
             </div>
         </div>
     </section>
 
 
     <!--------------------------------------------------Contact-------------------------------------------------->
-    <section id="contact">
-        <div class="containerContact">
-            <div class="container80 pb-0">
+    <section id="contact" data-scroll>
+        <div class="containerContact container80 pb-0">
 
-                <!--Séparation 2 colones-->
-                <div class="row">
+            <!--Séparation 2 colones (valable uniquement avec formulaire de contact -->
+            <div class="row w-80 mx-auto">
+                <!--<h4 class="mb-4">Me <span style="font-weight: bold;">trouver :</span></h4>-->
 
-                    <!--Colone de gauche : me trouver-->
-                    <div class="col-sm-12 col-md-12 col-lg-6">
-                        <h4 class="mb-4">Me <span style="font-weight: bold;">trouver :</span></h4>
-                        <div class="d-flex justify-content-center flex-column">
-                            <!-- Mail -->
-                            <div class="row m-5 justify-content-lg-center">
-                                <div class="col-sm-12 col-lg-6 text-lg-right">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                                        <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-lg-6 text-lg-left">
-                                    <p class="d-inline">Mail</p>
-                                    <br>
-                                    <a href="mailto:galli.johanna.g2@gmail.com">galli.johanna.g2@gmail.com</a>
-                                </div>
+                    <div class="w-50">
+                        <!-- Mail -->
+                        <div class="row mt-5 mb-5">
+                            <div class="col-sm-12 col-lg-6 text-lg-right">
+                                <svg aria-hidden="true" focusable="false" data-prefix="far" data-icon="envelope" class="svg-inline--fa fa-envelope fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                                    <path fill="currentColor" d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"></path>
+                                </svg>
                             </div>
-
-
-                            <!-- Linkedin -->
-                            <div class="row m-5">
-                                <div class="col-sm-12 col-lg-6 text-lg-right">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                                        <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-lg-6 text-lg-left">
-                                    <p class="d-inline">Linkedin</p>
-                                    <br>
-                                    <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/" target="_blank" rel="noopener noreferrer">Johanna Galli</a>
-                                </div>
-
+                            <div class="col-sm-12 col-lg-6 text-lg-left">
+                                <p class="d-inline">Mail</p>
+                                <br>
+                                <a href="mailto:galli.johanna.g2@gmail.com">galli.johanna.g2@gmail.com</a>
                             </div>
-                            <!-- GitHub -->
-                            <div class="row m-5">
-                                <div class="col-sm-12 col-lg-6 text-lg-right">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
-                                        <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-lg-6 text-lg-left">
-                                    <p class="d-inline">GitHub</p>
-                                    <br>
-                                    <a href="https://github.com/johanna-Galli" target="_blank" rel="noopener noreferrer">johanna-Galli</a>
-                                </div>
+                        </div>
+                        <!-- Linkedin -->
+                        <div class="row mt-5 mb-5">
+                            <div class="col-sm-12 col-lg-6 text-lg-right">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="linkedin" class="svg-inline--fa fa-linkedin fa-w-14" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                                    <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"></path>
+                                </svg>
                             </div>
-                            <!-- Youtube -->
-                            <div class="row m-5">
-                                <div class="col-sm-12 col-lg-6 text-lg-right">
-                                    <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
-                                    </svg>
-                                </div>
-                                <div class="col-sm-12 col-lg-6 text-lg-left">
-                                    <p class="d-inline">YouTube</p>
-                                    <br>
-                                    <a href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber" target="_blank" rel="noopener noreferrer">Johanna Galli</a>
-                                </div>
+                            <div class="col-sm-12 col-lg-6 text-lg-left">
+                                <p class="d-inline">Linkedin</p>
+                                <br>
+                                <a href="https://www.linkedin.com/in/johanna-galli-6a346410b/" target="_blank" rel="noopener noreferrer">Johanna Galli</a>
                             </div>
                         </div>
                     </div>
-                    <!--Fin colone de gauche-->
+
+                    <div class="w-50">
+                        <!-- GitHub -->
+                        <div class="row mt-5 mb-5">
+                            <div class="col-sm-12 col-lg-6 text-lg-right">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github" class="svg-inline--fa fa-github fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512">
+                                    <path fill="currentColor" d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"></path>
+                                </svg>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 text-lg-left">
+                                <p class="d-inline">GitHub</p>
+                                <br>
+                                <a href="https://github.com/johanna-Galli" target="_blank" rel="noopener noreferrer">johanna-Galli</a>
+                            </div>
+                        </div>
+                        <!-- Youtube -->
+                        <div class="row mt-5 mb-5">
+                            <div class="col-sm-12 col-lg-6 text-lg-right">
+                                <svg aria-hidden="true" focusable="false" data-prefix="fab" data-icon="youtube" class="svg-inline--fa fa-youtube fa-w-18" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                    <path fill="currentColor" d="M549.655 124.083c-6.281-23.65-24.787-42.276-48.284-48.597C458.781 64 288 64 288 64S117.22 64 74.629 75.486c-23.497 6.322-42.003 24.947-48.284 48.597-11.412 42.867-11.412 132.305-11.412 132.305s0 89.438 11.412 132.305c6.281 23.65 24.787 41.5 48.284 47.821C117.22 448 288 448 288 448s170.78 0 213.371-11.486c23.497-6.321 42.003-24.171 48.284-47.821 11.412-42.867 11.412-132.305 11.412-132.305s0-89.438-11.412-132.305zm-317.51 213.508V175.185l142.739 81.205-142.739 81.201z"></path>
+                                </svg>
+                            </div>
+                            <div class="col-sm-12 col-lg-6 text-lg-left">
+                                <p class="d-inline">YouTube</p>
+                                <br>
+                                <a href="https://www.youtube.com/channel/UC3GX4d_7vCJoRlG7QFbOZMA?view_as=subscriber" target="_blank" rel="noopener noreferrer">Johanna Galli</a>
+                            </div>
+                        </div>
+                    </div>
+                
 
 
-                    <!--Colone de droite : me contacter-->
-                    <div class="col-sm-12 col-md-12 col-lg-6">
+                <!--Formulaire de contact-->
+                <!--<div class="col-sm-12 col-md-12 col-lg-6">
                         <h4 class="mb-4">Me <span style="font-weight: bold;">contacter :</span></h4>
 
                         <form action="form.php" method="post">
@@ -501,16 +509,17 @@
                             <input type="submit" value="Envoyer" class="button d-block mx-auto" name="page_formulaire">
                             <p class="feedBackMail" id="inputMessageError">Mail envoyé !</p>
                         </form>
-                    </div>
-                    <!--Fin colone de droite-->
-                </div>
+                    </div>-->
             </div>
+
             <a href="#header" class="flecheHaut">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up" class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="currentColor" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path>
                 </svg>
             </a>
         </div>
+
+
         <div id="traitementFormulaire">
         </div>
     </section>
@@ -519,7 +528,12 @@
     <p class="footer">Design et intégration : Johanna Galli - <a href="mentionsLegales.html">Mentions légales</a></p>
 </body>
 
+<!-- Ceci est le script qui bug
 <script src="https://unpkg.com/scrollreveal"></script>
+-->
+<!-- autre fonction de thomas -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+
 <script src="asset/js/app.js"></script>
 
 </html>

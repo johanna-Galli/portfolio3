@@ -36,6 +36,8 @@ $goodSubject = null;
 $goodMail = null;
 $goodMessage = null;
 
+$statusMail = null;
+
 //name
 if (empty($name)) {
     $error = "Champ vide";
@@ -106,6 +108,12 @@ if (empty($message)) {
 }
 
 $resultJohanna = null;
+
+
+$err["envoiMail"] = [
+    "envoi" => $statusMail
+];
+
 
 echo json_encode($err);
 
@@ -321,6 +329,15 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
         }
 
         if ($envoi1 & $envoi2) {
+
+            $statusMail = "envoye";
+
+        } else {
+            $statusMail = "pas envoye";
         }
     }
 }
+
+
+
+//echo json_encode($err);
