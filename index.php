@@ -55,7 +55,7 @@
                 <p class="titleGen">Portfolio</p>
                 <div class="meText">
                     <h1>Johanna Galli, 24 ans</h1>
-                    <h5>Actuellement en stage chez <a href="https://www.marmignonbrothers.com/" target="_blank" rel="noopener noreferrer">Marmignon Brothers</a></h5>
+                    <h5>Actuellement en recherche d'opportunité d'emploi</h5>
                     <div class="conteneurLiencv">
                         <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-04-28_CV_Johanna-GALLI-SANS-ADRESSE.pdf">Curriculum Vitæ</a>
                     </div>
@@ -318,11 +318,12 @@
     </section>
 
     <!--------------------------------------------------Projects-------------------------------------------------->
+
     <section id="projects">
         <div class="container100">
             <div class="containerProjects">
                 <!--ALLO JATI-->
-                <a href="https://jent-strasbourg.promo-36.codeur.online/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/jentstrasbourg.jpg" alt="JENT Strasbourg" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Utilisation d'une API</h4>
@@ -333,9 +334,8 @@
                         </div>
                     </div>
                 </a>
-
                 <!--ALLO JATI-->
-                <a href="https://johannag.promo-36.codeur.online/allo_jati/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
@@ -347,7 +347,7 @@
                     </div>
                 </a>
                 <!--YES TRANSFERT-->
-                <a href="https://johannag.promo-36.codeur.online/YesTransfert/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
@@ -359,7 +359,7 @@
                     </div>
                 </a>
                 <!--BLUEASY-->
-                <a href="https://johannag.promo-36.codeur.online/blueasy/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Intégration maquette</h4>
@@ -371,7 +371,7 @@
                     </div>
                 </a>
                 <!--MOCKUP-->
-                <a href="https://johannag.promo-36.codeur.online/mockup/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
 
                     <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
                     <div class="overlay">
@@ -384,7 +384,7 @@
                     </div>
                 </a>
                 <!--Convertisseur d'âge-->
-                <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/age.JPG" alt="age" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Convertir son âge</h4>
@@ -396,7 +396,7 @@
                     </div>
                 </a>
                 <!--DEVINER NOMBRE-->
-                <a href="https://johannag.promo-36.codeur.online/guessNumber/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Jeu : deviner un nombre</h4>
@@ -408,7 +408,7 @@
                     </div>
                 </a>
                 <!--MULTIPLICATION-->
-                <a href="https://johannag.promo-36.codeur.online/multiplication/" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Apprendre les tables de multiplication</h4>
