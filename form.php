@@ -1,27 +1,5 @@
 <?php
 
-/**************************
-//1ER TEST :
-
-/*$err = [];
-foreach ($_POST as $key => $value) {
-    $err[$key]["value"] = $value;
-    if(empty($value)) {
-        $err[$key]["message"] = "Vous devez remplir ce champ !";
-    } 
-}
-echo json_encode($err);
- */
-
-
-/*$errName = [];
-$errSubject = [];
-
-$errMail = [];
-$errMessage = [];*/
-
-/*******************************************/
-
 $err = [];
 
 //traitement inputs
