@@ -29,7 +29,7 @@ body {
 }*/
 
 .container80 {
-    padding: 4vw 0;
+    padding: 2vw 0;
     margin: 0 auto;
     width: 80%;
 }
@@ -143,43 +143,3 @@ body {
         padding: 20px;
     }
 }***/
-
-
-
-
-
-
-
-
-/**************************************************Mentiens legales page**************************************************/
-.MentLegNav {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.800);
-    backdrop-filter: blur(5px) contrast(.8);
-    padding: 5px;
-}
-
-.MentLegNav ul {
-    text-align: center;
-    margin: 0 !important;
-    display: block;
-}
-
-.MentLegNav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.MentLegNav ul li a {
-    color: rgb(168, 168, 168);
-    font-size: 1.4rem;
-}
-
-.MentLegNav ul li a:hover {
-    color: white;
-}

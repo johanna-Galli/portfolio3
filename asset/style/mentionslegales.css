@@ -1,0 +1,37 @@
+
+/**************************************************Mentions legales page**************************************************/
+.MentLegNav {
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.800);
+    backdrop-filter: blur(5px) contrast(.8);
+    padding: 5px;
+}
+
+.MentLegNav ul {
+    text-align: center;
+    margin: 0 !important;
+    display: block;
+}
+
+.MentLegNav ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.MentLegNav ul li a {
+    color: rgb(168, 168, 168);
+    font-size: 1.4rem;
+}
+
+.MentLegNav ul li a:hover {
+    color: white;
+}
+
+
+body {
+    background-color: rgb(209, 209, 209) !important;
+}
