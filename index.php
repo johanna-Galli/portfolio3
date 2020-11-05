@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Johanna Galli</title>
+
     <!-- icon -->
     <link rel="icon" type="image/png" href="asset/img/favIcon3.png" />
 
@@ -13,8 +14,20 @@
     <link href="asset/style/style.css" rel="stylesheet">
     <!-- style navbar -->
     <link rel="stylesheet" href="asset/style/navbar.css">
+    <!-- style header -->
+    <link rel="stylesheet" href="asset/style/header.css">
+    <!-- style skills -->
+    <link rel="stylesheet" href="asset/style/skills.css">
+    <!-- style about -->
+    <link rel="stylesheet" href="asset/style/about.css">
+    <!-- style projects -->
+    <link rel="stylesheet" href="asset/style/projects.css">
+    <!-- style contact -->
+    <link rel="stylesheet" href="asset/style/contact.css">
     <!-- style footer -->
-    <link rel="stylesheet" href="asset/style/footer.css">
+    <link rel="stylesheet" href="asset/style/footer.css
+    ">
+
     <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Bootstrap -->

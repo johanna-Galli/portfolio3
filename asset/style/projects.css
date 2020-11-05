@@ -1,0 +1,93 @@
+/**************************************************projets**************************************************/
+
+.containerProjects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto !important;
+    padding: auto !important;
+    overflow: hidden;
+}
+
+.containerProjects a {
+    color: #5582a5;
+    display: block;
+    width: 650px !important;
+}
+
+.linkProject {
+    text-decoration: none;
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    width: 650px !important;
+    flex-grow: 0 !important;
+}
+
+.image {
+    width: 650px !important;
+    transition: .5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    width: 650px !important;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.596);
+}
+
+.loupe {
+    width: 50px !important;
+    position: absolute;
+    top: 40%;
+    bottom: -50%;
+    left: 46%;
+    right: -50%;
+}
+
+.linkProject:hover .image {
+    opacity: 0.5;
+    width: 650px !important;
+}
+
+.linkProject:hover .overlay {
+    opacity: 1;
+}
+
+.linkProject:hover .loupe {
+    opacity: 1;
+}
+
+.titleProject {
+    text-align: center;
+    color: white;
+    margin-top: 80px;
+    width: 650px !important;
+}
+
+.infoProject {
+    text-align: center;
+    color: white;
+    margin-top: 110px;
+    width: 650px !important;
+}
+
+.back-top {
+    display: none;
+    position: fixed;
+    bottom: 80px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: red;
+}
+
+.fleche {
+    width: 60px;
+}

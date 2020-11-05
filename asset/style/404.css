@@ -1,0 +1,38 @@
+/**************************************************PAGE 404**************************************************/
+
+.body404 {
+    text-align: center;
+    margin: 0;
+    overflow: hidden;
+}
+
+.oops404 {
+    font-size: 10vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.267);
+    -webkit-text-fill-color: transparent;
+    font-weight: 1000;
+    font-family: "Poppins", sans-serif;
+    margin-top: 10%;
+}
+
+.chiffre404 {
+    font-size: 8vw;
+    text-transform: uppercase;
+    -webkit-text-stroke: 3px rgba(0, 0, 0, 0.267);
+    -webkit-text-fill-color: rgb(0, 0, 0);
+    font-weight: 1000;
+    font-family: "Poppins", sans-serif;
+}
+
+.erreur404 {
+    background-color: white;
+}
+
+.revenir404 {
+    text-decoration: none;
+}
+
+.revenir404 {
+    text-decoration: none;
+}

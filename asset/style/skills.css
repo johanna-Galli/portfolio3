@@ -1,0 +1,125 @@
+/**************************************************Skills**************************************************/
+
+.containerSkills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    margin-top: 1vw;
+}
+
+#skills {
+    margin: auto;
+}
+
+h5 {
+    color: rgb(71, 71, 71);
+}
+
+.logoSkills {
+    color: transparent;
+    padding: 20px 20px;
+}
+
+.logoSkills img {
+    height: 80px;
+}
+
+.logoSkills img:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/**couleur ecriture sous différents logos*/
+
+/*languages*/
+
+.logoSkills:hover .infoLogohtml {
+    color: #E44D26;
+}
+
+.logoSkills:hover .infoLogocss {
+    color: #264DE4;
+}
+
+.logoSkills:hover .infoLogojs {
+    color: #E9CA32;
+}
+
+.logoSkills:hover .infoLogophp {
+    color: #777BB3;
+}
+
+.logoSkills:hover .infoLogoBoot {
+    color: #563D7C;
+}
+
+.logoSkills:hover .infoLogoTwig {
+    color: #87AB28;
+}
+
+.logoSkills:hover .infoLogoWordpress {
+    color: #464646;
+}
+/*Outils de développement*/
+
+.logoSkills:hover .infoLogovscode {
+    color: #3BA8F2;
+}
+
+.logoSkills:hover .infoLogoWamp {
+    color: #FF0099;
+}
+
+.logoSkills:hover .infoLogoGit {
+    color: black;
+}
+
+.logoSkills:hover .infoLogofilezilla {
+    color: #A10000;
+}
+
+/*BDD*/
+
+.logoSkills:hover .infoLogoMysql {
+    color: #4D90AD;
+}
+
+.logoSkills:hover .infoLogoMariaDB {
+    color: #434E66;
+}
+
+/*multimedia*/
+
+.logoSkills:hover .infoLogoPs {
+    color: #112759;
+}
+
+.logoSkills:hover .infoLogoVegas {
+    color: black;
+}
+
+/*bureautique*/
+
+.logoSkills:hover .infoLogoWord {
+    color: #2A5699;
+}
+
+.logoSkills:hover .infoLogoExcel {
+    color: #338C5B;
+}
+
+.logoSkills:hover .infoLogoPowerpoint {
+    color: #CB4A32;
+}
+
+/*OpenClassrooms*/
+
+.logoSkills .infoLogoCertif {
+    color: #263251;
+}
+.logoSkills:hover .infoLogoCertif {
+    color: #263251;
+}
