@@ -27,22 +27,8 @@ let form = document.querySelector("form");
 
 /***********************************************Animations sur tous les elements de la page***********************************************/
 
-/* CECI EST LEFFET DAPPARITION QUI BUG */
+/* EFFET D'APPARITION */
 
-/*
-//effet apparitions sections
-let sr2 = ScrollReveal({
-   duration: 1500,
-   reset: true
-});
-
-sr2.reveal('#skills', { reset: true });
-sr2.reveal('#about', { reset: true });
-sr2.reveal('#projects', { reset: true });
-sr2.reveal('#contact', { reset: true });
-*/
-
-/* CECI EST LEFFET DAPPARITION DE THOMAS */
 ScrollOut({
    once: false,
    onShown: function (el) {
@@ -51,81 +37,6 @@ ScrollOut({
 });
 
 /******************************************************************HEADER******************************************************************/
-/**********NAVBAR**********/
-window.onresize = function () {
-   if (window.innerWidth >= 992) {
-      toggleNav.style.display = 'block';
-   } else {
-      toggleNav.style.display = 'none';
-   }
-}
-
-function togglebutton() {
-   let toggleNav = document.getElementById('toggleNav');
-   if (toggleNav.style.display === 'none') {
-      toggleNav.style.display = 'block';
-   } else {
-      toggleNav.style.display = 'none';
-   }
-}
-
-//changement hauteur nav en fonction endroit sur le site
-window.onscroll = function () { scrollFunction() };
-
-function scrollFunction() {
-   //valeur du scroll top
-   let scrollTop = document.documentElement.scrollTop;
-   //let scrollTop = window.scrollY;
-
-   //taille navbar
-   if (scrollTop > header.scrollHeight) {
-      nav.className = "topnav paddingMin";
-   }
-   if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav paddingMin") {
-      nav.className = "topnav paddingMax";
-   } else if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav") {
-      nav.className = "topnav";
-   }
-
-   let positionSectionSkills = header.scrollHeight;
-   let positionSectionAbout = sectionAbout.offsetTop;
-   let positionSectionProjects = sectionProjects.offsetTop;
-   let positionSectionContact = sectionContact.offsetTop;
-
-   //console.log(positionSectionAbout);
-   //console.log(positionSectionAbout + 10);
-   //console.log(scrollTop);
-
-   //bouton actif au scroll
-   for (let i = 0; i < btns.length; i++) {
-
-      //bouton "me"
-      if (scrollTop == 0 || scrollTop < sectionSkills.scrollHeight) {
-         btns[i].classList.remove("active");
-         mebtn.className += " active";
-      }
-      //bouton "skills"
-      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < (positionSectionAbout - 1)) {
-         btns[i].classList.remove("active");
-         skillsbtn.className += " active";
-      }
-      //bouton "about"
-      else if (scrollTop == (positionSectionAbout - 1) || scrollTop > positionSectionAbout && scrollTop < (positionSectionProjects - 1)) {
-         btns[i].classList.remove("active");
-         aboutbtn.className += " active";
-      }
-      //bouton "Projects"
-      else if (scrollTop == (positionSectionProjects - 1) || scrollTop > positionSectionProjects && scrollTop < (positionSectionContact - 1)) {
-         btns[i].classList.remove("active");
-         projectsbtn.className += " active";
-      }
-      //bouton "Contact"
-      else if (scrollTop == (positionSectionContact - 1) || scrollTop > (positionSectionContact - 1)) {
-         btns[i].classList.remove("active");
-         contactbtn.className += " active";
-      }
-   }
-}
 
 
 /******************************************************************ABOUT*****************************************************************/

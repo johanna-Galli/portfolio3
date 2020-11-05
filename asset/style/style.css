@@ -1,15 +1,16 @@
 html {
     scroll-behavior: smooth;
     height: 100%;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
+    width: 100%;
 }
 
 body {
     position: relative;
     margin: 0;
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
+    /*width: 100%;*/
 }
 
 .titlePart {
@@ -39,7 +40,7 @@ body {
 }
 
 /**************************************************NAVBAR**************************************************/
-
+/*
 .topnav {
     z-index: 1;
     position: fixed;
@@ -89,7 +90,7 @@ body {
     color: white;
 }
 
-/**********affichage du bouton**********/
+/**********affichage du bouton*********
 
 @media screen and (max-width: 992px) {
     .toggle {
@@ -107,9 +108,9 @@ body {
         display: block !important;
     }
 }
+*/
 
-
-/**********taille de la navbar au scroll**********/
+/**********taille de la navbar au scroll*******
 .paddingMin {
     padding: 0px;
     animation-duration: 1s;
@@ -140,6 +141,14 @@ body {
     to {
         padding: 20px;
     }
+}***/
+
+
+/**************************************************HEADER**************************************************/
+
+#header {
+    background-color: black;
+    width: 100%;
 }
 
 
@@ -250,7 +259,7 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     height: auto;
-    width: 100vw;
+    width: 100%;
     text-align: center;
     margin-top: 1vw;
 }
@@ -641,25 +650,7 @@ button {
     margin-bottom: 2%;
 }
 
-/**************************************************footer**************************************************/
 
-.footer {
-    text-align: center;
-    color: rgb(255, 255, 255);
-    margin: 0;
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.800);
-    backdrop-filter: blur(5px) contrast(.8);
-}
-
-.footer a {
-    color: #5582a5;
-}
-
-.footer a:hover {
-    color: #6ca4cf;
-    text-decoration: none;
-}
 
 /**************************************************PAGE 404**************************************************/
 

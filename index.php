@@ -6,10 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Johanna Galli</title>
+    <!-- icon -->
     <link rel="icon" type="image/png" href="asset/img/favIcon3.png" />
+
+    <!-- style -->
     <link href="asset/style/style.css" rel="stylesheet">
+    <!-- style navbar -->
+    <link rel="stylesheet" href="asset/style/navbar.css">
+    <!-- style footer -->
+    <link rel="stylesheet" href="asset/style/footer.css">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
@@ -17,6 +27,37 @@
 <body>
     <header id="header">
 
+
+        <!--Navbar
+        <nav>-->
+        <!--Liens
+            <ul class="navLinks">
+                <li>
+                    <a href="#me" class="">Moi</a>
+                </li>
+                <li>
+                    <a href="#skills" class="">Compétences</a>
+                </li>
+                <li>
+                    <a href="#about" class="">À propos</a>
+                </li>
+                <li>
+                    <a href="#projects" class="">Projets</a>
+                </li>
+                <li>
+                    <a href="#contact" class="">Me contacter</a>
+                </li>
+            </ul>-->
+
+        <!--menu burger
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>-->
+
+        <!-- Ancienne Navbar
         <nav class="topnav" id="myTopnav">
             <div id="toggleBtn" class="toggle" onclick="togglebutton()">
                 <i class="fa fa-bars" aria-hidden="true"></i>
@@ -38,7 +79,7 @@
                     <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
                 </li>
             </ul>
-        </nav>
+        </nav>-->
 
         <div id="me" class="row">
 
@@ -531,12 +572,12 @@
     <p class="footer">Design et intégration : Johanna Galli - <a href="mentionsLegales.html">Mentions légales</a></p>
 </body>
 
-<!-- Ceci est le script qui bug
-<script src="https://unpkg.com/scrollreveal"></script>
--->
-<!-- autre fonction de thomas -->
-<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 
+<!-- script scroll -->
+<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- script navbar -->
+<script src="asset/js/navbar.js"></script>
+<!-- script -->
 <script src="asset/js/app.js"></script>
 
 </html>
