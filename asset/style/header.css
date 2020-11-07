@@ -1,16 +1,8 @@
 /**************************************************HEADER**************************************************/
 
-#header {
-    background-color: black;
-    width: 100%;
-}
-
-/**************************************************ME**************************************************/
-
 #me {
     padding-top: 40px;
     background: black;
-    min-height: 80vh;
     margin: 0;
     width: 100%;
     /*z-index: 0;*/
@@ -18,13 +10,10 @@
 
 .mePhoto {
     order: 1;
+    object-fit: contain;
 }
 
-#myPhoto {
-    position: relative;
-    width: 800px;
-    bottom: 0 !important;
-}
+
 
 .titleGen {
     position: relative;

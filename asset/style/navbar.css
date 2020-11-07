@@ -3,7 +3,6 @@
 nav {
     position: fixed;
     top: 0;
-    /*width: 100%;*/
     padding: 10px 0;
     z-index: 20;
     background-color: rgba(0, 0, 0, 0.800);

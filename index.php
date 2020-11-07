@@ -38,12 +38,10 @@
 </head>
 
 <body>
-    <header id="header">
-
-
-        <!--Navbar
-        <nav>-->
-        <!--Liens
+    <header>
+        <!--Navbar-->
+        <nav>
+        <!--Liens-->
             <ul class="navLinks">
                 <li>
                     <a href="#me" class="">Moi</a>
@@ -60,15 +58,15 @@
                 <li>
                     <a href="#contact" class="">Me contacter</a>
                 </li>
-            </ul>-->
+            </ul>
 
-        <!--menu burger
+        <!--menu burger-->
             <div class="burger">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
             </div>
-        </nav>-->
+        </nav>
 
         <!-- Ancienne Navbar
         <nav class="topnav" id="myTopnav">
@@ -97,11 +95,7 @@
         <div id="me" class="row">
 
             <!--photo-->
-            <div class="mePhoto col-sm-12 col-lg-6">
-
-                <img src="asset/img/johanna-galli-2.JPG" alt="photo johanna galli" id="myPhoto">
-
-            </div>
+                <img class="mePhoto col-sm-12 col-lg-6" src="asset/img/johanna-galli-3.JPG" alt="photo johanna galli" id="myPhoto">
 
             <!--texte-->
             <div class="meText col-sm-12 col-lg-6">
@@ -109,7 +103,7 @@
                 <p class="titleGen">Portfolio</p>
                 <div class="meText">
                     <h1>Johanna Galli, 24 ans</h1>
-                    <h5>Actuellement en recherche d'opportunité d'emploi</h5>
+                    <h5>Actuellement à l'écoute d'opportunité d'emploi</h5>
                     <div class="conteneurLiencv">
                         <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-04-28_CV_Johanna-GALLI-SANS-ADRESSE.pdf">Curriculum Vitæ</a>
                     </div>
