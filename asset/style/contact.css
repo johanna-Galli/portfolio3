@@ -31,10 +31,10 @@
 }
 
 .error {
-    color: transparent;
+    color: red;
 }
 .feedBackMail {
-    color: transparent;
+    color: black;
 }
 
 input[type=submit] {
