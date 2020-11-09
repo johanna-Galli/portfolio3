@@ -548,7 +548,7 @@
                     <form action="form.php" method="post">
 
                         <input type="text" maxlength="50" name="name" placeholder="Nom" class="inputs" id="inputName">
-                        <p class="error" id="inputNameError">Caractères spéciaux interdits</p>
+                        <p class="error" id="inputNameError"></p>
 
                         <input type="text" maxlength="100" name="subject" placeholder="Sujet" class="inputs" id="inputSubject">
                         <p class="error" id="inputSubjectError"></p>
@@ -559,7 +559,7 @@
                         <textarea name="message" placeholder="Message" maxlength="3000" class="inputs" id="inputMessage"></textarea>
                         <p class="error" id="inputMessageError"></p>
                         <input type="submit" value="Envoyer" class="button d-block mx-auto" name="page_formulaire">
-                        <p class="feedBackMail" id="inputMessageError">Mail envoyé !</p>
+                        <p class="feedBackMail" id="inputMessageError"></p>
                     </form>
                 </div>
             </div>
