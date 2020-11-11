@@ -8,6 +8,7 @@ $subject = trim($_POST["subject"]);
 $mail = trim($_POST["mail"]);
 $message = trim($_POST["message"]);
 
+
 //instancie les variables
 $goodName = null;
 $goodSubject = null;
@@ -26,7 +27,7 @@ if (empty($name)) {
 } else if (preg_match("/^[a-zA-Z ]+$/", $name)) {
     $err["name"] = [
         "value" => $name,
-        "err" => "Aucune erreur"
+        "err" => "aucune erreur"
     ];
     $goodName = $name;
 } else {
@@ -93,7 +94,7 @@ $err["envoiMail"] = [
 ];
 
 
-echo json_encode($err);
+//echo json_encode($err);
 
 if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessage != null) {
 
@@ -187,7 +188,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
     }
 
     //si on est en ligne
-    if ($_SERVER['SERVER_NAME'] === "johannag.promo-36.codeur.online") {
+    if ($_SERVER['SERVER_NAME'] === "johanna-galli.fr") {
 
         $to = "galli.johanna.g2@gmail.com";
 
@@ -316,6 +317,4 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
     }
 }
 
-
-
-//echo json_encode($err);
+echo json_encode($err);

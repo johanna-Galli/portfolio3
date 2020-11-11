@@ -547,19 +547,27 @@
 
                     <form action="form.php" method="post">
 
-                        <input type="text" maxlength="50" name="name" placeholder="Nom" class="inputs" id="inputName">
-                        <p class="error" id="inputNameError"></p>
-
-                        <input type="text" maxlength="100" name="subject" placeholder="Sujet" class="inputs" id="inputSubject">
-                        <p class="error" id="inputSubjectError"></p>
-
-                        <input type="email" maxlength="100" name="mail" placeholder="Mail" class="inputs" id="inputMail">
-                        <p class="error" id="inputMailError"></p>
-
-                        <textarea name="message" placeholder="Message" maxlength="3000" class="inputs" id="inputMessage"></textarea>
-                        <p class="error" id="inputMessageError"></p>
-                        <input type="submit" value="Envoyer" class="button d-block mx-auto" name="page_formulaire">
-                        <p class="feedBackMail" id="inputMessageError"></p>
+                        <div class="sizeInput">
+                            <input type="text" maxlength="50" name="name" placeholder="Nom" class="inputs" id="inputName">
+                            <p class="error" id="inputNameError"></p>
+                        </div>
+                        <div class="sizeInput">
+                            <input type="text" maxlength="100" name="subject" placeholder="Sujet" class="inputs" id="inputSubject">
+                            <p class="error" id="inputSubjectError"></p>
+                        </div>
+                        <div class="sizeInput">
+                            <input type="email" maxlength="100" name="mail" placeholder="Mail" class="inputs" id="inputMail">
+                            <p class="error" id="inputMailError"></p>
+                        </div>
+                        <div class="sizeInput">
+                            <textarea name="message" placeholder="Message" maxlength="3000" class="inputs" id="inputMessage"></textarea>
+                            <p class="error" id="inputMessageError"></p>
+                        </div>
+                        <div class="sizeInput">
+                            <input type="submit" value="Envoyer" class="button d-block mx-auto" name="page_formulaire">
+                        <p id="feedBackMail"></p>
+                        </div>
+                        
                     </form>
                 </div>
             </div>
@@ -569,10 +577,6 @@
                     <path fill="currentColor" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path>
                 </svg>
             </a>
-        </div>
-
-
-        <div id="traitementFormulaire">
         </div>
     </section>
 

@@ -32,7 +32,7 @@ let form = document.querySelector("form");
 ScrollOut({
    once: false,
    onShown: function (el) {
-     el.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
+      el.animate([{ opacity: 0 }, { opacity: 1 }], 1000);
    }
 });
 
@@ -82,65 +82,71 @@ form.addEventListener("submit", function (e) {
          let message = null;
          console.log(data);
 
-         let feedBackMail = document.getElementsByClassName("feedBackMail");
+         let inputNameError = document.getElementById("inputNameError");
+         let inputSubjectError = document.getElementById("inputSubjectError");
+         let inputMailError = document.getElementById("inputMailError");
+         let inputMessageError = document.getElementById("inputMessageError");
+         let feedBackMail = document.getElementById("feedBackMail");
+
          e.preventDefault();
+
+         let form = document.querySelector("form");
+
+
 
          //test sur name
          if (data.name.err == "Champ vide" || data.name.err == "Champ ne correspond pas") {
             inputName.style.borderBottom = "2px solid red";
-            if (data.name.err == "Champ ne correspond pas") {
-               inputNameError.style.color = "red";
-            }
+            inputNameError.innerHTML = data.name.err;
          } else {
             inputName.style.borderBottom = "2px solid black"
             name = data.name.value;
+            inputNameError.innerHTML = "";
             //console.log(name);
          }
 
          //test sur sujet
          if (data.subject.err == "Champ vide" || data.subject.err == "Champ ne correspond pas") {
             inputSubject.style.borderBottom = "2px solid red";
+            inputSubjectError.innerHTML = data.subject.err;
          } else {
             inputSubject.style.borderBottom = "2px solid black"
             subject = data.subject.value;
+            inputSubjectError.innerHTML = "";
             //console.log(subject);
          }
 
          //test sur mail
          if (data.mail.err == "Champ vide" || data.mail.err == "Champ ne correspond pas") {
             inputMail.style.borderBottom = "2px solid red";
-            if (data.mail.err == "Champ ne correspond pas") {
-               //console.log("Champ ne correspond pas");
-            }
+            inputMailError.innerHTML = data.mail.err;
          } else {
             inputMail.style.borderBottom = "2px solid black"
             mail = data.mail.value;
+            inputMailError.innerHTML = "";
             //console.log(mail);
          }
 
          //test sur message
          if (data.message.err == "Champ vide" || data.message.err == "Champ ne correspond pas") {
             inputMessage.style.borderBottom = "2px solid red";
+            inputMessageError.innerHTML = data.message.err;
          } else {
             inputMessage.style.borderBottom = "2px solid black";
             message = data.message.value;
-            //console.log(message);
+            inputMessageError.innerHTML = "";
          }
 
-         if (data.envoiMail.envoi == "envoye") {
-            console.log(envoiMail);
-         } else {
-            console.log("pas envoye");
+         console.log(feedBackMail);
+         if (data.name.err == "aucune erreur" && data.subject.err == "aucune erreur" && data.mail.err == "aucune erreur" && data.message.err == "aucune erreur") {            
+            if (data.envoiMail.envoiMail == "envoye") {
+               feedBackMail.innerHTML = "Votre mail à bien été envoyé";
+               form.reset();
+            } else {
+               feedBackMail.innerHTML = "Suite à une erreur, votre mail n'a pas pu être envoyé.";
+            }
          }
 
-         /*
-         //console.log(feedBackMail);
-         //test sur envoi de mail
-         if (data.message.envoiMail === "envoye") {
-            feedBackMail.style.color = "green";
-   
-         } else {
-            feedBackMail.style.color = "transparent";
-         }*/
+
       });
 });
