@@ -188,9 +188,9 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
     }
 
     //si on est en ligne
-    if ($_SERVER['SERVER_NAME'] === "johanna-galli.fr") {
+    if ($_SERVER["REMOTE_ADDR"] === "2a01:e35:2e68:8340:e565:b26c:6461:c09") {
 
-        $to = "galli.johanna.g2@gmail.com";
+        $to = "contact@johanna-galli.fr";
 
         //l'en-tête Content-type
         $headers[] = 'MIME-Version: 1.0';
@@ -256,7 +256,7 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
             $headers2[] = 'From: ' . $to;
             //destinataire :
             $headers2[] = 'To: ' . $goodMail . ' <' . $goodMail . '>' . "\r\n";
-            $subject2 = 'Contact portfolio Johanna Galli :' . $goodSubject;
+            $subject2 = 'Portfolio Johanna Galli : ' . $goodSubject;
 
             //contenu mail
             $mailBody2 = '
@@ -307,13 +307,20 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
             $envoi2 = mail($goodMail, $subject2, $mailBody2, implode("\r\n", $headers2));
         }
 
+
         if ($envoi1 & $envoi2) {
 
-            $statusMail = "envoye";
-
+            $err["envoiMail"] = [
+                "envoiMail" => "envoye"
+            ];
         } else {
-            $statusMail = "pas envoye";
+
+            $err["envoiMail"] = [
+                "envoiMail" => "pas envoye"
+            ];
         }
+
+
     }
 }
 

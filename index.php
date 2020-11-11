@@ -38,6 +38,9 @@
 </head>
 
 <body>
+
+
+
     <header>
         <!--Navbar-->
         <nav>
@@ -95,7 +98,7 @@
         <div id="me" class="row">
 
             <!--photo-->
-            <img class="mePhoto col-sm-12 col-lg-6" src="asset/img/johanna-galli-3.JPG" alt="photo johanna galli" id="myPhoto">
+            <img class="mePhoto col-sm-12 col-lg-6" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli" id="myPhoto">
 
             <!--texte-->
             <div class="meText col-sm-12 col-lg-6">
@@ -473,6 +476,11 @@
 
 
     <!--------------------------------------------------Contact-------------------------------------------------->
+
+    <!-----------------
+    echo gethostbyaddr($_SERVER["REMOTE_ADDR"]);
+    ------------------->
+
     <section id="contact" data-scroll>
         <div class="containerContact container80 pb-0">
 
@@ -565,9 +573,9 @@
                         </div>
                         <div class="sizeInput">
                             <input type="submit" value="Envoyer" class="button d-block mx-auto" name="page_formulaire">
-                        <p id="feedBackMail"></p>
+                            <p id="feedBackMail"></p>
                         </div>
-                        
+
                     </form>
                 </div>
             </div>
