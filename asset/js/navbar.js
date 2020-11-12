@@ -1,81 +1,43 @@
 // variables
-let burger = document.querySelector(".burger");
-let nav = document.querySelector(".navLinks");
-let navLinks = document.querySelectorAll(".navLinks li");
-let scrollTop = document.documentElement.scrollTop;
-//let photoScene = doncument.querySelector(".photoScene");
-
-//let intElemScrollTop = photoScene.scrollTop;
-//console.log(intElemScrollTop);
-
-// fonction slide
-let navSlide = () => {
-    burger.addEventListener('click', () => {
-        //ouverture burger
-        nav.classList.toggle('navActive')
-
-        //animation links
-        navLinks.forEach((link, index) => {
-            if (link.style.animation) {
-                link.style.animation = '';
-            } else {
-                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.4}s`;
-            }
-        })
-
-        //barre burger
-        burger.classList.toggle('toggle');
-    });
-}
-
-// action fonction
-navSlide();
+let header = document.querySelector("header");
+let nav = document.querySelector("nav");
+let navLinks = document.querySelector(".navLinks");
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-console.log("cc");
 
 //changement hauteur nav en fonction endroit sur le site
-window.onscroll = function () { scrollFunction() };
+window.onscroll = function () { scrollNavbar(); activeButtonScroll() };
 
-function scrollFunction() {
+
+function scrollNavbar() {
    //valeur du scroll top
-   let scrollTop = document.documentElement.scrollTop;
-   
-   let scrollTop = window.scrollY;
-   console.log(scrollTop);
+   scrollTop = window.scrollY;
+
+   //console.log(scrollTop);
+
+   //let padding = setInterval(frame, 10);
+
+   //let x = setTimeout(function() { alert("bip"); }, 2000);      
+   //console.log(x);
+
 
    //taille navbar
    if (scrollTop > header.scrollHeight) {
-      nav.className = "topnav paddingMin";
+      nav.style.padding = "5px 0";
+      nav.style.padding = "0";
    }
-   if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav paddingMin") {
-      nav.className = "topnav paddingMax";
-   } else if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav") {
-      nav.className = "topnav";
+   if (scrollTop < header.scrollHeight) {
+      nav.style.padding = "10px 0";
    }
+
+}
+
+function activeButtonScroll() {
 
    let positionSectionSkills = header.scrollHeight;
    let positionSectionAbout = sectionAbout.offsetTop;
    let positionSectionProjects = sectionProjects.offsetTop;
    let positionSectionContact = sectionContact.offsetTop;
-
-   //console.log(positionSectionAbout);
-   //console.log(positionSectionAbout + 10);
-   //console.log(scrollTop);
 
    //bouton actif au scroll
    for (let i = 0; i < btns.length; i++) {

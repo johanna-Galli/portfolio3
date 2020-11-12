@@ -39,61 +39,28 @@
 
 <body>
 
-
-
     <header>
         <!--Navbar-->
-        <nav>
-            <!--Liens-->
-            <ul class="navLinks">
-                <li>
-                    <a href="#me" class="">Moi</a>
-                </li>
-                <li>
-                    <a href="#skills" class="">Compétences</a>
-                </li>
-                <li>
-                    <a href="#about" class="">À propos</a>
-                </li>
-                <li>
-                    <a href="#projects" class="">Projets</a>
-                </li>
-                <li>
-                    <a href="#contact" class="">Me contacter</a>
-                </li>
-            </ul>
-
-            <!--menu burger-->
-            <div class="burger">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </div>
-        </nav>
-
-        <!-- Ancienne Navbar
-        <nav class="topnav" id="myTopnav">
-            <div id="toggleBtn" class="toggle" onclick="togglebutton()">
-                <i class="fa fa-bars" aria-hidden="true"></i>
-            </div>
-            <ul class="navbarLinks pl-0" id="toggleNav">
-                <li>
-                    <a href="#me" id="mebtn" class="btn active">Moi</a>
-                </li>
-                <li>
-                    <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
-                </li>
-                <li>
-                    <a href="#about" id="aboutbtn" class="btn">À propos</a>
-                </li>
-                <li>
-                    <a href="#projects" id="projectsbtn" class="btn">Projets</a>
-                </li>
-                <li>
-                    <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
-                </li>
-            </ul>
-        </nav>-->
+            <nav>
+                <!--Liens-->
+                <ul class="navLinks">
+                    <li>
+                        <a href="#me" id="meButtonNav">Moi</a>
+                    </li>
+                    <li>
+                        <a href="#skills" id="skillsButtonNav">Compétences</a>
+                    </li>
+                    <li>
+                        <a href="#about" id="aboutButtonNav">À propos</a>
+                    </li>
+                    <li>
+                        <a href="#projects" id="projectsButtonNav">Projets</a>
+                    </li>
+                    <li>
+                        <a href="#contact" id="contactButtonNav">Me contacter</a>
+                    </li>
+                </ul>
+            </nav>
 
         <div id="me" class="row">
 
@@ -382,10 +349,13 @@
 
     <!--------------------------------------------------Projects-------------------------------------------------->
 
+
     <section id="projects">
         <div class="container100">
             <div class="containerProjects">
+
                 <!--ALLO JATI-->
+                <!--
                 <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
                     <img src="asset/img/projets/jentstrasbourg.jpg" alt="JENT Strasbourg" class="image">
                     <div class="overlay">
@@ -396,92 +366,108 @@
                             <h7>Symfony<br>PHP - SCSS - TWIG</h7>
                         </div>
                     </div>
-                </a>
-                <!--ALLO JATI-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-                    <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet de groupe (4)</h6>
-                            <h7>MVC - POO<br>PHP - CSS - TWIG - MYSQL</h7>
-                        </div>
-                    </div>
-                </a>
-                <!--YES TRANSFERT-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-                    <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet de groupe (4)</h6>
-                            <h7>MVC <br> PHP - CSS - MYSQL</h7>
-                        </div>
-                    </div>
-                </a>
-                <!--BLUEASY-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-                    <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Intégration maquette</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet de groupe (2)</h6>
-                            <h7>HTML - CSS - Bootstrap</h7>
-                        </div>
-                    </div>
-                </a>
-                <!--MOCKUP-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                </a>-->
 
-                    <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Intégration maquette</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet de groupe (2)</h6>
-                            <h7>HTML - CSS - Bootstrap</h7>
-                        </div>
-                    </div>
-                </a>
+                <!--ALLO JATI-->
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+        <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet de groupe (4)</h6>
+                <h7>MVC - POO<br>PHP - CSS - TWIG - MYSQL</h7>
+            </div>
+        </div>
+    </a>
+    -->
+                <!--YES TRANSFERT-->
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+        <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet de groupe (4)</h6>
+                <h7>MVC <br> PHP - CSS - MYSQL</h7>
+            </div>
+        </div>
+    </a>
+    -->
+                <!--BLUEASY-->
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+        <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Intégration maquette</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet de groupe (2)</h6>
+                <h7>HTML - CSS - Bootstrap</h7>
+            </div>
+        </div>
+    </a>
+    -->
+                <!--MOCKUP-->
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+
+        <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Intégration maquette</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet de groupe (2)</h6>
+                <h7>HTML - CSS - Bootstrap</h7>
+            </div>
+        </div>
+    </a>
+    -->
                 <!--Convertisseur d'âge-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-                    <img src="asset/img/projets/age.JPG" alt="age" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Convertir son âge</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet solo</h6>
-                            <h7>HTML - CSS - JS</h7>
-                        </div>
-                    </div>
-                </a>
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+        <img src="asset/img/projets/age.JPG" alt="age" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Convertir son âge</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet solo</h6>
+                <h7>HTML - CSS - JS</h7>
+            </div>
+        </div>
+    </a>
+    -->
                 <!--DEVINER NOMBRE-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-                    <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Jeu : deviner un nombre</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet solo</h6>
-                            <h7>HTML - CSS - JS</h7>
-                        </div>
-                    </div>
-                </a>
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+        <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Jeu : deviner un nombre</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet solo</h6>
+                <h7>HTML - CSS - JS</h7>
+            </div>
+        </div>
+    </a>
+    -->
                 <!--MULTIPLICATION-->
-                <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-                    <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
-                    <div class="overlay">
-                        <h4 class="titleProject">Apprendre les tables de multiplication</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        <div class="infoProject">
-                            <h6>Projet solo</h6>
-                            <h7>HTML - CSS - JS</h7>
-                        </div>
-                    </div>
-                </a>
+                <!--
+    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+        <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
+        <div class="overlay">
+            <h4 class="titleProject">Apprendre les tables de multiplication</h4>
+            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+            <div class="infoProject">
+                <h6>Projet solo</h6>
+                <h7>HTML - CSS - JS</h7>
+            </div>
+        </div>
+    </a>
+    
+    -->
             </div>
         </div>
     </section>

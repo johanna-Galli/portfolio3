@@ -1,25 +1,9 @@
-let header = document.getElementById("header");
-let nav = document.getElementById("myTopnav");
-
-//tous les boutons de la navbar
-let btns = document.getElementsByClassName("btn");
-
-//chaque bouton de la navbar
-let mebtn = document.getElementById("mebtn");
-let skillsbtn = document.getElementById("skillsbtn");
-let aboutbtn = document.getElementById("aboutbtn");
-let projectsbtn = document.getElementById("projectsbtn");
-let contactbtn = document.getElementById("contactbtn");
-
 //chaque section :
 const sectionSkills = document.getElementById("skills");
 const sectionAbout = document.getElementById("about");
 const sectionProjects = document.getElementById("projects");
 const sectionContact = document.getElementById("contact");
 
-//pour burger
-let toggle = document.getElementsByClassName('toggle');
-let navbarlinks = document.getElementsByClassName('navbarLinks').style;
 
 //formulaire contact
 let form = document.querySelector("form");

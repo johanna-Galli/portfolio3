@@ -1,32 +1,12 @@
 html {
     scroll-behavior: smooth;
-    height: 100%;
-    /*overflow-x: hidden;*/
-    width: 100%;
 }
 
 body {
-    position: relative;
     margin: 0;
-    /*margin-top: 10px;*/
     font-family: Arial, Helvetica, sans-serif;
-    /*width: 100%;*/
 }
 
-/*
-.titlePart {
-    text-align: center;
-    margin: 0;
-    font-size: 100px;
-    text-transform: uppercase;
-    z-index: 0;
-    -webkit-text-stroke: 1px rgb(0, 0, 0);
-    -webkit-text-fill-color: rgb(255, 255, 255);
-    font-weight: 700px;
-    font-family: "Poppins", sans-serif;
-    text-decoration: underline;
-    text-decoration-color: rgba(0, 0, 0, 0.075);
-}*/
 
 .container80 {
     padding: 2vw 0;
@@ -39,107 +19,3 @@ body {
     margin: 0 auto;
     width: 100%;
 }
-
-/**************************************************NAVBAR**************************************************/
-/*
-.topnav {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    overflow: hidden;
-    background-color: rgba(0, 0, 0, 0.800);
-    backdrop-filter: blur(5px) contrast(.8);
-    padding-top: 20px 0px;
-}
-
-.topnav ul {
-    text-align: center;
-    margin: 0 !important;
-    display: block;
-}
-
-.topnav ul li {
-    list-style: none;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.topnav ul li a {
-    color: rgb(168, 168, 168);
-    font-size: 1.4rem;
-}
-
-.topnav ul li a:hover {
-    color: white;
-}
-
-.active {
-    color: white !important;
-}
-
-.toggle {
-    color: rgb(168, 168, 168);
-    box-sizing: border-box;
-    text-align: right;
-    vertical-align: middle;
-    font-size: 30px; 
-    display: none;
-}
-
-.toggle:hover {
-    color: white;
-}
-
-/**********affichage du bouton*********
-
-@media screen and (max-width: 992px) {
-    .toggle {
-        display: block;
-    }
-    .navbarLinks {
-        width: 100%;
-        display: none;
-    }
-    .topnav ul li {
-        display: block !important;
-        text-align: center;
-    }
-    .openList {
-        display: block !important;
-    }
-}
-*/
-
-/**********taille de la navbar au scroll*******
-.paddingMin {
-    padding: 0px;
-    animation-duration: 1s;
-    animation-name: paddingMin;
-    animation-direction: alternate;
-}
-
-@keyframes paddingMin {
-    from {
-        padding: 20px;
-    }
-    to {
-        padding: 0px !important;
-    }
-}
-
-.paddingMax {
-    padding: 20px;
-    animation-duration: 1s;
-    animation-name: paddingMax;
-    animation-direction: alternate;
-}
-
-@keyframes paddingMax {
-    from {
-        padding: 0px;
-    }
-    to {
-        padding: 20px;
-    }
-}***/
