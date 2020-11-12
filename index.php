@@ -118,125 +118,137 @@
     <!--------------------------------------------------Skills-------------------------------------------------->
     <section id="skills" data-scroll>
         <div class="containerSkills">
-            <div class="mr-5 ml-5">
-                <h5>Langages</h5>
+            <div class="mx-auto pr-2 pl-2">
+                <h5>Langages / frameworks / logiciels / ...</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---html-->
-                    <div class="logoSkills">
+                    <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/html5.png" alt="logo html5">
-                        <h6 class="infoLogohtml mt-2">HTML 5</h6>
-                    </div>
+                        <p id="infoLogohtml" class="mt-1">HTML 5</p>
+                    </a>
                     <!---css-->
-                    <div class="logoSkills">
+                    <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/css3.png" alt="logo css3">
-                        <h6 class="infoLogocss mt-2">CSS 3</h6>
-                    </div>
+                        <p id="infoLogocss" class="mt-1">CSS 3</p>
+                    </a>
                     <!---js-->
-                    <div class="logoSkills">
+                    <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/js.png" alt="logo javascript">
-                        <h6 class="infoLogojs mt-2">JavaScript</h6>
-                    </div>
+                        <p id="infoLogojs" class="mt-1">JavaScript</p>
+                    </a>
                     <!---php-->
-                    <div class="logoSkills">
+                    <a href="https://www.php.net/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/php.png" alt="logo php">
-                        <h6 class="infoLogophp mt-2">PHP</h6>
-                    </div>
+                        <p id="infoLogophp" class="mt-1">PHP</p>
+                    </a>
                     <!---bootstrap-->
-                    <div class="logoSkills">
+                    <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/bootstrap.png" alt="logo bootstrap">
-                        <h6 class="infoLogoBoot mt-2">Bootstrap</h6>
-                    </div>
+                        <p id="infoLogoBoot" class="mt-1">Bootstrap</p>
+                    </a>
                     <!---Twig-->
-                    <div class="logoSkills">
+                    <a href="https://twig.symfony.com/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/twig.png" alt="logo twig">
-                        <h6 class="infoLogoTwig mt-2">Twig</h6>
-                    </div>
+                        <p id="infoLogoTwig" class="mt-1">Twig</p>
+                    </a>
                     <!---wordpress-->
-                    <div class="logoSkills">
+                    <a href="https://fr.wordpress.com/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/wordpress.png" alt="logo wordpress">
-                        <h6 class="infoLogoWordpress mt-2">Wordpress</h6>
-                    </div>
+                        <p id="infoLogoWordpress" class="mt-1">Wordpress</p>
+                    </a>
+                    <!---composer-->
+                    <a href="https://getcomposer.org/" target="_blank" class="logoSkills">
+                        <img src="asset/img/skills/composer.png" alt="logo composer">
+                        <p id="infoLogoComposer" class="mt-1">Composer</p>
+                    </a>
+                    <!---swiftmailer-->
+                    <a href="https://swiftmailer.symfony.com/" target="_blank" class="logoSkills">
+                        <img src="asset/img/skills/swiftmailer.png" alt="logo swiftmailer">
+                        <p id="infoLogoSwiftmailer" class="mt-1">Swiftmailer</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="mr-5 ml-5">
+            <div class="mx-auto pr-2 pl-2">
                 <h5>Outils de développement</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---vscode-->
-                    <div class="logoSkills mr-0">
+                    <a href="https://code.visualstudio.com/" target="_blank" class="logoSkills mr-0">
                         <img src="asset/img/skills/vscode.png" alt="logo vscode">
-                        <h6 class="infoLogovscode mt-2">Visual Studio Code</h6>
-                    </div>
+                        <p id="infoLogovscode" class="mt-1">Visual Studio Code</p>
+                    </a>
                     <!---wamp-->
-                    <div class="logoSkills">
+                    <a href="https://www.wampserver.com/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/Wamp.png" alt="logo wamp">
-                        <h6 class="infoLogoWamp mt-2">WampServer</h6>
-                    </div>
+                        <p id="infoLogoWamp" class="mt-1">WampServer</p>
+                    </a>
                     <!---github-->
-                    <div class="logoSkills">
+                    <a href="https://github.com/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/github.png" alt="logo github">
-                        <h6 class="infoLogoGit mt-2">GitHub</h6>
-                    </div>
+                        <p id="infoLogoGit" class="mt-1">GitHub</p>
+                    </a>
                     <!---filezila-->
-                    <div class="logoSkills">
+                    <a href="https://filezilla-project.org/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/filezilla.png" alt="logo FileZilla">
-                        <h6 class="infoLogofilezilla mt-2">FileZilla</h6>
-                    </div>
+                        <p id="infoLogofilezilla" class="mt-1">FileZilla</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="mr-5 ml-5">
+            <div class="mx-auto pr-2 pl-2">
                 <h5>Gestion BDD</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---mysql-->
-                    <div class="logoSkills">
+                    <a href="https://www.mysql.com/fr/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/MySQL.png" alt="logo mysql">
-                        <h6 class="infoLogoMysql mt-2">My SQL</h6>
-                    </div>
+                        <p id="infoLogoMysql" class="mt-1">My SQL</p>
+                    </a>
                     <!---mariadb-->
-                    <div class="logoSkills">
+                    <a href="https://mariadb.org/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/mariadb.png" alt="logo mysql">
-                        <h6 class="infoLogoMariaDB mt-2">MariaDB</h6>
-                    </div>
+                        <p id="infoLogoMariaDB" class="mt-1">MariaDB</p>
+                    </a>
                 </div>
             </div>
 
-            <div class="mr-5 ml-5">
+            <div class="mx-auto pr-2 pl-2">
                 <h5>Multimédia</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---photoshop-->
-                    <div class="logoSkills">
+                    <a href="https://www.adobe.com/fr/products/photoshop.html" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/photoshop.png" alt="logo photoshop">
-                        <h6 class="infoLogoPs mt-1">Photoshop</h6>
-                    </div>
+                        <p id="infoLogoPs" class="mt-1">Photoshop</p>
+                    </a>
                     <!---vegas pro-->
-                    <div class="logoSkills">
+                    <a href="https://www.vegascreativesoftware.com/fr/vegas-pro/" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/vegas-pro.png" alt="logo vegas-pro">
-                        <h6 class="infoLogoVegas mt-1">Vegas Pro</h6>
-                    </div>
+                        <p id="infoLogoVegas" class="mt-1">Vegas Pro</p>
+                    </a>
                 </div>
             </div>
-            <div class="mr-5 ml-5">
+
+            <div class="mx-auto pr-2 pl-2">
                 <h5>Bureautique</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---word-->
-                    <div class="logoSkills">
+                    <a href="https://www.microsoft.com/fr-fr/microsoft-365/word" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/word.png" alt="Word">
-                        <h6 class="infoLogoWord mt-1">Word</h6>
-                    </div>
+                        <p id="infoLogoWord" class="mt-1">Word</p>
+                    </a>
                     <!---excel-->
-                    <div class="logoSkills">
+                    <a href="https://www.microsoft.com/fr-fr/microsoft-365/excel" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/excel.png" alt="excel">
-                        <h6 class="infoLogoExcel mt-1">Excel</h6>
-                    </div>
+                        <p id="infoLogoExcel" class="mt-1">Excel</p>
+                    </a>
                     <!---powerpoint-->
-                    <div class="logoSkills">
+                    <a href="https://www.microsoft.com/fr-fr/microsoft-365/powerpoint" target="_blank" class="logoSkills">
                         <img src="asset/img/skills/powerpoint.png" alt="powerpoint">
-                        <h6 class="infoLogoPowerpoint mt-1">Powerpoint</h6>
-                    </div>
+                        <p id="infoLogoPowerpoint" class="mt-1">Powerpoint</p>
+                    </a>
                 </div>
             </div>
-            <div class="mr-5 ml-5">
+
+            <div class="mx-auto pr-2 pl-2">
                 <h5>OpenClassrooms</h5>
                 <div class="d-flex flex-wrap justify-content-center">
                     <!---wordpress-->
@@ -244,21 +256,21 @@
                         <a target="_blank" href="asset/fichier/CreezVotrePremierSiteAvecWordpress.pdf">
                             <img src="asset/img/skills/certificat.png" alt="certificat">
                         </a>
-                        <h6 class="infoLogoCertif mt-1">Wordpress</h6>
+                        <p class="infoLogoCertif mt-2">Wordpress</p>
                     </div>
                     <!---PHP MySQL-->
                     <div class="logoSkills">
                         <a target="_blank" href="asset/fichier/ConcevezVotreSiteWebAvecPHPetMySQL.pdf">
                             <img src="asset/img/skills/certificat.png" alt="certificat">
                         </a>
-                        <h6 class="infoLogoCertif mt-1">PHP MySQL</h6>
+                        <p class="infoLogoCertif mt-2">PHP MySQL</p>
                     </div>
                     <!---Jquery-->
                     <div class="logoSkills">
                         <a target="_blank" href="asset/fichier/IntroductionàJQuery.pdf">
                             <img src="asset/img/skills/certificat.png" alt="certificat">
                         </a>
-                        <h6 class="infoLogoCertif mt-1">JQuery</h6>
+                        <p class="infoLogoCertif mt-2">JQuery</p>
                     </div>
                 </div>
             </div>
@@ -580,7 +592,7 @@
                 </div>
             </div>
 
-            <a href="#header" class="flecheHaut">
+            <a href="#me" class="flecheHaut">
                 <svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="arrow-circle-up" class="svg-inline--fa fa-arrow-circle-up fa-w-16" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
                     <path fill="currentColor" d="M8 256C8 119 119 8 256 8s248 111 248 248-111 248-248 248S8 393 8 256zm143.6 28.9l72.4-75.5V392c0 13.3 10.7 24 24 24h16c13.3 0 24-10.7 24-24V209.4l72.4 75.5c9.3 9.7 24.8 9.9 34.3.4l10.9-11c9.4-9.4 9.4-24.6 0-33.9L273 107.7c-9.4-9.4-24.6-9.4-33.9 0L106.3 240.4c-9.4 9.4-9.4 24.6 0 33.9l10.9 11c9.6 9.5 25.1 9.3 34.4-.4z"></path>
                 </svg>
