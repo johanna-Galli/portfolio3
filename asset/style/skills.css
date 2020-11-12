@@ -1,5 +1,5 @@
 /**************************************************Skills**************************************************/
-
+/*div conteneur*/
 .containerSkills {
     display: flex;
     flex-wrap: wrap;
@@ -10,21 +10,26 @@
     margin-top: 1vw;
 }
 
-#skills {
-    margin: auto;
+/*les grands titres*/
+.containerSkills>div:hover h5 {
+   font-weight: bold;
 }
 
-h5 {
+.containerSkills h5 {
     color: rgb(71, 71, 71);
+    padding-bottom: 5px;
 }
 
+/*les liens des img*/
 .logoSkills {
     color: transparent;
-    padding: 20px 20px;
+    padding: 0 15px !important;
+    text-decoration: none !important;
 }
 
+/*les img*/
 .logoSkills img {
-    height: 80px;
+    width: 80px;
 }
 
 .logoSkills img:hover {
@@ -32,94 +37,127 @@ h5 {
     transform: scale(1.1);
 }
 
+/*les sous titres de chaque img*/
+.containerSkills p {
+    font-size: 1em;
+    max-width: 90px;
+}
+
+/*adaptation petit écran*/
+@media (max-width: 960px) {
+    /*les liens des img*/
+    .logoSkills {
+        padding: 0px 0px;
+    }
+    /*les img*/
+    .logoSkills img {
+        width: 60px;
+    }
+    /*les sous titres de chaque img*/
+    .containerSkills p {
+        font-size: 0.9em;
+        max-width: 70px;
+    }
+}
+
+
 /**couleur ecriture sous différents logos*/
 
-/*languages*/
+/*langages*/
 
-.logoSkills:hover .infoLogohtml {
+.logoSkills:hover #infoLogohtml {
     color: #E44D26;
 }
 
-.logoSkills:hover .infoLogocss {
+.logoSkills:hover #infoLogocss {
     color: #264DE4;
 }
 
-.logoSkills:hover .infoLogojs {
+.logoSkills:hover #infoLogojs {
     color: #E9CA32;
 }
 
-.logoSkills:hover .infoLogophp {
+.logoSkills:hover #infoLogophp {
     color: #777BB3;
 }
 
-.logoSkills:hover .infoLogoBoot {
+.logoSkills:hover #infoLogoBoot {
     color: #563D7C;
 }
 
-.logoSkills:hover .infoLogoTwig {
+.logoSkills:hover #infoLogoTwig {
     color: #87AB28;
 }
 
-.logoSkills:hover .infoLogoWordpress {
+.logoSkills:hover #infoLogoWordpress {
     color: #464646;
 }
+
+.logoSkills:hover #infoLogoComposer {
+    color: #22479D;
+}
+
+.logoSkills:hover #infoLogoSwiftmailer {
+    color: #656e85;
+}
+
 /*Outils de développement*/
 
-.logoSkills:hover .infoLogovscode {
+.logoSkills:hover #infoLogovscode {
     color: #3BA8F2;
 }
 
-.logoSkills:hover .infoLogoWamp {
+.logoSkills:hover #infoLogoWamp {
     color: #FF0099;
 }
 
-.logoSkills:hover .infoLogoGit {
+.logoSkills:hover #infoLogoGit {
     color: black;
 }
 
-.logoSkills:hover .infoLogofilezilla {
+.logoSkills:hover #infoLogofilezilla {
     color: #A10000;
 }
 
 /*BDD*/
 
-.logoSkills:hover .infoLogoMysql {
+.logoSkills:hover #infoLogoMysql {
     color: #4D90AD;
 }
 
-.logoSkills:hover .infoLogoMariaDB {
+.logoSkills:hover #infoLogoMariaDB {
     color: #434E66;
 }
 
 /*multimedia*/
 
-.logoSkills:hover .infoLogoPs {
+.logoSkills:hover #infoLogoPs {
     color: #112759;
 }
 
-.logoSkills:hover .infoLogoVegas {
+.logoSkills:hover #infoLogoVegas {
     color: black;
 }
 
 /*bureautique*/
 
-.logoSkills:hover .infoLogoWord {
+.logoSkills:hover #infoLogoWord {
     color: #2A5699;
 }
 
-.logoSkills:hover .infoLogoExcel {
+.logoSkills:hover #infoLogoExcel {
     color: #338C5B;
 }
 
-.logoSkills:hover .infoLogoPowerpoint {
+.logoSkills:hover #infoLogoPowerpoint {
     color: #CB4A32;
 }
 
 /*OpenClassrooms*/
 
-.logoSkills .infoLogoCertif {
+.infoLogoCertif {
     color: #263251;
 }
-.logoSkills:hover .infoLogoCertif {
+.logoSkills:hover #infoLogoCertif {
     color: #263251;
 }
