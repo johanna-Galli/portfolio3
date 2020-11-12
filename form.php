@@ -185,11 +185,9 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
                 "envoiMail" => "pas envoye"
             ];
         }
-    }
+    } else {
 
-    //si on est en ligne
-    if ($_SERVER["REMOTE_ADDR"] === "2a01:e35:2e68:8340:e565:b26c:6461:c09") {
-
+        //si on est en ligne
         $to = "contact@johanna-galli.fr";
 
         //l'en-tête Content-type
@@ -319,8 +317,6 @@ if ($goodName != null && $goodSubject != null && $goodMail != null && $goodMessa
                 "envoiMail" => "pas envoye"
             ];
         }
-
-
     }
 }
 
