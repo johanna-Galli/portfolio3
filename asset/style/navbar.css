@@ -19,6 +19,12 @@ nav {
     margin: 0;
 }
 
+@media (max-width: 487px) {
+    nav {
+        display: none !important;
+    }
+}
+
 @media (min-width: 800px) {
     .navLinks {
         margin: 0 15%;

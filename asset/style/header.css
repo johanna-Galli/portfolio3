@@ -28,6 +28,15 @@
     font-family: "Poppins", sans-serif;
 }
 
+@media (max-width: 487px) {
+    .titleGen {
+        display: none !important;
+    }
+    #me {
+        padding-top: 0;
+    }
+}
+
 .meText {
     position: relative;
     margin-top: 20px;
