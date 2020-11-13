@@ -277,7 +277,7 @@
                     <div class="slideshow-container">
                         <div class="mySlides">
                             <div class="numbertext">1 / 2</div>
-                            <img src="asset/img/johanna1.jpg" style="width:100%" class="img-fluid">
+                            <img src="asset/img/johanna3.jpg" style="width:100%" class="img-fluid">
                         </div>
                         <div class="mySlides">
                             <div class="numbertext">2 / 2</div>
