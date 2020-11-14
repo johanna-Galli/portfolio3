@@ -8,6 +8,9 @@
     text-decoration: none;
 }
 
+#about p {
+   text-align: justify;
+}
 
 .mySlides {
     display: none;
