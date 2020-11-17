@@ -12,7 +12,7 @@
 .containerProjects a {
     color: #5582a5;
     display: block;
-    width: 650px !important;
+    width: 450px !important;
 }
 
 .linkProject {
@@ -20,12 +20,12 @@
     margin: 0 !important;
     padding: 0 !important;
     position: relative;
-    width: 650px !important;
+    width: 450px !important;
     flex-grow: 0 !important;
 }
 
 .image {
-    width: 650px !important;
+    width: 450px !important;
     transition: .5s ease;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -35,7 +35,7 @@
     top: 0;
     bottom: 0;
     height: 100%;
-    width: 650px !important;
+    width: 450px !important;
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.596);
@@ -52,7 +52,7 @@
 
 .linkProject:hover .image {
     opacity: 0.5;
-    width: 650px !important;
+    width: 450px !important;
 }
 
 .linkProject:hover .overlay {
@@ -66,15 +66,15 @@
 .titleProject {
     text-align: center;
     color: white;
-    margin-top: 80px;
-    width: 650px !important;
+    margin-top: 50px;
+    width: 450px !important;
 }
 
 .infoProject {
     text-align: center;
     color: white;
-    margin-top: 110px;
-    width: 650px !important;
+    margin-top: 80px;
+    width: 450px !important;
 }
 
 .back-top {
@@ -91,3 +91,11 @@
 .fleche {
     width: 60px;
 }
+/*
+.underInfoProject {
+    position: absolute;
+    width: 450px;
+    background-color: rgb(119, 119, 119);
+}
+
+*/
