@@ -254,7 +254,7 @@
                         <strong>Parcours scolaire</strong>
                     </h5>
                     <p>
-                        J'ai un parcours assez atypique ... Après avoir obtenu le bac <a href="https://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/La-voie-technologique/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable">STI2D</a> opt SIN, j'ai fait un diplôme universitaire <a href="https://www.service-civique.gouv.fr/actualites/lancement-du-programme-projet-orientation-solidarite-a-mulhouse">POS</a>. Cette année m'a permis d'effectuer un service civique dans une web radio. Suite à cela je suis allé jusqu'au Puy-en-Velay pour obtenir un BTS métiers de l'audiovisuel option <a href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-metiers-de-l-audiovisuel-option-techniques-d-ingenierie-et-exploitation-des-equipements">TIEE</a>. En 2019 j'ai décidé de me réorienter, et j'ai donc effectué un titre professionnel <strong>développeur web / web mobile</strong> à l'accès Code School que j'ai obtenu en juillet 2020.
+                        J'ai un parcours assez atypique ... Après avoir obtenu le bac <a target="_blank" href="https://www.onisep.fr/Choisir-mes-etudes/Au-lycee-au-CFA/Au-lycee-general-et-technologique/La-voie-technologique/Le-bac-STI2D-sciences-et-technologies-de-l-industrie-et-du-developpement-durable">STI2D</a> opt SIN, j'ai fait un diplôme universitaire <a target="_blank" href="https://www.service-civique.gouv.fr/actualites/lancement-du-programme-projet-orientation-solidarite-a-mulhouse">POS</a>. Cette année m'a permis d'effectuer un service civique dans une web radio. Suite à cela je suis allé jusqu'au Puy-en-Velay pour obtenir un BTS métiers de l'audiovisuel option <a target="_blank" href="https://www.onisep.fr/Ressources/Univers-Formation/Formations/Post-bac/bts-metiers-de-l-audiovisuel-option-techniques-d-ingenierie-et-exploitation-des-equipements">TIEE</a>. En 2019 j'ai décidé de me réorienter, et j'ai donc effectué un titre professionnel <strong>développeur web / web mobile</strong> à l'accès Code School que j'ai obtenu en juillet 2020.
                     </p>
 
                     <h5>
@@ -262,7 +262,7 @@
                     </h5>
                     <p>
                         En 2015, j'ai effectué un service civique dans une web radio à Mulhouse (radio Antares). Ensuite dans le cadre de mon BTS Audiovisuel, j'ai passé 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieurs antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) ainsi qu'à DisneyLand Paris en régie pour un spectacle.
-                        Durant le titre professionnel développeur web j'ai réalisé un stage de 2 mois en télétravail pour l'entreprise <a href="https://www.marmignonbrothers.com/">Marmignon Brothers</a> afin de travailler sur leur nouvelle application <a href="https://e-dutainment.com/">e-dutainment</a>.
+                        Durant le titre professionnel développeur web j'ai réalisé un stage de 2 mois en télétravail pour l'entreprise <a target="_blank" href="https://www.marmignonbrothers.com/">Marmignon Brothers</a> afin de travailler sur leur nouvelle application <a target="_blank" href="https://e-dutainment.com/">e-dutainment</a>.
                     </p>
                 </div>
 
@@ -327,123 +327,147 @@
 
 
     <section id="projects">
+
         <div class="container100">
+
+            <h2 class="text-center">Mes projets</h2>
+
             <div class="containerProjects">
 
-                <!--ALLO JATI-->
-                <!--
-                <a href="#" target="_blank" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <!--JENT-->
+                <div class="col-sm linkProject p-0 m-4">
                     <img src="asset/img/projets/jentstrasbourg.jpg" alt="JENT Strasbourg" class="image">
                     <div class="overlay">
                         <h4 class="titleProject">Utilisation d'une API</h4>
-                        <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a>
                         <div class="infoProject">
                             <h6>Projet de groupe (4)</h6>
                             <h7>Symfony<br>PHP - SCSS - TWIG</h7>
                         </div>
                     </div>
-                </a>-->
+                </div>
+
 
                 <!--ALLO JATI-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-        <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet de groupe (4)</h6>
-                <h7>MVC - POO<br>PHP - CSS - TWIG - MYSQL</h7>
-            </div>
-        </div>
-    </a>
-    -->
-                <!--YES TRANSFERT-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-        <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet de groupe (4)</h6>
-                <h7>MVC <br> PHP - CSS - MYSQL</h7>
-            </div>
-        </div>
-    </a>
-    -->
-                <!--BLUEASY-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-        <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Intégration maquette</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet de groupe (2)</h6>
-                <h7>HTML - CSS - Bootstrap</h7>
-            </div>
-        </div>
-    </a>
-    -->
-                <!--MOCKUP-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
+                <div class="col-sm linkProject p-0 m-4">
+                    <img src="asset/img/projets/allojati.JPG" alt="allo jati" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Création d'un site type : "Allo Ciné"</h4>
+                        <a href="https://github.com/johanna-Galli/allo_jati" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a>
+                        <div class="infoProject">
+                            <h6>Projet de groupe (4)</h6>
+                            <h7>MVC - POO<br>PHP - CSS - TWIG - MYSQL</h7>
+                        </div>
+                    </div>
+                </div>
 
-        <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Intégration maquette</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet de groupe (2)</h6>
-                <h7>HTML - CSS - Bootstrap</h7>
-            </div>
-        </div>
-    </a>
-    -->
+
+                <!--YES TRANSFERT-->
+
+                <div class="col-sm linkProject p-0 m-4">
+                    <img src="asset/img/projets/yestransfert.JPG" alt="yes transfert" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Création d'un site type : "WeTransfer"</h4>
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a>
+                        <div class="infoProject">
+                            <h6>Projet de groupe (4)</h6>
+                            <h7>MVC <br> PHP - CSS - MYSQL</h7>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--BLUEASY-->
+
+                <div class="col-sm linkProject p-0 m-4">
+                    <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Intégration maquette</h4>
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a>
+                        <div class="infoProject">
+                            <h6>Projet de groupe (2)</h6>
+                            <h7>HTML - CSS - Bootstrap</h7>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!--MOCKUP-->
+
+                <div class="col-sm linkProject p-0 m-4">
+
+                    <img src="asset/img/projets/mockup.JPG" alt="mockup" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Intégration maquette</h4>
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a>
+                        <div class="infoProject">
+                            <h6>Projet de groupe (2)</h6>
+                            <h7>HTML - CSS - Bootstrap</h7>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!--Convertisseur d'âge-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-        <img src="asset/img/projets/age.JPG" alt="age" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Convertir son âge</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet solo</h6>
-                <h7>HTML - CSS - JS</h7>
-            </div>
-        </div>
-    </a>
-    -->
+
+                <div class="col-sm linkProject p-0 m-4">
+                    <img src="asset/img/projets/age.JPG" alt="age" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Convertir son âge</h4>
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a> 
+                        <div class="infoProject">
+                            <h6>Projet solo</h6>
+                            <h7>HTML - CSS - JS</h7>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!--DEVINER NOMBRE-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-        <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Jeu : deviner un nombre</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet solo</h6>
-                <h7>HTML - CSS - JS</h7>
-            </div>
-        </div>
-    </a>
-    -->
+
+                <div class="col-sm linkProject p-0 m-4">
+                    <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Jeu : deviner un nombre</h4>
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a>
+                        <div class="infoProject">
+                            <h6>Projet solo</h6>
+                            <h7>HTML - CSS - JS</h7>
+                        </div>
+                    </div>
+                </div>
+
+
                 <!--MULTIPLICATION-->
-                <!--
-    <a href="#" rel="noopener noreferrer" class="col-sm linkProject p-0 m-4" data-scroll>
-        <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
-        <div class="overlay">
-            <h4 class="titleProject">Apprendre les tables de multiplication</h4>
-            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-            <div class="infoProject">
-                <h6>Projet solo</h6>
-                <h7>HTML - CSS - JS</h7>
-            </div>
-        </div>
-    </a>
-    
-    -->
+
+                <div class="col-sm linkProject p-0 m-4">
+                    <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="image">
+                    <div class="overlay">
+                        <h4 class="titleProject">Apprendre les tables de multiplication</h4>
+                        <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
+                            <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
+                        </a> class="loupe">
+                        <div class="infoProject">
+                            <h6>Projet solo</h6>
+                            <h7>HTML - CSS - JS</h7>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
@@ -571,6 +595,8 @@
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
 <!-- script navbar -->
 <script src="asset/js/navbar.js"></script>
+<!-- script project -->
+<script src="asset/js/project.js"></script>
 <!-- script -->
 <script src="asset/js/app.js"></script>
 
