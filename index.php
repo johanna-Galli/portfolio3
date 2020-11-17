@@ -261,9 +261,12 @@
                         <strong>Expériences professionnelles</strong>
                     </h5>
                     <p>
-                        En 2015, j'ai effectué un service civique dans une web radio à Mulhouse (radio Antares). Ensuite dans le cadre de mon BTS Audiovisuel, j'ai passé 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieurs antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) ainsi qu'à DisneyLand Paris en régie pour un spectacle.
-                        Durant le titre professionnel développeur web j'ai réalisé un stage de 2 mois en télétravail pour l'entreprise <a target="_blank" href="https://www.marmignonbrothers.com/">Marmignon Brothers</a> afin de travailler sur leur nouvelle application <a target="_blank" href="https://e-dutainment.com/">e-dutainment</a>.
+                        Dans le cadre de mon BTS Audiovisuel, j'ai passé 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieurs antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) ainsi qu'à DisneyLand Paris en régie pour un spectacle.
                     </p>
+                    <p>
+                        Durant le titre professionnel développeur web j'ai réalisé un stage de 2 mois (mai - juillet 2020) en télétravail pour l'entreprise <a target="_blank" href="https://www.marmignonbrothers.com/">Marmignon Brothers</a> afin de travailler sur leur nouvelle application <a target="_blank" href="https://e-dutainment.com/">e-dutainment</a>.
+                    </p>
+
                 </div>
 
                 <div class="col-12 col-sm-12 col-md-8 col-lg-5 col-xl-4 m-auto">
@@ -426,7 +429,7 @@
                         <h4 class="titleProject">Convertir son âge</h4>
                         <a href="https://github.com/johanna-Galli/JENT-Strasbourg" target="_blank">
                             <img src="asset/img/loupe-white.png" alt="loupe" class="loupe">
-                        </a> 
+                        </a>
                         <div class="infoProject">
                             <h6>Projet solo</h6>
                             <h7>HTML - CSS - JS</h7>
