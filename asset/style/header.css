@@ -98,7 +98,7 @@
         order: 2;
         text-align: center;
     }
-    #myPhoto {
+    .mePhoto {
         width: 100%;
     }
 }
