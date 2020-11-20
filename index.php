@@ -65,7 +65,7 @@
         <div id="me" class="row">
 
             <!--photo-->
-            <img class="mePhoto col-12 col-sm-10 col-md-8 col-lg-6 pt-4 mx-auto" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli" id="myPhoto">
+            <img class="mePhoto col-12 col-sm-10 col-md-8 col-lg-6 pt-4 mx-auto" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli">
 
             <!--texte-->
             <div class="meText col-sm-12 col-lg-6">
@@ -73,9 +73,9 @@
                 <p class="titleGen">Portfolio</p>
                 <div class="meText">
                     <h1>Johanna Galli, 24 ans</h1>
-                    <h5>Actuellement à l'écoute d'opportunité d'emploi</h5>
+                    <h5>Actuellement en recherche d'emploi</h5>
                     <div class="conteneurLiencv">
-                        <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-04-28_CV_Johanna-GALLI-SANS-ADRESSE.pdf">Curriculum Vitæ</a>
+                        <a class="liencv" target="_blank" rel="noopener noreferrer" href="asset/fichier/2020-11-20_CV_Johanna-GALLI-SANS-ADRESSE.pdf">Curriculum Vitæ</a>
                     </div>
                 </div>
             </div>
