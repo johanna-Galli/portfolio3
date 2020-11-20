@@ -41,23 +41,23 @@
 
     <header>
         <!--Navbar-->
-        <nav>
+        <nav class="topnav">
             <!--Liens-->
             <ul class="navLinks">
                 <li>
-                    <a href="#me" id="meButtonNav">Moi</a>
+                    <a href="#me" id="mebtn" class="btn active" >Moi</a>
                 </li>
                 <li>
-                    <a href="#skills" id="skillsButtonNav">Compétences</a>
+                    <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
                 </li>
                 <li>
-                    <a href="#about" id="aboutButtonNav">À propos</a>
+                    <a href="#about" id="aboutbtn" class="btn">À propos</a>
                 </li>
                 <li>
-                    <a href="#projects" id="projectsButtonNav">Projets</a>
+                    <a href="#projects" id="projectsbtn" class="btn">Projets</a>
                 </li>
                 <li>
-                    <a href="#contact" id="contactButtonNav">Me contacter</a>
+                    <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
                 </li>
             </ul>
         </nav>
@@ -65,7 +65,7 @@
         <div id="me" class="row">
 
             <!--photo-->
-            <img class="mePhoto col-sm-12 col-lg-6" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli" id="myPhoto">
+            <img class="mePhoto col-12 col-sm-10 col-md-8 col-lg-6 pt-4 mx-auto" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli" id="myPhoto">
 
             <!--texte-->
             <div class="meText col-sm-12 col-lg-6">
@@ -83,7 +83,7 @@
     </header>
 
     <!--------------------------------------------------Skills-------------------------------------------------->
-    <section id="skills" data-scroll>
+    <section id="skills" class="pt-4" data-scroll>
         <div class="containerSkills">
             <div class="mx-auto pr-2 pl-2">
                 <h5>Langages / frameworks / logiciels / ...</h5>
@@ -244,9 +244,8 @@
         </div>
     </section>
 
-
     <!--------------------------------------------------About-------------------------------------------------->
-    <section id="about" class="bg-light" data-scroll>
+    <section id="about" class="pt-4" data-scroll>
         <div class="container80 pt-5 pb-5">
             <div class="row">
                 <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 m-auto">
@@ -327,9 +326,7 @@
     </section>
 
     <!--------------------------------------------------Projects-------------------------------------------------->
-
-
-    <section id="projects">
+    <section id="projects" class="pt-4" data-scroll>
 
         <div class="container100">
 
@@ -475,14 +472,8 @@
         </div>
     </section>
 
-
     <!--------------------------------------------------Contact-------------------------------------------------->
-
-    <!-----------------
-    echo gethostbyaddr($_SERVER["REMOTE_ADDR"]);
-    ------------------->
-
-    <section id="contact" data-scroll>
+    <section id="contact" class="pt-4" data-scroll>
         <div class="containerContact container80 pb-0">
 
             <div class="row w-80 mx-auto">
