@@ -22,15 +22,24 @@
     position: relative;
     width: 450px !important;
     flex-grow: 0 !important;
+    text-align: center;
 }
 
-.image {
+.imageWeb {
     width: 450px !important;
     transition: .5s ease;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
-.overlay {
+.imageGraphisme {
+    width: 250px !important;
+    height: 200px;
+    object-fit: contain;
+    transition: .5s ease;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.overlayWeb {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -39,6 +48,20 @@
     opacity: 0;
     transition: .5s ease;
     background-color: rgba(0, 0, 0, 0.596);
+}
+
+.overlayGraphisme {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform:translateX(-50%);
+    height: 100%;
+    width: 250px !important;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.596);
+    text-align: center;
 }
 
 .loupe {
@@ -55,9 +78,14 @@
     width: 450px !important;
 }
 
-.linkProject:hover .overlay {
+.linkProject:hover .overlayWeb {
     opacity: 1;
 }
+
+.linkProject:hover .overlayGraphisme {
+    opacity: 1;
+}
+
 
 .linkProject:hover .loupe {
     opacity: 1;
@@ -91,11 +119,24 @@
 .fleche {
     width: 60px;
 }
-/*
-.underInfoProject {
-    position: absolute;
-    width: 450px;
-    background-color: rgb(119, 119, 119);
+
+
+.buttonProject {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px dashed black;
+    background-color: rgba(231, 231, 231, 0.411);
+    margin-left: 50%;
+    transform:translateX(-50%);
+    width: 150px;
+    font-size: larger;
 }
 
-*/
+.suiteProjectsWeb {
+    display: none;
+}
+
+.viewLessWeb {
+    display: none;
+}
