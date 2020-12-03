@@ -1,3 +1,18 @@
+// variables
+let header = document.querySelector("header");
+let nav = document.querySelector("nav");
+let navLinks = document.querySelector(".navLinks");
+
+//tous les boutons
+let btns = document.getElementsByClassName("btn");
+
+//chaque bouton de la navbar
+let mebtn = document.getElementById("mebtn");
+let skillsbtn = document.getElementById("skillsbtn");
+let aboutbtn = document.getElementById("aboutbtn");
+let projectsbtn = document.getElementById("projectsbtn");
+let contactbtn = document.getElementById("contactbtn");
+
 //chaque section :
 const sectionSkills = document.getElementById("skills");
 const sectionAbout = document.getElementById("about");
@@ -22,7 +37,59 @@ ScrollOut({
 
 /******************************************************************HEADER******************************************************************/
 
+//changement hauteur nav en fonction endroit sur le site
+window.onscroll = function () { scrollFunction() };
 
+function scrollFunction() {
+   //valeur du scroll top
+   let scrollTop = document.documentElement.scrollTop;
+   //let scrollTop = window.scrollY;
+
+   //taille navbar
+   if (scrollTop > header.scrollHeight) {
+      nav.className = "topnav paddingMin";
+   }
+   if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav paddingMin") {
+      nav.className = "topnav paddingMax";
+   } else if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav") {
+      nav.className = "topnav";
+   }
+
+   let positionSectionSkills = header.scrollHeight;
+   let positionSectionAbout = sectionAbout.offsetTop;
+   let positionSectionProjects = sectionProjects.offsetTop;
+   let positionSectionContact = sectionContact.offsetTop;
+
+   //bouton actif au scroll
+   for (let i = 0; i < btns.length; i++) {
+
+      //bouton "me"
+      if (scrollTop == 0 || scrollTop < sectionSkills.scrollHeight) {
+         btns[i].classList.remove("active");
+         mebtn.className += " active";
+      }
+      //bouton "skills"
+      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < (positionSectionAbout - 1)) {
+         btns[i].classList.remove("active");
+         skillsbtn.className += " active";
+      }
+      //bouton "about"
+      else if (scrollTop == (positionSectionAbout - 1) || scrollTop > positionSectionAbout && scrollTop < (positionSectionProjects - 1)) {
+         btns[i].classList.remove("active");
+         aboutbtn.className += " active";
+      }
+      //bouton "Projects"
+      else if (scrollTop == (positionSectionProjects - 1) || scrollTop > positionSectionProjects && scrollTop < (positionSectionContact - 1)) {
+         btns[i].classList.remove("active");
+         projectsbtn.className += " active";
+      }
+      //bouton "Contact"
+      else if (scrollTop == (positionSectionContact - 1) || scrollTop > (positionSectionContact - 1)) {
+         btns[i].classList.remove("active");
+         contactbtn.className += " active";
+      }
+   }
+}
 /******************************************************************ABOUT*****************************************************************/
 let slideIndex = 1;
 
@@ -51,6 +118,29 @@ function showSlides(n) {
    dots[slideIndex - 1].className += " active";
 }
 
+/*****************************************************************PROJETS*****************************************************************/
+
+//les boutons voir plus et moins
+let viewMoreWeb = document.querySelector(".viewMoreWeb");
+let viewLessWeb = document.querySelector(".viewLessWeb");
+
+//la partie cachée des projets web
+let suiteProjectsWeb = document.querySelector(".suiteProjectsWeb");
+
+viewMoreWeb.onclick = function () {
+   viewLessWeb.style.display = "block";
+   viewMoreWeb.style.display = "none";
+
+   suiteProjectsWeb.style.display = "flex";
+};
+
+viewLessWeb.onclick = function () {
+   viewMoreWeb.style.display = "block";
+   viewLessWeb.style.display = "none";
+
+   suiteProjectsWeb.style.display = "none";
+};
+
 
 /*****************************************************************CONTACT*****************************************************************/
 //gestion du formulaire 
@@ -59,14 +149,14 @@ form.addEventListener("submit", function (e) {
 
    const formData = new FormData(form);
 
-   fetch("form.php", { 
-      method: "post", 
-      body: formData 
+   fetch("form.php", {
+      method: "post",
+      body: formData
    })
-      .then(response => { 
-         return response.json(); 
+      .then(response => {
+         return response.json();
       })
-      
+
       .then(data => {
          let name = null;
          let subject = null;
@@ -128,7 +218,7 @@ form.addEventListener("submit", function (e) {
          }
 
          console.log(feedBackMail);
-         if (data.name.err == "aucune erreur" && data.subject.err == "aucune erreur" && data.mail.err == "aucune erreur" && data.message.err == "aucune erreur") {            
+         if (data.name.err == "aucune erreur" && data.subject.err == "aucune erreur" && data.mail.err == "aucune erreur" && data.message.err == "aucune erreur") {
             if (data.envoiMail.envoiMail == "envoye") {
                feedBackMail.innerHTML = "Votre mail à bien été envoyé";
                form.reset();
