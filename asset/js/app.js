@@ -56,15 +56,23 @@ function showSlides(n) {
 //gestion du formulaire 
 form.addEventListener("submit", function (e) {
    e.preventDefault();
+
    const formData = new FormData(form);
-   fetch("form.php", { method: "post", body: formData })
-      .then(response => { return response.json(); })
+
+   fetch("form.php", { 
+      method: "post", 
+      body: formData 
+   })
+      .then(response => { 
+         return response.json(); 
+      })
+      
       .then(data => {
          let name = null;
          let subject = null;
          let mail = null;
          let message = null;
-         console.log(data);
+         //console.log(data);
 
          let inputNameError = document.getElementById("inputNameError");
          let inputSubjectError = document.getElementById("inputSubjectError");
@@ -75,8 +83,6 @@ form.addEventListener("submit", function (e) {
          e.preventDefault();
 
          let form = document.querySelector("form");
-
-
 
          //test sur name
          if (data.name.err == "Champ vide" || data.name.err == "Champ ne correspond pas") {
@@ -130,7 +136,5 @@ form.addEventListener("submit", function (e) {
                feedBackMail.innerHTML = "Suite à une erreur, votre mail n'a pas pu être envoyé.";
             }
          }
-
-
       });
 });

@@ -587,11 +587,12 @@
 
 <!-- script scroll -->
 <script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
+<!-- script -->
+<script src="asset/js/app.js"></script>
 <!-- script navbar -->
 <script src="asset/js/navbar.js"></script>
 <!-- script project -->
 <script src="asset/js/project.js"></script>
-<!-- script -->
-<script src="asset/js/app.js"></script>
+
 
 </html>
