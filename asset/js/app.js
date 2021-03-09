@@ -125,20 +125,26 @@ let viewMoreWeb = document.querySelector(".viewMoreWeb");
 let viewLessWeb = document.querySelector(".viewLessWeb");
 
 //la partie cachée des projets web
-let suiteProjectsWeb = document.querySelector(".suiteProjectsWeb");
+let suiteProjectsWeb = document.querySelectorAll(".suiteProjectsWeb");
+let suiteProjectsWebLenght = suiteProjectsWeb.length;
+
 
 viewMoreWeb.onclick = function () {
    viewLessWeb.style.display = "block";
    viewMoreWeb.style.display = "none";
-
-   suiteProjectsWeb.style.display = "flex";
+   for (let s = 0; s < suiteProjectsWebLenght; s++) {
+      suiteProjectsWeb[s].style.transitionDuration  = "5s";
+      suiteProjectsWeb[s].style.display = "flex";
+   }
 };
 
 viewLessWeb.onclick = function () {
    viewMoreWeb.style.display = "block";
    viewLessWeb.style.display = "none";
+   for (let s = 0; s < suiteProjectsWebLenght; s++) {
+      suiteProjectsWeb[s].style.display = "none";
+   }
 
-   suiteProjectsWeb.style.display = "none";
 };
 
 

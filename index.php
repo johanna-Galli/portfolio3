@@ -328,7 +328,7 @@
 
         <!--projets web-->
         <div class="container100">
-            <h2 class="text-center">Mes projets web</h2>
+            <h2 class="text-center">Projets web</h2>
 
             <!--projets web part 1-->
             <div class="containerProjects">
@@ -393,14 +393,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
 
-            <!--BOUTONS VOIR PLUS/MOINS -->
-            <button class="buttonProject viewMoreWeb">Voir plus</button>
-            <button class="buttonProject viewLessWeb">Voir moins</button>
-
-            <!--projets web part 2-->
-            <div class="containerProjects suiteProjectsWeb">
                 <!--BLUEASY-->
                 <div class="col-sm linkProject p-0 m-4">
                     <img src="asset/img/projets/blueasy.JPG" alt="blueasy" class="imageWeb">
@@ -416,8 +409,14 @@
                     </div>
                 </div>
 
+
+
+                <!--projets web part 2-->
+
+
+
                 <!--MOCKUP-->
-                <div class="col-sm linkProject p-0 m-4">
+                <div class="col-sm linkProject p-0 m-4 suiteProjectsWeb">
 
                     <img src="asset/img/projets/mockup.JPG" alt="mockup" class="imageWeb">
                     <div class="overlayWeb">
@@ -433,7 +432,7 @@
                 </div>
 
                 <!--Convertisseur d'âge-->
-                <div class="col-sm linkProject p-0 m-4">
+                <div class="col-sm linkProject p-0 m-4 suiteProjectsWeb">
                     <img src="asset/img/projets/age.JPG" alt="age" class="imageWeb">
                     <div class="overlayWeb">
                         <h4 class="titleProject">Convertir son âge</h4>
@@ -448,7 +447,7 @@
                 </div>
 
                 <!--DEVINER NOMBRE-->
-                <div class="col-sm linkProject p-0 m-4">
+                <div class="col-sm linkProject p-0 m-4 suiteProjectsWeb">
                     <img src="asset/img/projets/guessNumber.JPG" alt="Guess number" class="imageWeb">
                     <div class="overlayWeb">
                         <h4 class="titleProject">Jeu : deviner un nombre</h4>
@@ -463,7 +462,7 @@
                 </div>
 
                 <!--MULTIPLICATION-->
-                <div class="col-sm linkProject p-0 m-4">
+                <div class="col-sm linkProject p-0 m-4 suiteProjectsWeb">
                     <img src="asset/img/projets/multiplication.JPG" alt="multiplication" class="imageWeb">
                     <div class="overlayWeb">
                         <h4 class="titleProject">Apprendre les tables de multiplication</h4>
@@ -476,12 +475,17 @@
                         </div>
                     </div>
                 </div>
+
+
             </div>
         </div>
+        <!--BOUTONS VOIR PLUS/MOINS -->
+        <button class="buttonProject viewMoreWeb">Voir plus</button>
+        <button class="buttonProject viewLessWeb">Voir moins</button>
 
         <!--projets graphisme-->
         <div class="container100">
-            <h2 class="text-center">Mes projets en graphisme</h2>
+            <h2 class="text-center">Visuels et graphismes</h2>
 
             <!--projets graphisme part 1-->
             <div class="containerProjects">
@@ -490,7 +494,7 @@
 
                     <img src="asset/img/projets/logoatm.png" alt="ATM logo" class="imageGraphisme">
                     <div class="overlayGraphisme">
-                        <h4 class="text-center text-white mt-2">Logo ATM</h4>
+                        <h4 class="titleProject">Logo ATM</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Illustrator <br> Adobe Photoshop</h7>
                         </div>
@@ -502,7 +506,7 @@
 
                     <img src="asset/img/projets/aabiltaxi.jpg" alt="Carte visite Aabil Taxi Mulhouse" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
-                        <h4 class="text-center text-white mt-2">Carte de visite Aabil Taxi</h4>
+                        <h4 class="titleProject">Carte de visite Aabil Taxi</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Photoshop</h7>
                         </div>
@@ -514,7 +518,7 @@
 
                     <img src="asset/img/projets/cse.png" alt="Logo CSE Soléa" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
-                        <h4 class="text-center text-white mt-2">Logo CSE Soléa</h4>
+                        <h4 class="titleProject">Logo CSE Soléa</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Photoshop</h7>
                         </div>
@@ -526,7 +530,7 @@
 
                     <img src="asset/img/projets/joal.jpg" alt="Logo Joal & Co" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
-                        <h4 class="text-center text-white mt-2">Logo Joal & Co</h4>
+                        <h4 class="titleProject">Logo Joal & Co</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Photoshop</h7>
                         </div>
@@ -538,7 +542,7 @@
 
                     <img src="asset/img/projets/carte-fut.jpg" alt="Carte FUT LKR" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
-                        <h4 class="text-center text-white mt-2">Carte FUT Lustige Klique</h4>
+                        <h4 class="titleProject">Carte FUT Lustige Klique</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Photoshop</h7>
                         </div>
@@ -550,7 +554,7 @@
 
                     <img src="asset/img/projets/misslkr.png" alt="Logo miss LKR" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
-                        <h4 class="text-center text-white mt-2">Logo miss Lustige Klique</h4>
+                        <h4 class="titleProject">Logo miss Lustige Klique</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Photoshop</h7>
                         </div>
@@ -562,7 +566,7 @@
 
                     <img src="asset/img/projets/ringispil1.jpg" alt="DVD Ringispil" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
-                        <h4 class="text-center text-white mt-2">Pochette CD</h4>
+                        <h4 class="titleProject">Pochette CD</h4>
                         <div class="text-center text-white mt-3">
                             <h7>Adobe Photoshop</h7>
                         </div>
