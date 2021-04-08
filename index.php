@@ -62,24 +62,24 @@
         </div>
     </header>
 
-        <!--Navbar-->
-        <nav class="topnav topnavWhite">
-            <!--Liens-->
-            <ul class="navLinks">
-                <li>
-                    <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
-                </li>
-                <li>
-                    <a href="#about" id="aboutbtn" class="btn">À propos</a>
-                </li>
-                <li>
-                    <a href="#projects" id="projectsbtn" class="btn">Réalisations</a>
-                </li>
-                <li>
-                    <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
-                </li>
-            </ul>
-        </nav>
+    <!--Navbar-->
+    <nav class="topnav topnavWhite">
+        <!--Liens-->
+        <ul class="navLinks">
+            <li>
+                <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
+            </li>
+            <li>
+                <a href="#about" id="aboutbtn" class="btn">À propos</a>
+            </li>
+            <li>
+                <a href="#projects" id="projectsbtn" class="btn">Réalisations</a>
+            </li>
+            <li>
+                <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
+            </li>
+        </ul>
+    </nav>
     <!--------------------------------------------------Skills-------------------------------------------------->
     <section id="skills" class="pt-4" data-scroll>
         <div class="containerSkills">
@@ -245,8 +245,8 @@
     <!--------------------------------------------------About-------------------------------------------------->
     <section id="about" class="pt-4" data-scroll>
         <div class="container80 pt-5 pb-5">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 m-auto">
+            <div class="row my-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-7 col-xl-8 mx-auto">
                     <h5>
                         <strong>Parcours scolaire</strong>
                     </h5>
@@ -258,10 +258,10 @@
                         <strong>Expériences professionnelles</strong>
                     </h5>
                     <p>
-                        Dans le cadre de mon BTS Audiovisuel, j'ai passé 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieurs antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) ainsi qu'à DisneyLand Paris en régie pour un spectacle.
+                        Dans le cadre de mon BTS Audiovisuel, j'ai passé 2 ans en alternance à France 3 Alsace (Strasbourg). Par la suite, j'ai travaillé comme intermittente du spectacle en tant que technicienne vidéo sur plusieurs antennes de France 3 Régions (Dijon, Nancy, Clermont-Ferrand, Besançon) ainsi qu'à DisneyLand Paris en régie pour un spectacle. Ces expériences dans le milieu de la télé et du spectacle vivant ont été très enrichissantes d'un point de vue : travail en équipe, communication, polyvalence et facilité d'adaptation.
                     </p>
                     <p>
-                        Durant le titre professionnel développeur web j'ai réalisé un stage de 2 mois (mai - juillet 2020) en télétravail pour l'entreprise <a target="_blank" href="https://www.marmignonbrothers.com/">Marmignon Brothers</a> afin de travailler sur leur nouvelle application <a target="_blank" href="https://e-dutainment.com/">e-dutainment</a>.
+                        Durant le titre professionnel développeur web obtenu en juillet 2020, j'ai réalisé un stage de 2 mois en télétravail dans l'entreprise <a target="_blank" href="https://www.marmignonbrothers.com/">Marmignon Brothers</a>. J'ai travaillé sur le frontend de leur nouvelle application <a target="_blank" href="https://e-dutainment.com/">e-dutainment</a>. En Janvier 2021 j'ai travaillé 2 mois en tant que développeur intégratrice web à l'<a href="https://www.agence-web-evidence.fr/">Agence web Evidence</a> à Altkirch. Ces différentes expériences dans le milieu du web m'ont permis de découvrir le métier de développeur front end autant en développement "pur" HTML-CSS-JS que sur des CMS tel que Wordpress.
                     </p>
 
                 </div>
@@ -287,9 +287,9 @@
                 </div>
             </div>
 
-            <div class="row">
+            <div class="row my-5">
 
-                <iframe class="col-12 order-last col-sm-10 order-sm-last col-md-8 order-md-last col-lg-6 order-lg-first col-xl-5 order-xl-first m-auto" style="min-height: 250px;" src="https://www.youtube.com/embed/dY32NAT5rCY" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="col-12 order-last col-sm-12 order-sm-last col-md-10 order-md-last col-lg-6 order-lg-first col-xl-5 order-xl-first m-auto" style="min-height: 325px;" src="https://www.youtube.com/embed/rUoMsUGWl40" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
                 <div class="col-12 order-first col-sm-12 order-sm-first col-md-12 order-md-first col-lg-6 order-lg-last col-xl-7 order-xl-last m-auto">
                     <div class="bloc blocAssoc">
@@ -300,7 +300,7 @@
                             Depuis 2010, je suis membre active en tant que trésorière adjointe, responsable maquillage et musicienne de l'association <a href="https://www.lustige-klique.com/" target="_blank" rel="noopener noreferrer">La Lustige Klique de Riedisheim</a>.
                         </p>
                         <p>
-                            C'est un groupe de musique d'ambiance pour carnavals. Nous animons des carnavals et festivals dans toute la France ainsi qu'en Suisse, en Belgique et en Allemagne. Nous avons aussi voyagé en Angleterre, en Espagne, en Italie et en Guyane.
+                            Nous sommes un groupe de musique d'ambiance carnavalesque composé d'instruments à vent et de percussions. Nous animons des carnavals et festivals dans toute la France ainsi qu'en Suisse, en Belgique et en Allemagne. Nous avons aussi voyagé en Angleterre, en Espagne, en Italie et en Guyane.
                         </p>
                     </div>
                     <div class="bloc blocPassions">
@@ -311,7 +311,7 @@
                             Je réalise régulièrement des montages vidéos de mes voyages personnels et des sorties que nous faisons avec mon association.
                         </p>
                         <p>
-                            La vidéo est un montage que j'ai réalisé en 2019 lors d'un voyage à New York avec des amis.
+                            La vidéo ci-contre est un montage que j'ai réalisé en 2020 lors d'un voyage .
                         </p>
 
 
