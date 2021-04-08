@@ -41,11 +41,17 @@ ScrollOut({
 window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
+
+   //changement de taille ou couleur de la navbar (ancien design du portfolio)
+
+
+
    //valeur du scroll top
    let scrollTop = document.documentElement.scrollTop;
    //let scrollTop = window.scrollY;
 
-   //taille navbar
+   /* 
+   //CHANGEMENT DE TAILLE :
    if (scrollTop > header.scrollHeight) {
       nav.className = "topnav paddingMin";
    }
@@ -54,6 +60,51 @@ function scrollFunction() {
    } else if (scrollTop != 0 && document.documentElement.scrollTop < header.scrollHeight && nav.className == "topnav") {
       nav.className = "topnav";
    }
+   */
+
+
+   //CHANGEMENT COULEUR
+/*
+   if (scrollTop == 0) {
+      nav.className = "topnav topnavWhite";   
+   }
+   
+   if (scrollTop != 0 && scrollTop < header.scrollHeight) {
+      nav.className = "topnav topnavWhite";   
+   }
+
+   if (scrollTop != 0 && scrollTop < header.scrollHeight && nav.className == "topnav topnavBlack") {
+      nav.className = "topnav topnavWhite";   
+   }
+
+   if (scrollTop > header.scrollHeight) {
+      nav.className = "topnav topnavBlack";   
+   }
+
+   if (scrollTop > header.scrollHeight && nav.className == "topnav topnavWhite") {
+      nav.className = "topnav topnavBlack";   
+   }
+*/
+
+
+
+   if (scrollTop > header.scrollHeight) {
+      nav.className = "topnav topnavBlack";
+   } 
+   if (scrollTop != 0 && scrollTop < header.scrollHeight && nav.className == "topnav topnavBlack") {
+      nav.className = "topnav topnavWhite";   
+   } else if (scrollTop != 0 && scrollTop < header.scrollHeight && nav.className == "topnav") {
+      nav.className = "topnav";
+   }
+
+
+
+
+
+
+
+
+
 
    let positionSectionSkills = header.scrollHeight;
    let positionSectionAbout = sectionAbout.offsetTop;
@@ -63,13 +114,16 @@ function scrollFunction() {
    //bouton actif au scroll
    for (let i = 0; i < btns.length; i++) {
 
+      
       //bouton "me"
       if (scrollTop == 0 || scrollTop < sectionSkills.scrollHeight) {
          btns[i].classList.remove("active");
-         mebtn.className += " active";
+         mebtn.className += " ";
       }
+      
+
       //bouton "skills"
-      else if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < (positionSectionAbout - 1)) {
+      if (scrollTop == positionSectionSkills || scrollTop > positionSectionSkills && scrollTop < (positionSectionAbout - 1)) {
          btns[i].classList.remove("active");
          skillsbtn.className += " active";
       }
@@ -133,7 +187,7 @@ viewMoreWeb.onclick = function () {
    viewLessWeb.style.display = "block";
    viewMoreWeb.style.display = "none";
    for (let s = 0; s < suiteProjectsWebLenght; s++) {
-      suiteProjectsWeb[s].style.transitionDuration  = "5s";
+      suiteProjectsWeb[s].style.transitionDuration = "5s";
       suiteProjectsWeb[s].style.display = "flex";
    }
 };

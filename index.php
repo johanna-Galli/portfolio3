@@ -40,35 +40,15 @@
 <body>
 
     <header>
-        <!--Navbar-->
-        <nav class="topnav">
-            <!--Liens-->
-            <ul class="navLinks">
-                <li>
-                    <a href="#me" id="mebtn" class="btn active">Moi</a>
-                </li>
-                <li>
-                    <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
-                </li>
-                <li>
-                    <a href="#about" id="aboutbtn" class="btn">À propos</a>
-                </li>
-                <li>
-                    <a href="#projects" id="projectsbtn" class="btn">Projets</a>
-                </li>
-                <li>
-                    <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
-                </li>
-            </ul>
-        </nav>
+
 
         <div id="me" class="row">
 
             <!--photo-->
-            <img class="mePhoto col-12 col-sm-10 col-md-8 col-lg-6 pt-4 mx-auto" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli">
+            <img class="mePhoto col-12 col-sm-10 col-md-8 col-lg-6 mx-auto pt-0" src="asset/img/johanna-galli-3.jpg" alt="photo johanna galli">
 
             <!--texte-->
-            <div class="meText col-sm-12 col-lg-6">
+            <div class="meText col-sm-12 col-lg-6 pt-0 mt-0">
 
                 <p class="titleGen">Portfolio</p>
                 <div class="meText">
@@ -82,6 +62,24 @@
         </div>
     </header>
 
+        <!--Navbar-->
+        <nav class="topnav topnavWhite">
+            <!--Liens-->
+            <ul class="navLinks">
+                <li>
+                    <a href="#skills" id="skillsbtn" class="btn">Compétences</a>
+                </li>
+                <li>
+                    <a href="#about" id="aboutbtn" class="btn">À propos</a>
+                </li>
+                <li>
+                    <a href="#projects" id="projectsbtn" class="btn">Réalisations</a>
+                </li>
+                <li>
+                    <a href="#contact" id="contactbtn" class="btn">Me contacter</a>
+                </li>
+            </ul>
+        </nav>
     <!--------------------------------------------------Skills-------------------------------------------------->
     <section id="skills" class="pt-4" data-scroll>
         <div class="containerSkills">
@@ -335,7 +333,7 @@
                 <!--ATM-->
                 <div class="col-sm linkProject p-0 m-4">
 
-                    <img src="asset/img/projets/atm.jpg" alt="JENT Strasbourg" class="imageWeb">
+                    <img src="asset/img/projets/atm.JPG" alt="ATM" class="imageWeb">
                     <div class="overlayWeb">
                         <h4 class="titleProject">ATM</h4>
                         <a href="https://github.com/johanna-Galli/atm" target="_blank">
@@ -516,7 +514,7 @@
                 <!--cse-->
                 <div class="col-sm linkProject p-0 m-4">
 
-                    <img src="asset/img/projets/cse.png" alt="Logo CSE Soléa" class="imageGraphisme">
+                    <img src="asset/img/projets/CSE.png" alt="Logo CSE Soléa" class="imageGraphisme">
                     <div class="overlayGraphisme my-auto">
                         <h4 class="titleProject">Logo CSE Soléa</h4>
                         <div class="text-center text-white mt-3">
@@ -601,7 +599,7 @@
     </section>
 
     <!--------------------------------------------------Contact-------------------------------------------------->
-    <section id="contact" class="pt-4" data-scroll>
+    <section id="contact" class="" data-scroll>
         <div class="containerContact container80 pb-0">
 
             <div class="row w-80 mx-auto">

@@ -1,23 +1,83 @@
 /********** NAVBAR **********/
 
-
 .topnav {
     z-index: 20;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+
+
+    /*
     position: fixed;
     top: 0;
-    width: 100%;
+    */
+
+    /*
     background-color: rgba(0, 0, 0, 0.800);
     backdrop-filter: blur(5px) contrast(.8);
     padding: 10px 0;
+    */
+}
+
+
+/* effet couleur au scroll*/
+
+.topnavWhite {
+    background-color: white;
+    border-bottom: solid 1px #474747 !important;
+    border-top: solid 1px #474747 !important;
+    
+    animation-duration: 0.2s;
+    animation-name: topnavWhite;
+    animation-direction: alternate;
+}
+
+@keyframes topnavWhite {
+    from {
+        background-color: rgba(0, 0, 0, 0.800);
+        backdrop-filter: blur(5px) contrast(.8);
+    }
+    to {
+        background-color: white;
+    }
+}
+
+
+
+.topnavBlack {
+    background-color: rgba(0, 0, 0, 0.800);
+    backdrop-filter: blur(5px) contrast(.8);
+
+    animation-duration: 0.2s;
+    animation-name: topnavBlack;
+    animation-direction: alternate;
+}
+
+.topnavBlack a {
+    color: rgb(177, 177, 177);
+}
+
+@keyframes topnavBlack {
+    from {
+        background-color: white;
+    }
+    to {        
+        background-color: rgba(0, 0, 0, 0.800);
+        backdrop-filter: blur(5px) contrast(.8);
+    }
 }
 
 /* effet padding au scroll*/
+
 .paddingMin {
     padding: 0px;
     animation-duration: 1s;
     animation-name: paddingMin;
     animation-direction: alternate;
 }
+
+/*
 @keyframes paddingMin {
     from {
         padding: 10px 0;
@@ -40,6 +100,7 @@
         padding: 10px 0;
     }
 }
+*/
 /*Fin effet padding au scroll*/
 
 .navLinks {
@@ -79,12 +140,13 @@
 }
 
 .navLinks li a {
-    color:  rgb(204, 204, 204);
+    /*color:  rgb(204, 204, 204);*/
     letter-spacing: 1px;
 }
 
+
 .navLinks li a:hover {
-    color: white;
+    /*color: white;*/
     text-decoration: none;    
 }
 

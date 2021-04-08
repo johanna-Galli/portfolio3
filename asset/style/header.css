@@ -1,7 +1,7 @@
 /**************************************************HEADER**************************************************/
 
 #me {
-    padding-top: 40px;
+    /*padding-top: 40px;*/
     background: black;
     margin: 0;
     width: 100%;
@@ -11,13 +11,14 @@
 .mePhoto {
     order: 1;
     object-fit: contain;
+    max-height: 500px;
 }
 
 
 
 .titleGen {
     position: relative;
-    margin-top: 100px;
+    margin-top: 50px;
     right: 6%;
     font-size: 70px;
     text-transform: uppercase;
