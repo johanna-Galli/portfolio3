@@ -29,9 +29,11 @@
     ">
 
     <!-- font awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="asset/style/font-awesome/font-awesome.min.css">
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="asset/style/bootstrap/bootstrap.min.css">
+    <!-- Carousel Flickity-->
+    <link rel="stylesheet" href="asset/style/flickity/flickity.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -311,9 +313,8 @@
                             Je réalise régulièrement des montages vidéos de mes voyages personnels et des sorties que nous faisons avec mon association.
                         </p>
                         <p>
-                            La vidéo ci-contre est un montage que j'ai réalisé en 2020 lors d'un voyage .
+                            La vidéo ci-contre est un montage que j'ai réalisé en 2020 lors d'un voyage à Bassecourt en suisse. Malheureusement ça à été le dernier week end de carnaval que nous avons pu faire avant la crise sanitaire dû au COVID-19, nous attendons avec impatience la reprise des week ends et répétitions.
                         </p>
-
 
                     </div>
                 </div>
@@ -712,8 +713,9 @@
 
 
 <!-- script scroll -->
-<script src="https://unpkg.com/scroll-out/dist/scroll-out.min.js"></script>
-
+<script src="asset/js/scrollout/scroll-out.min.js"></script>
+<!-- script Flickity -->
+<script src="asset/js/flickity/flickity.pkgd.min.js"></script>
 <!-- script -->
 <script src="asset/js/app.js"></script>
 
